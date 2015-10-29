@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../assets/Avenir.ttc"); }
+body {
+  color: #3d3c42;
+  font-family: "Open Sans" sans-serif; }
+
+nav, .navbar {
+  background-color: #102036;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  padding: 0 20px; }
+  nav a, .navbar a {
+    color: #f4f3f0; }
+  nav a:hover, .navbar a:hover {
+    color: #559f93;
+    background-color: #102036;
+    transition: all 600ms ease; }
+  nav li:hover, nav .nav, nav .navbar-nav, nav .navbar-right, nav a:focus, nav a:active, .navbar li:hover, .navbar .nav, .navbar .navbar-nav, .navbar .navbar-right, .navbar a:focus, .navbar a:active {
+    background-color: #102036 !important; }
+
+.student #divider {
+  border: 1px solid #f4f3f0;
+  margin: 30px 0; }
+.student .content {
+  max-width: 55vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  height: 100%;
+  padding: 30px 50px; }
+.student h1 {
+  letter-spacing: 2px;
+  font-size: 1.8em;
+  text-align: center; }
+.student h3 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1.4em; }
+.student p {
+  font-size: 1.1em;
+  line-height: 1.5em; }
+.student a {
+  color: #559f93; }
+.student a:hover {
+  opacity: .6;
+  transition: all 600ms ease; }
+.student .button {
+  border: 2px solid #559f93;
+  color: #559f93;
+  font-family: "Avenir" sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 10px; }
+.student .button:hover {
+  background-color: #559f93;
+  color: #f4f3f0;
+  transition: all 600ms ease;
+  cursor: pointer; }
+.student .schedule {
+  font-size: 1em;
+  padding-left: 50px;
+  margin-top: 20px;
+  border-left: 5px solid #559f93;
+  padding-bottom: 15px;
+  max-width: 60%; }
+  .student .schedule h4 {
+    padding: 15px 0 0 0;
+    font-weight: 500; }
+  .student .schedule .row {
+    border-bottom: 1px solid #bab9c1; }
+    .student .schedule .row p {
+      margin-top: 10px;
+      font-weight: 400; }
+    .student .schedule .row .col-lg-3 p {
+      color: #559f93; }
+  .student .schedule .row:hover {
+    background-color: #f4f3f0; }
+.student #company-list {
+  margin-top: 30px; }
+  .student #company-list .row {
+    margin: 0; }
+  .student #company-list h4 {
+    font-size: 1.1em;
+    color: #559f93;
+    font-weight: 600;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #656565; }
+  .student #company-list ul {
+    padding: 0;
+    padding-left: 5px;
+    margin: 0; }
+    .student #company-list ul li {
+      list-style-type: none;
+      padding: 2px; }
