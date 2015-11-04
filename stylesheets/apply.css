@@ -1,0 +1,29 @@
+.title {
+  color: #f2f6f9;
+  font-size: 3em;
+  margin-bottom: 25px; }
+
+a {
+  color: rgba(242, 246, 249, 0.25);
+  text-decoration: none;
+  transition: all 300ms;
+  -ms-transition: all 300ms;
+  -webkit-transition: all 300ms; }
+
+a:hover {
+  color: #f2f6f9;
+  text-decoration: none;
+  transition: all 300ms;
+  -ms-transition: all 300ms;
+  -webkit-transition: all 300ms; }
+
+nav.navbar.navbar-inverse {
+  text-align: left; }
+
+#come-back {
+  height: 90vh;
+  padding-top: 30vh;
+  font-size: 3em;
+  color: #f2f6f9; }
+
+/*# sourceMappingURL=apply.css.map */

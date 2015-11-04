@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>xFair 2016</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a id="goto-who">WHO</a></li>
+          <li><a id="goto-what">WHAT</a></li>
+          <li><a id="goto-committees">COMMITTEES</a></li>
+          <li><a href="/vlog">VLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="main">
+    <img class="logo" src="img/logo.svg"
+         onerror="this.onerror=null; this.src='img/logo.png'">
+    <div class="subtitle">
+        empowering students through technology
+    </div>
+    <a class="down" id="down"><span class="glyphicon glyphicon-chevron-down"></span></a>
+  </section>
+
+  <section id="who">
+    <div class="title">
+      WHO WE ARE
+    </div>
+    <div class="content">
+      We are a student-run organization that aims to <b>empower</b> MIT students by bringing cutting-edge technology, new ideas, and top tech-innovators to campus.
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="title">WHAT WE DO</div>
+      <div class="line">
+        <a href="http://hackmit.org/" target="_blank">
+          <img class="square" src="img/hackmit.svg"
+               onerror="this.onerror=null; this.src='img/hackmit.png'">
+        </a>
+        <a href="http://xfair.mit.edu/" target="_blank">
+          <img class="square" src="img/xfair.svg"
+               onerror="this.onerror=null; this.src='img/xfair.png'">
+        </a>
+        <a href="http://makemit.org/" target="_blank">
+          <img class="square" src="img/makemit.svg"
+               onerror="this.onerror=null; this.src='img/makemit.png'">
+        </a>
+      </div>
+      <div class="line">
+        <a href="http://blueprint.hackmit.org/" target="_blank">
+          <img class="square" src="img/blueprint.svg"
+               onerror="this.onerror=null; this.src='img/blueprint.png'">
+        </a>
+        <a href="http://think.mit.edu/" target="_blank">
+          <img class="square" src="img/think.svg"
+               onerror="this.onerror=null; this.src='img/think.png'">
+        </a>
+        <a href="http://projx.mit.edu/" target="_blank">
+          <img class="square" src="img/projx.svg"
+               onerror="this.onerror=null; this.src='img/projx.png'">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="committees">
+    <div class="title">COMMITTEES</div>
+    <div class="left">
+      <ul>
+        <li class="break" id="show-exec">Executive Team</li>
+        <li id="show-hack">HackMIT</li>
+        <li id="show-xfair">xFair</li>
+        <li id="show-make">MakeMIT</li>
+        <li id="show-projx">ProjX</li>
+        <li class="break" id="show-think">THINK</li>
+        <li id="show-devops">Developer Operations</li>
+        <li id="show-mkt">Marketing</li>
+        <li id="show-fin">Finance &amp; Internal Relations</li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="default" id="default">
+        <div class="name">
+          Want to get involved?
+        </div>
+        <div class="description">
+          Check out our committees to the left! If you have any questions feel free to <a href="mailto:techx-exec@mit.edu">email</a> us.
+        </div>
+      </div>
+      <div class="committee" id="exec" hidden>
+        <div class="name">
+          Executive Team
+        </div>
+        <div class="description">
+          The exec team consists of the directors of all the committees of TechX. We care deeply about all the events and initiatives that we have to offer, and we strive to make our mission of empowering students through technology possible on campus.
+        </div>
+        <div class="directors">
+          Directors:<br/>
+          <div class="person">
+            <div class="image jason-ma"></div>
+            <div class="name">
+              Jason Ma
+            </div>
+          </div>
+          <div class="person">
+            <div class="image jennifer-yu"></div>
+            <div class="name">
+              Jennifer Yu
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="hack" hidden>
+        <div class="name">
+          HackMIT
+        </div>
+        <div class="description">
+          HackMIT organizes MIT's largest annual undergraduate hackathon. Over the span of a weekend, a thousand hackers from all over the world come together to experiment and innovate on software and hardware projects on MIT's campus. Our team works to organize this event as well as Blueprint, a smaller-scale high school hackathon.
+        </div>
+        <div class="directors">
+          Directors:<br/>
+          <div class="person">
+            <div class="image jennifer-zhang"></div>
+            <div class="name">
+              Jennifer Zhang
+            </div>
+          </div>
+          <div class="person">
+            <div class="image kimberli-zhong"></div>
+            <div class="name">
+              Kimberli Zhong
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="xfair" hidden>
+        <div class="name">
+          xFair
+        </div>
+        <div class="description">
+          xFair is a career fair and technoloby expo. It is split into two committees. The Logistics committee handles all the behind-the-scenes planning during the months leading up to xFair as well as the day of xFair. The Corporate Relations team seeks out and communicates with companies to bring their hottest new tech to xFair.
+        </div>
+        <div class="directors">
+          Directors:<br/>
+          <div class="person">
+            <div class="image margaret-tian"></div>
+            <div class="name">
+              Margaret Tian
+            </div>
+          </div>
+          <div class="person">
+            <div class="image sina-booeshaghi"></div>
+            <div class="name">
+              Sina Booeshaghi
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="make" hidden>
+        <div class="name">
+          MakeMIT
+        </div>
+        <div class="description">
+          MakeMIT organizes one of the world's largest hardware hackathons, bringing together hundreds of makers, designers, artists, and engineers to bring their crazy ideas to life. We need enthusiastic organizers who are passionate about fostering a creative and collaborative environment for our participating hackers!
+        </div>
+        <div class="directors">
+          Director:<br/>
+          <div class="person">
+            <div class="image elizabeth-bianchini"></div>
+            <div class="name">
+              Elizabeth Bianchini
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="projx" hidden>
+        <div class="name">
+          ProjX
+        </div>
+        <div class="description">
+          The ProjX team is all about enabling MIT students to build cool side-projects to display at xFair. Last year, we funded dozens of projects including a prosthetic arm, an Oculus-controlled quadcopter, “gecko” gloves, and a variety of small electric vehicles. We’re looking for students with good communication, organizational, and mentorship skills. Bonus if you enjoy building things!
+        </div>
+        <div class="directors">
+          Director:<br/>
+          <div class="person">
+            <div class="image benjamin-reynolds"></div>
+            <div class="name">
+              Benjamin Reynolds
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="think" hidden>
+        <div class="name">
+          THINK
+        </div>
+        <div class="description">
+          THINK is TechX's initiative to make science and technology research and development accessible to high school students across the nation. We organize a competition in which high schoolers submit proposals for what they would create given a $1000 budget. From all the proposals we select 4-6 finalists who are flown in to see xFair and are ultimately awarded seed funding for their projects.
+        </div>
+        <div class="directors">
+          Directors:<br/>
+          <div class="person">
+            <div class="image archis-bhandarkar"></div>
+            <div class="name">
+              Archis Bhandarkar
+            </div>
+          </div>
+          <div class="person">
+            <div class="image daniel-lerner"></div>
+            <div class="name">
+              Daniel Lerner
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="devops" hidden>
+        <div class="name">
+          Developer Operations
+        </div>
+        <div class="description">
+          With projects ranging from behind-the-scenes, mission-critical web software to public-facing marketing campaigns, DevOps allows you to contribute to TechX while developing your programming chops. Students with coding experience are encouraged to apply for a dev position!
+        </div>
+        <div class="directors">
+          Director:<br/>
+          <div class="person">
+            <div class="image jack-serrino"></div>
+            <div class="name">
+              Jack Serrino
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="mkt" hidden>
+        <div class="name">
+          Marketing
+        </div>
+        <div class="description">
+          The Marketing team is the creative direction behind TechX - we design and deploy all forms of branding and advertising. We're looking for designers (no experience required), video-makers, social media junkies, and people interested in publicity positions!
+        </div>
+        <div class="directors">
+          Director:<br/>
+          <div class="person">
+            <div class="image larry-zhang"></div>
+            <div class="name">
+              Larry Zhang
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee" id="fin" hidden>
+        <div class="name">
+          Internal Relations
+        </div>
+        <div class="description">
+          The internal relations team works to bring together the TechX family through organizing exciting club-wide events, connecting committees, and expanding our alumni involvement. If you're upbeat, energetic, and interested in planning events, meeting new people, and helping shape the TechX community, we'd love to have you with us!
+        </div>
+        <div class="directors">
+          Director:<br/>
+          <div class="person">
+            <div class="image andreea-martin"></div>
+            <div class="name">
+              Andreea Martin
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="icons">
+      <a href="mailto:techx-exec@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
+      <a href="https://www.facebook.com/MITTechX" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/MITtechx" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; MIT TechX 2015 - <a id="constitution" href="/constitution.pdf" target="_blank"><i class="fa fa-file-text"></i></a>
+    </div>
+  </footer>
+</html>

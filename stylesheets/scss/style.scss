@@ -1,0 +1,632 @@
+@import '_constants';
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: $opensans;
+  font-weight: 300;
+
+  section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+
+  div {
+    position: relative;
+  }
+}
+
+body {
+  background: $black;
+}
+
+nav.navbar.navbar-inverse {
+  background-color: $black;
+  border: none;
+  font-size: 1.5em;
+
+  .navbar-nav {
+    float: none;
+    display: inline-block;
+    margin-bottom: -8px;
+
+    a#blue {
+      color: $blue;
+    }
+
+    a#blue:hover {
+      color: $white;
+    }
+
+    li>a {
+      padding: 25px;
+      color: $grey;
+      cursor: pointer;
+    }
+
+    li>a:hover {
+      color: $white;
+    }
+  }
+}
+
+#main {
+  text-align: center;
+  padding-top: 35vh;
+
+  .logo {
+    height: 10em;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    color: $white;
+    font-size: 1.75em;
+  }
+
+  a.down {
+    position: absolute;
+    bottom: 10vh;
+    cursor: pointer;
+  }
+
+  .glyphicon {
+    font-size: 1.75em;
+  }
+}
+
+#who {
+  padding: 40vh 0;
+
+  .content {
+    padding: 0 15vw;
+    color: $white;
+    font-size: 1.25em;
+  }
+}
+
+#what {
+  padding-top: 20vh;
+
+  .line {
+    width: 100vw;
+    padding: 10px 0;
+
+    a {
+      padding: 10px;
+
+      img.square {
+        height: 175px;
+      }
+    }
+  }
+}
+
+#committees {
+  padding-top: 20vh;
+  height: 105vh;
+
+  .left {
+    width: 40vw;
+    color: $white;
+    text-align: right;
+    font-size: 1.5em;
+    display: inline-block;
+    float: left;
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style-type: none;
+      cursor: pointer;
+      line-height: 1.75em;
+      display: inline-block;
+
+      li {
+        width: auto;
+      }
+
+      li:hover {
+        color: $blue;
+      }
+
+      .break {
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  .right {
+    width: 45vw;
+    color: $white;
+    text-align: left;
+    display: inline-block;
+
+    .default {
+      margin-top: 10em;
+
+      .name {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1.25em;
+
+        a {
+          text-decoration: underline;
+          color: $white;
+        }
+
+        a:visited {
+          color: $white;
+        }
+      }
+    }
+
+    .committee {
+
+      .name {
+        font-size: 2em;
+        margin-bottom: 30px;
+      }
+
+      .description {
+        font-size: 1.25em;
+        margin-bottom: 3em;
+      }
+
+      .directors {
+        font-size: 1.25em;
+
+        .person {
+          display: inline-block;
+          margin: 10px 10px 0 0;
+
+          .name {
+            background: $black;
+            color: $white;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.8em;
+            padding: 8px;
+            border-radius: 0 0 5px 5px;
+          }
+
+          .image {
+            display: inline-block;
+            background: url(/img/team/q.png);
+            background-size: contain;
+            height: 150px;
+            width: 150px;
+            border-radius: 5px 5px 0 0;
+            margin: 0 0 -6px 0;
+
+            &:hover {
+              -webkit-transition: background 1s;
+              -moz-transition: background 1s;
+              -o-transition: background 1s;
+              transition: background 1s;
+            }
+
+            &.archis-bhandarkar {
+              background: url(/img/team/archis.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/archis-silly.png);
+                background-size: contain;
+              }
+            }
+            &.andreea-martin {
+              background: url(/img/team/andreea.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/andreea-silly.png);
+                background-size: contain;
+              }
+            }
+            &.benjamin-reynolds {
+              background: url(/img/team/ben.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/ben-silly.png);
+                background-size: contain;
+              }
+            }
+            &.daniel-lerner {
+              background: url(/img/team/daniel.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/daniel-silly.png);
+                background-size: contain;
+              }
+            }
+            &.elizabeth-bianchini {
+              background: url(/img/team/elizabeth.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/elizabeth-silly.png);
+                background-size: contain;
+              }
+            }
+            &.jack-serrino {
+              background: url(/img/team/jack.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/jack-silly.png);
+                background-size: contain;
+              }
+            }
+            &.jason-ma {
+              background: url(/img/team/jason.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/jason-silly.png);
+                background-size: contain;
+              }
+            }
+            &.jennifer-yu {
+              background: url(/img/team/jenn.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/jenn-silly.png);
+                background-size: contain;
+              }
+            }
+            &.jennifer-zhang {
+              background: url(/img/team/jenny.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/jenny-silly.png);
+                background-size: contain;
+              }
+            }
+            &.kimberli-zhong {
+              background: url(/img/team/kimberli.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/kimberli-silly.png);
+                background-size: contain;
+              }
+            }
+            &.larry-zhang {
+              background: url(/img/team/larry.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/larry-silly.png);
+                background-size: contain;
+              }
+            }
+            &.margaret-tian {
+              background: url(/img/team/margaret.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/margaret-silly.png);
+                background-size: contain;
+              }
+            }
+            &.sina-booeshaghi {
+              background: url(/img/team/sina.png);
+              background-size: contain;
+              &:hover {
+                background: url(/img/team/sina-silly.png);
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  color: $grey;
+
+  .icons {
+    margin-bottom: 5px;
+
+    a {
+    	font-size: .75em;
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+
+  .copyright {
+    font-size: 1em;
+    margin: 10px 0 5px 0;
+  }
+
+  .elevator {
+    font-size: 0.8em;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+	#what {
+	  padding-top: 25vh;
+	}
+
+	#committees {
+		padding-top: 22vh;
+		height: 100vh;
+	}
+}
+
+@media only screen and (max-width: 736px) {
+
+	#main {
+
+		.logo {
+			height: 5em;
+		}
+	}
+
+	#who {
+		padding-top: 35vh;
+	}
+
+	#what {
+		padding-top: 20vh;
+
+		.line {
+			padding: 5px 0;
+
+			a {
+				padding: 5px;
+
+				img.square {
+					height: 100px;
+				}
+			}
+		}
+	}
+
+	#committees {
+		height: 190vh;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+
+	#main {
+		padding-top: 30vh;
+	}
+
+	#who {
+		padding-top: 30vh;
+	}
+
+	#what {
+		padding-top: 18vh;
+
+		.title {
+			margin-bottom: 15px;
+		}
+
+		.line>a>img.square {
+			height: 90px;
+		}
+	}
+
+	#committees {
+		height: 200vh;
+
+		.left {
+			font-size: 1.4em;
+		}
+
+		.right {
+			width: 50vw;
+
+			.default {
+				margin-top: 8em;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 568px) {
+
+	.title {
+		font-size: 2.5em;
+	}
+
+	#who {
+
+		.content {
+			font-size: 1.1em;
+		}
+	}
+
+	#what {
+
+		.title {
+			margin-bottom: 5px;
+		}
+
+		.line>a>img.square {
+			height: 90px;
+		}
+	}
+
+	#committees {
+		height: 200vh;
+
+		.left {
+			font-size: 1.2em;
+		}
+
+		.right {
+			width: 50vw;
+
+			.default {
+				margin-top: 8em;
+
+				.description {
+					font-size: 1.1em;
+				}
+			}
+
+			.committee {
+
+				.description {
+					font-size: 1.1em;
+					margin-bottom: 2em;
+				}
+
+				.directors .person {
+
+					.image {
+						height: 125px;
+						width: 125px;
+					}
+
+					.name {
+						font-size: .7em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 414px) {
+
+	#what {
+		padding-top: 25vh;
+
+		.title {
+			margin-bottom: 25px;
+		}
+	}
+
+	#committees {
+		height: 135vh;
+
+		.left {
+			font-size: 1.1em;
+		}
+
+		.right {
+
+			.default {
+				margin-top: 5em;
+			}
+
+			.committee {
+
+				.description {
+					font-size: 1.1em;
+					margin-bottom: 2em;
+				}
+
+				.directors .person {
+
+					.name {
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+
+	#what {
+		padding-top: 25vh;
+
+		.title {
+			margin-bottom: 25px;
+		}
+	}
+
+	#committees {
+		height: 160vh;
+
+		.left {
+			font-size: 1.1em;
+		}
+
+		.right {
+
+			.committee {
+
+				.description {
+					font-size: 1.1em;
+					margin-bottom: 2em;
+				}
+
+				.directors .person {
+
+					.name {
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.title {
+		font-size: 3em;
+	}
+
+	#main {
+
+		.subtitle {
+			font-size: 1.25em;
+		}
+	}
+
+	#who {
+
+		.content {
+			font-size: 1.25em;
+		}
+	}
+
+	#what {
+		padding-top: 25vh;
+
+		.title {
+			margin-bottom: 25px;
+		}
+	}
+
+	#committees {
+		height: 190vh;
+
+		.left {
+			font-size: 1.1em;
+		}
+
+		.right {
+
+			.committee {
+
+				.description {
+					font-size: 1.1em;
+					margin-bottom: 2em;
+				}
+
+				.directors .person {
+
+					.name {
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,390 @@
+.title {
+  color: #f2f6f9;
+  font-size: 3em;
+  margin-bottom: 25px; }
+
+a {
+  color: rgba(242, 246, 249, 0.25);
+  text-decoration: none;
+  transition: all 300ms;
+  -ms-transition: all 300ms;
+  -webkit-transition: all 300ms; }
+
+a:hover {
+  color: #f2f6f9;
+  text-decoration: none;
+  transition: all 300ms;
+  -ms-transition: all 300ms;
+  -webkit-transition: all 300ms; }
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  html section, body section {
+    height: 100vh;
+    width: 100vw;
+    position: relative; }
+  html div, body div {
+    position: relative; }
+
+body {
+  background: #1d1d1d; }
+
+nav.navbar.navbar-inverse {
+  background-color: #1d1d1d;
+  border: none;
+  font-size: 1.5em; }
+  nav.navbar.navbar-inverse .navbar-nav {
+    float: none;
+    display: inline-block;
+    margin-bottom: -8px; }
+    nav.navbar.navbar-inverse .navbar-nav a#blue {
+      color: #5083bf; }
+    nav.navbar.navbar-inverse .navbar-nav a#blue:hover {
+      color: #f2f6f9; }
+    nav.navbar.navbar-inverse .navbar-nav li > a {
+      padding: 25px;
+      color: rgba(242, 246, 249, 0.25);
+      cursor: pointer; }
+    nav.navbar.navbar-inverse .navbar-nav li > a:hover {
+      color: #f2f6f9; }
+
+#main {
+  text-align: center;
+  padding-top: 35vh; }
+  #main .logo {
+    height: 10em; }
+  #main .subtitle {
+    margin-top: 10px;
+    color: #f2f6f9;
+    font-size: 1.75em; }
+  #main a.down {
+    position: absolute;
+    bottom: 10vh;
+    cursor: pointer; }
+  #main .glyphicon {
+    font-size: 1.75em; }
+
+#who {
+  padding: 40vh 0; }
+  #who .content {
+    padding: 0 15vw;
+    color: #f2f6f9;
+    font-size: 1.25em; }
+
+#what {
+  padding-top: 20vh; }
+  #what .line {
+    width: 100vw;
+    padding: 10px 0; }
+    #what .line a {
+      padding: 10px; }
+      #what .line a img.square {
+        height: 175px; }
+
+#committees {
+  padding-top: 20vh;
+  height: 105vh; }
+  #committees .left {
+    width: 40vw;
+    color: #f2f6f9;
+    text-align: right;
+    font-size: 1.5em;
+    display: inline-block;
+    float: left; }
+    #committees .left ul {
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style-type: none;
+      cursor: pointer;
+      line-height: 1.75em;
+      display: inline-block; }
+      #committees .left ul li {
+        width: auto; }
+      #committees .left ul li:hover {
+        color: #5083bf; }
+      #committees .left ul .break {
+        margin-bottom: 1em; }
+  #committees .right {
+    width: 45vw;
+    color: #f2f6f9;
+    text-align: left;
+    display: inline-block; }
+    #committees .right .default {
+      margin-top: 10em; }
+      #committees .right .default .name {
+        font-size: 2em; }
+      #committees .right .default .description {
+        font-size: 1.25em; }
+        #committees .right .default .description a {
+          text-decoration: underline;
+          color: #f2f6f9; }
+        #committees .right .default .description a:visited {
+          color: #f2f6f9; }
+    #committees .right .committee .name {
+      font-size: 2em;
+      margin-bottom: 30px; }
+    #committees .right .committee .description {
+      font-size: 1.25em;
+      margin-bottom: 3em; }
+    #committees .right .committee .directors {
+      font-size: 1.25em; }
+      #committees .right .committee .directors .person {
+        display: inline-block;
+        margin: 10px 10px 0 0; }
+        #committees .right .committee .directors .person .name {
+          background: #1d1d1d;
+          color: #f2f6f9;
+          text-align: center;
+          font-weight: 400;
+          font-size: 0.8em;
+          padding: 8px;
+          border-radius: 0 0 5px 5px; }
+        #committees .right .committee .directors .person .image {
+          display: inline-block;
+          background: url(/img/team/q.png);
+          background-size: contain;
+          height: 150px;
+          width: 150px;
+          border-radius: 5px 5px 0 0;
+          margin: 0 0 -6px 0; }
+          #committees .right .committee .directors .person .image:hover {
+            -webkit-transition: background 1s;
+            -moz-transition: background 1s;
+            -o-transition: background 1s;
+            transition: background 1s; }
+          #committees .right .committee .directors .person .image.archis-bhandarkar {
+            background: url(/img/team/archis.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.archis-bhandarkar:hover {
+              background: url(/img/team/archis-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.andreea-martin {
+            background: url(/img/team/andreea.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.andreea-martin:hover {
+              background: url(/img/team/andreea-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.benjamin-reynolds {
+            background: url(/img/team/ben.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.benjamin-reynolds:hover {
+              background: url(/img/team/ben-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.daniel-lerner {
+            background: url(/img/team/daniel.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.daniel-lerner:hover {
+              background: url(/img/team/daniel-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.elizabeth-bianchini {
+            background: url(/img/team/elizabeth.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.elizabeth-bianchini:hover {
+              background: url(/img/team/elizabeth-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.jack-serrino {
+            background: url(/img/team/jack.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.jack-serrino:hover {
+              background: url(/img/team/jack-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.jason-ma {
+            background: url(/img/team/jason.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.jason-ma:hover {
+              background: url(/img/team/jason-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.jennifer-yu {
+            background: url(/img/team/jenn.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.jennifer-yu:hover {
+              background: url(/img/team/jenn-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.jennifer-zhang {
+            background: url(/img/team/jenny.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.jennifer-zhang:hover {
+              background: url(/img/team/jenny-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.kimberli-zhong {
+            background: url(/img/team/kimberli.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.kimberli-zhong:hover {
+              background: url(/img/team/kimberli-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.larry-zhang {
+            background: url(/img/team/larry.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.larry-zhang:hover {
+              background: url(/img/team/larry-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.margaret-tian {
+            background: url(/img/team/margaret.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.margaret-tian:hover {
+              background: url(/img/team/margaret-silly.png);
+              background-size: contain; }
+          #committees .right .committee .directors .person .image.sina-booeshaghi {
+            background: url(/img/team/sina.png);
+            background-size: contain; }
+            #committees .right .committee .directors .person .image.sina-booeshaghi:hover {
+              background: url(/img/team/sina-silly.png);
+              background-size: contain; }
+
+footer {
+  height: 100px;
+  color: rgba(242, 246, 249, 0.25); }
+  footer .icons {
+    margin-bottom: 5px; }
+    footer .icons a {
+      font-size: .75em;
+      display: inline-block;
+      margin: 0 5px; }
+  footer .copyright {
+    font-size: 1em;
+    margin: 10px 0 5px 0; }
+  footer .elevator {
+    font-size: 0.8em;
+    text-decoration: underline; }
+
+@media only screen and (max-width: 768px) {
+  #what {
+    padding-top: 25vh; }
+
+  #committees {
+    padding-top: 22vh;
+    height: 100vh; } }
+@media only screen and (max-width: 736px) {
+  #main .logo {
+    height: 5em; }
+
+  #who {
+    padding-top: 35vh; }
+
+  #what {
+    padding-top: 20vh; }
+    #what .line {
+      padding: 5px 0; }
+      #what .line a {
+        padding: 5px; }
+        #what .line a img.square {
+          height: 100px; }
+
+  #committees {
+    height: 190vh; } }
+@media only screen and (max-width: 667px) {
+  #main {
+    padding-top: 30vh; }
+
+  #who {
+    padding-top: 30vh; }
+
+  #what {
+    padding-top: 18vh; }
+    #what .title {
+      margin-bottom: 15px; }
+    #what .line > a > img.square {
+      height: 90px; }
+
+  #committees {
+    height: 200vh; }
+    #committees .left {
+      font-size: 1.4em; }
+    #committees .right {
+      width: 50vw; }
+      #committees .right .default {
+        margin-top: 8em; } }
+@media only screen and (max-width: 568px) {
+  .title {
+    font-size: 2.5em; }
+
+  #who .content {
+    font-size: 1.1em; }
+
+  #what .title {
+    margin-bottom: 5px; }
+  #what .line > a > img.square {
+    height: 90px; }
+
+  #committees {
+    height: 200vh; }
+    #committees .left {
+      font-size: 1.2em; }
+    #committees .right {
+      width: 50vw; }
+      #committees .right .default {
+        margin-top: 8em; }
+        #committees .right .default .description {
+          font-size: 1.1em; }
+      #committees .right .committee .description {
+        font-size: 1.1em;
+        margin-bottom: 2em; }
+      #committees .right .committee .directors .person .image {
+        height: 125px;
+        width: 125px; }
+      #committees .right .committee .directors .person .name {
+        font-size: .7em; } }
+@media only screen and (max-width: 414px) {
+  #what {
+    padding-top: 25vh; }
+    #what .title {
+      margin-bottom: 25px; }
+
+  #committees {
+    height: 135vh; }
+    #committees .left {
+      font-size: 1.1em; }
+    #committees .right .default {
+      margin-top: 5em; }
+    #committees .right .committee .description {
+      font-size: 1.1em;
+      margin-bottom: 2em; }
+    #committees .right .committee .directors .person .name {
+      margin-bottom: 1em; } }
+@media only screen and (max-width: 375px) {
+  #what {
+    padding-top: 25vh; }
+    #what .title {
+      margin-bottom: 25px; }
+
+  #committees {
+    height: 160vh; }
+    #committees .left {
+      font-size: 1.1em; }
+    #committees .right .committee .description {
+      font-size: 1.1em;
+      margin-bottom: 2em; }
+    #committees .right .committee .directors .person .name {
+      margin-bottom: 1em; } }
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 3em; }
+
+  #main .subtitle {
+    font-size: 1.25em; }
+
+  #who .content {
+    font-size: 1.25em; }
+
+  #what {
+    padding-top: 25vh; }
+    #what .title {
+      margin-bottom: 25px; }
+
+  #committees {
+    height: 190vh; }
+    #committees .left {
+      font-size: 1.1em; }
+    #committees .right .committee .description {
+      font-size: 1.1em;
+      margin-bottom: 2em; }
+    #committees .right .committee .directors .person .name {
+      margin-bottom: 1em; } }
+
+/*# sourceMappingURL=style.css.map */
