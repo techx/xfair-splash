@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-  var elevator = new Elevator({
-    mainAudio: '/sound/elevator.mp3',
-    endAudio: '/sound/ding.mp3',
-    duration: 7000
-  });
-
   // Gradient
   var startPos = 0,
       endPos = 3*$(window).height(),
