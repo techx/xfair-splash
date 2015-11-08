@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -26,263 +27,98 @@
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a id="goto-who">WHO</a></li>
-          <li><a id="goto-what">WHAT</a></li>
-          <li><a id="goto-committees">COMMITTEES</a></li>
+          <li><a id="goto-about">About</a></li>
+          <li><a id="goto-employers">Employers</a></li>
+          <li><a id="goto-students">Students</a></li>
+          <li><a id="goto-exhibitors">Student Exhibitors</a></li>
+          <li><a id="goto-faq">FAQ</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <section id="main">
-    <img class="logo" src="img/logo.svg"
-         onerror="this.onerror=null; this.src='img/logo.png'">
-    <div class="subtitle">
-        empowering students through technology
-    </div>
-    <a class="down" id="down"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    <div class="bg"></div>
+    <div class="title"></div>
+    <div class="tagline">Powered by TechX and Tau Beta Pi</div>
+    <div class="date">February 1, 2016, 10AM – 4PM</div>
+    <div class="location">Rockwell Cage</div>
+    <a href="#employers"><button>Employers</button></a>
+    <a href="#students"><button>Students</button></a>
   </section>
 
-  <section id="who">
-    <div class="title">
-      WHO WE ARE
-    </div>
+  <section id="about">
+    <div class="title">More than your average career fair</div>
     <div class="content">
-      We are a student-run organization that aims to <b>empower</b> MIT students by bringing cutting-edge technology, new ideas, and top tech-innovators to campus.
+      xFair is more than booths, name tags, and blazers — it's a career fair and a tech expo combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is <b>MIT’s largest career fair & tech expo.</b>
     </div>
   </section>
 
-  <section id="what">
-    <div class="title">WHAT WE DO</div>
-      <div class="line">
-        <a href="http://hackmit.org/" target="_blank">
-          <img class="square" src="img/hackmit.svg"
-               onerror="this.onerror=null; this.src='img/hackmit.png'">
-        </a>
-        <a href="http://xfair.mit.edu/" target="_blank">
-          <img class="square" src="img/xfair.svg"
-               onerror="this.onerror=null; this.src='img/xfair.png'">
-        </a>
-        <a href="http://makemit.org/" target="_blank">
-          <img class="square" src="img/makemit.svg"
-               onerror="this.onerror=null; this.src='img/makemit.png'">
-        </a>
-      </div>
-      <div class="line">
-        <a href="http://blueprint.hackmit.org/" target="_blank">
-          <img class="square" src="img/blueprint.svg"
-               onerror="this.onerror=null; this.src='img/blueprint.png'">
-        </a>
-        <a href="http://think.mit.edu/" target="_blank">
-          <img class="square" src="img/think.svg"
-               onerror="this.onerror=null; this.src='img/think.png'">
-        </a>
-        <a href="http://projx.mit.edu/" target="_blank">
-          <img class="square" src="img/projx.svg"
-               onerror="this.onerror=null; this.src='img/projx.png'">
-        </a>
-      </div>
+  <section id="employers">
+    <div class="title">Employers</div>
+    <div class="content">
+      <b>Recruit the brightest young minds to make your company's vision come true.</b>
+      <br>
+      Showcase your company and brand to thousands of attendees and inspire the next generation of talent.
+      <br>
+      Our application for xFair 2016 is opening soon! Check back here for more information, but feel free to let us know if you have any questions. You can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>!
     </div>
   </section>
 
-  <section id="committees">
-    <div class="title">COMMITTEES</div>
-    <div class="left">
-      <ul>
-        <li class="break" id="show-exec">Executive Team</li>
-        <li id="show-hack">HackMIT</li>
-        <li id="show-xfair">xFair</li>
-        <li id="show-make">MakeMIT</li>
-        <li id="show-projx">ProjX</li>
-        <li class="break" id="show-think">THINK</li>
-        <li id="show-devops">Developer Operations</li>
-        <li id="show-mkt">Marketing</li>
-        <li id="show-fin">Finance &amp; Internal Relations</li>
-      </ul>
+  <section id="students">
+    <div class="title">Students</div>
+    <div class="content">
+      Network, explore, and be inspired. xFair companies feature cutting-edge technologies and industry leaders from a variety of fields.
     </div>
-    <div class="right">
-      <div class="default" id="default">
-        <div class="name">
-          Want to get involved?
-        </div>
-        <div class="description">
-          Check out our committees to the left! If you have any questions feel free to <a href="mailto:techx-exec@mit.edu">email</a> us.
-        </div>
-      </div>
-      <div class="committee" id="exec" hidden>
-        <div class="name">
-          Executive Team
-        </div>
-        <div class="description">
-          The exec team consists of the directors of all the committees of TechX. We care deeply about all the events and initiatives that we have to offer, and we strive to make our mission of empowering students through technology possible on campus.
-        </div>
-        <div class="directors">
-          Directors:<br/>
-          <div class="person">
-            <div class="image jason-ma"></div>
-            <div class="name">
-              Jason Ma
-            </div>
-          </div>
-          <div class="person">
-            <div class="image jennifer-yu"></div>
-            <div class="name">
-              Jennifer Yu
-            </div>
+  </section>
+
+  <section id="exhibitors">
+    <div class="title">Student Exhibitors</div>
+    <div class="content">
+      We want to see your creativity, innovation, and engineering at its best. And we want to help you gain the exposure you deserve. xFair student exhibitors will display their projects at xFair 2016 to thousands of students and hundreds of industry professionals.
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="title">Frequently Asked Questions For Students</div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="question">What is xFair?</div>
+          <div class="answer">
+            xFair is a career fair that is a combination of TechFair and TBP Career Fair. The two fairs have merged to become xFair.
           </div>
         </div>
-      </div>
-      <div class="committee" id="hack" hidden>
-        <div class="name">
-          HackMIT
-        </div>
-        <div class="description">
-          HackMIT organizes MIT's largest annual undergraduate hackathon. Over the span of a weekend, a thousand hackers from all over the world come together to experiment and innovate on software and hardware projects on MIT's campus. Our team works to organize this event as well as Blueprint, a smaller-scale high school hackathon.
-        </div>
-        <div class="directors">
-          Directors:<br/>
-          <div class="person">
-            <div class="image jennifer-zhang"></div>
-            <div class="name">
-              Jennifer Zhang
-            </div>
+        <div class="col-md-4">
+          <div class="question">Should I bring my resume?</div>
+          <div class="answer">
+            Yes. There will be a resume drop opening in January so employers can find you before the fair, but also bring paper copies. Some recruiters like writing on resumes in person.
           </div>
-          <div class="person">
-            <div class="image kimberli-zhong"></div>
-            <div class="name">
-              Kimberli Zhong
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="question">What's the dress code?</div>
+          <div class="answer">
+            <a href="http://en.wikipedia.org/wiki/Smart_casual">Smart</a> casual.
           </div>
         </div>
       </div>
-      <div class="committee" id="xfair" hidden>
-        <div class="name">
-          xFair
-        </div>
-        <div class="description">
-          xFair is a career fair and technoloby expo. It is split into two committees. The Logistics committee handles all the behind-the-scenes planning during the months leading up to xFair as well as the day of xFair. The Corporate Relations team seeks out and communicates with companies to bring their hottest new tech to xFair.
-        </div>
-        <div class="directors">
-          Directors:<br/>
-          <div class="person">
-            <div class="image margaret-tian"></div>
-            <div class="name">
-              Margaret Tian
-            </div>
-          </div>
-          <div class="person">
-            <div class="image sina-booeshaghi"></div>
-            <div class="name">
-              Sina Booeshaghi
-            </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="question">What distinguishes xFair from traditional career fairs?</div>
+          <div class="answer">
+            Many companies at xFair will be displaying cool demos, so you can check out the products that you'll help build at your future job. In addition to company demos, we'll also be displaying cool projects made by MIT students like you! Check out your friends' and classmates' projects at the fair.
           </div>
         </div>
-      </div>
-      <div class="committee" id="make" hidden>
-        <div class="name">
-          MakeMIT
-        </div>
-        <div class="description">
-          MakeMIT organizes one of the world's largest hardware hackathons, bringing together hundreds of makers, designers, artists, and engineers to bring their crazy ideas to life. We need enthusiastic organizers who are passionate about fostering a creative and collaborative environment for our participating hackers!
-        </div>
-        <div class="directors">
-          Director:<br/>
-          <div class="person">
-            <div class="image elizabeth-bianchini"></div>
-            <div class="name">
-              Elizabeth Bianchini
-            </div>
+        <div class="col-md-4">
+          <div class="question">Where can I get more information?</div>
+          <div class="answer">
+            Student information is available <a href="">here</a>. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
           </div>
         </div>
-      </div>
-      <div class="committee" id="projx" hidden>
-        <div class="name">
-          ProjX
-        </div>
-        <div class="description">
-          The ProjX team is all about enabling MIT students to build cool side-projects to display at xFair. Last year, we funded dozens of projects including a prosthetic arm, an Oculus-controlled quadcopter, “gecko” gloves, and a variety of small electric vehicles. We’re looking for students with good communication, organizational, and mentorship skills. Bonus if you enjoy building things!
-        </div>
-        <div class="directors">
-          Director:<br/>
-          <div class="person">
-            <div class="image benjamin-reynolds"></div>
-            <div class="name">
-              Benjamin Reynolds
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="committee" id="think" hidden>
-        <div class="name">
-          THINK
-        </div>
-        <div class="description">
-          THINK is TechX's initiative to make science and technology research and development accessible to high school students across the nation. We organize a competition in which high schoolers submit proposals for what they would create given a $1000 budget. From all the proposals we select 4-6 finalists who are flown in to see xFair and are ultimately awarded seed funding for their projects.
-        </div>
-        <div class="directors">
-          Directors:<br/>
-          <div class="person">
-            <div class="image archis-bhandarkar"></div>
-            <div class="name">
-              Archis Bhandarkar
-            </div>
-          </div>
-          <div class="person">
-            <div class="image daniel-lerner"></div>
-            <div class="name">
-              Daniel Lerner
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="committee" id="devops" hidden>
-        <div class="name">
-          Developer Operations
-        </div>
-        <div class="description">
-          With projects ranging from behind-the-scenes, mission-critical web software to public-facing marketing campaigns, DevOps allows you to contribute to TechX while developing your programming chops. Students with coding experience are encouraged to apply for a dev position!
-        </div>
-        <div class="directors">
-          Director:<br/>
-          <div class="person">
-            <div class="image jack-serrino"></div>
-            <div class="name">
-              Jack Serrino
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="committee" id="mkt" hidden>
-        <div class="name">
-          Marketing
-        </div>
-        <div class="description">
-          The Marketing team is the creative direction behind TechX - we design and deploy all forms of branding and advertising. We're looking for designers (no experience required), video-makers, social media junkies, and people interested in publicity positions!
-        </div>
-        <div class="directors">
-          Director:<br/>
-          <div class="person">
-            <div class="image larry-zhang"></div>
-            <div class="name">
-              Larry Zhang
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="committee" id="fin" hidden>
-        <div class="name">
-          Internal Relations
-        </div>
-        <div class="description">
-          The internal relations team works to bring together the TechX family through organizing exciting club-wide events, connecting committees, and expanding our alumni involvement. If you're upbeat, energetic, and interested in planning events, meeting new people, and helping shape the TechX community, we'd love to have you with us!
-        </div>
-        <div class="directors">
-          Director:<br/>
-          <div class="person">
-            <div class="image andreea-martin"></div>
-            <div class="name">
-              Andreea Martin
-            </div>
+        <div class="col-md-4">
+          <div class="question">Why should I go?</div>
+          <div class="answer">
+            We try to bring companies from all different industries so that there's something there for everyone. At xFair, you could find a job, a first hand look at what the latest industry-leading companies are doing, cool demos, swag, and maybe even... true love?
           </div>
         </div>
       </div>
@@ -291,12 +127,11 @@
 
   <footer>
     <div class="icons">
-      <a href="mailto:techx-exec@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
-      <a href="https://www.facebook.com/MITTechX" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-      <a href="https://twitter.com/MITtechx" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="mailto:xfair-cr@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
+      <a href="https://www.facebook.com/MITxFair" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/MITxFair" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
     </div>
-    <div class="copyright">
-      &copy; MIT TechX 2015
-    </div>
+    Powered by <a href="http://techx.mit.edu/">MIT TechX</a> and <a href="http://web.mit.edu/tbp/www/">MIT Tau Beta Pi</a>
   </footer>
+</body>
 </html>
