@@ -44,7 +44,7 @@ div {
   50% {
     -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
   75% {
-    -webkit-transform: translate3d(0px, 0px, -70px) rotateX(55deg) rotateZ(270deg); }
+    -webkit-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
   100% {
     -webkit-transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); } }
 @-moz-keyframes camerawork {
@@ -55,7 +55,7 @@ div {
   50% {
     -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
   75% {
-    -moz-transform: translate3d(0px, 0px, -70px) rotateX(55deg) rotateZ(270deg); }
+    -moz-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
   100% {
     -moz-transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); } }
 @keyframes camerawork {
@@ -66,7 +66,7 @@ div {
   50% {
     transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
   75% {
-    transform: translate3d(0px, 0px, -70px) rotateX(55deg) rotateZ(270deg); }
+    transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
   100% {
     transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); } }
     .view .camera .floor {
@@ -279,7 +279,7 @@ section {
   color: #f0f0f0;
   font-size: 8em;
   font-weight: 500;
-  letter-spacing: .25em;
+  letter-spacing: .2em;
   z-index: -1; }
   .main-title .logo {
     display: none;
@@ -287,7 +287,7 @@ section {
     left: -19px;
     top: -18px;
     height: .8em; }
-  .main-title #year {
+  .main-title .year {
     display: none; }
 
 #main {
