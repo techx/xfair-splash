@@ -6,7 +6,7 @@
 	.st0{fill:#72CFF5;}
 	.st1{fill:#FFFFFF;}
 </style>
-<polygon id="XMLID_36_" class="st0" points="3,269.8 -54,376 4,376 55.8,272.8 "/>
+<polygon id="XMLID_36_" class="st0" points="0.8,273.9 -54,376 4,376 53.6,276.9 "/>
 <g>
 	<path class="st0" d="M-784.8,176.1L-912.8-4.5h66.1l98.9,146.2l97.8-146.2h64.5l-126.8,180L-572.6,376h-67.7l-109.1-165L-859,376
 		h-64L-784.8,176.1z"/>
@@ -28,5 +28,5 @@
 		</g>
 	</g>
 </g>
-<polygon id="XMLID_2_" class="st0" points="271.7,272.8 323.5,376 381.4,376 324.4,269.8 "/>
+<polygon id="XMLID_1_" class="st0" points="273.5,276.9 323.2,376 381.1,376 326.4,273.9 "/>
 </svg>

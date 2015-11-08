@@ -32,8 +32,8 @@ section {
     letter-spacing: .25em; }
     #main .title .logo {
       position: relative;
-      top: -13px;
-      height: .72em; }
+      top: -18px;
+      height: .8em; }
     #main .title #blue {
       color: #6bd4ff; }
 
@@ -62,15 +62,15 @@ section {
   -webkit-animation-name: camerawork;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 8s;
   -moz-animation-name: camerawork;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
-  -moz-animation-duration: 5s;
+  -moz-animation-duration: 8s;
   animation-name: camerawork;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
-  animation-duration: 5s; }
+  animation-duration: 8s; }
 @-webkit-keyframes camerawork {
   0% {
     -webkit-transform: translate3d(0px, 0px, -100px) rotateX(40deg) rotateZ(0deg); }
@@ -95,13 +95,13 @@ section {
     -moz-transform: translate3d(0px, 0px, -100px) rotateX(10deg) rotateZ(360deg); } }
 @keyframes camerawork {
   0% {
-    transform: translate3d(0px, 0px, -100px) rotateX(40deg) rotateZ(0deg); }
+    transform: translate3d(0px, 0px, -500px) rotateX(40deg) rotateZ(0deg); }
   25% {
-    transform: translate3d(0px, 0px, -250px) rotateX(20deg) rotateZ(90deg); }
+    transform: translate3d(0px, 0px, -60px) rotateX(60deg) rotateZ(90deg); }
   50% {
-    transform: translate3d(0px, 0px, -400px) rotateX(70deg) rotateZ(180deg); }
+    transform: translate3d(0px, 0px, -80px) rotateX(100deg) rotateZ(180deg); }
   75% {
-    transform: translate3d(0px, 0px, -250px) rotateX(100deg) rotateZ(270deg); }
+    transform: translate3d(0px, 0px, -90px) rotateX(55deg) rotateZ(270deg); }
   100% {
     transform: translate3d(0px, 0px, -100px) rotateX(10deg) rotateZ(360deg); } }
 .airplane #floor {
