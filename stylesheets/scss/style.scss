@@ -1,5 +1,5 @@
 @import '_constants';
-@import 'airplane';
+@import '_airplane';
 
 html, body {
   height: 100%;
@@ -34,27 +34,34 @@ body {
 
 section {
   height: 100vh;
+  padding: 80px 0;
   position: relative;
+}
+
+.main-title {
+  padding-top: 34.4vh;
+  color: $white;
+  font-size: 8em;
+  font-weight: 500;
+  letter-spacing: .25em;
+  z-index: -1;
+
+  .logo {
+    display: none;
+    position: relative;
+    left: -19px;
+    top: -18px;
+    height: .8em;
+  }
+
+  #year {
+    display: none;
+  }
 }
 
 #main {
   color: $white;
 
-  .title {
-    font-size: 8em;
-    font-weight: 500;
-    letter-spacing: .25em;
-
-    .logo {
-      position: relative;
-      top: -18px;
-      height: .8em;
-    }
-
-    #2016 {
-      
-    }
-  }
 }
 
 
