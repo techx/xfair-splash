@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <title>xFair 2016</title>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <meta charset="UTF-8">
+  <title> xFair 2016 | Feb 1</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="xFair 2016"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="img/xfair-logo.png"/>
+  <meta property="og:url" content="http://xfair.io"/>
+  <meta property="og:description" content="MIT's largest career fair & tech expo | Feb 1, MIT."/>
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MITxFair">
+  <meta name="twitter:title" content="xFair 2016">
+  <meta name="twitter:description" content="MIT's largest career fair & tech expo | Feb 1, MIT.">
+  <meta name="twitter:image:src" content="img/xfair-logo.png">
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
   <script src="js/main.js"></script>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -35,11 +53,31 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
+  <section>
+    <div class="airplane">
+      <div id="view">
+        <div id="camera">
+          <div id="floor"></div>
+          <div id="airplane">
+            <div class="wingLeft"></div>
+            <div class="wingRight"></div>
+            <div class="bodyLeft"></div>
+            <div class="bodyRight"></div>
+            <div class="bodyShadow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="main">
-    <div class="bg"></div>
-    <div class="title"></div>
+    <div class="title">
+      <img class="logo" src="img/logo.svg"
+           onerror="this.onerror=null; this.src='img/logo.png'">
+      2016
+    </div>
     <div class="tagline">Powered by TechX and Tau Beta Pi</div>
     <div class="date">February 1, 2016, 10AM – 4PM</div>
     <div class="location">Rockwell Cage</div>
