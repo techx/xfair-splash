@@ -1,4 +1,5 @@
 @import '_constants';
+@import '_airplane';
 
 html, body {
   height: 100%;
@@ -22,7 +23,12 @@ body {
   background: $blue;
 }
 
+#show {
+  display: none;
+}
+
 section {
+<<<<<<< HEAD
   height: 100%;
   position: relative;
 }
@@ -95,208 +101,75 @@ section {
     75%   { transform: translate3d(0px, 0px, -150px) rotateX(55deg) rotateZ(270deg); }
     100%  { transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(360deg); }
   }
+=======
+  height: 100vh;
+  position: relative;
+}
 
-  #floor {
-    border-radius: 25vw;
-    position: absolute;
-    width: 50vw;
-    height: 50vw;
-    left: -25vw;
-    top: -25vw;
-    background-position: -10px 0;
-    background-image: -webkit-gradient(
-      radial,
-      center center, 0,
-      center center, 5,
-      from(          #fff),
-      color-stop(.50,#fff),
-      color-stop(.50,transparent),
-      to(            transparent));
-    background-image: -moz-radial-gradient(
-      center 45deg,
-      circle closest-side,
-      #fff 0%,
-      #fff 10%,
-      transparent 10%,
-      transparent 100%);
-    -webkit-background-size: 100px 100px;
-    -moz-background-size: 100px 100px;
-    background-size: 100px 100px;
-    -webkit-transform: translateZ(-300px);
-    -moz-transform: translateZ(-300px);
-    transform: translateZ(-300px);
-    -webkit-animation-name: scroll;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 0.2s;
-    -webkit-animation-direction: normal;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-name: scroll;
-    -moz-animation-timing-function: linear;
-    -moz-animation-duration: 0.2s;
-    -moz-animation-direction: normal;
-    -moz-animation-iteration-count: infinite;
-    animation-name: scroll;
-    animation-timing-function: linear;
-    animation-duration: 0.2s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-  }
+.logo {
+  display: none;
+  position: relative;
+  top: -32px;
+  left: -54%;
+  height: 7.5em;
+  z-index: -1;
+}
 
-  @-webkit-keyframes scroll {
-    0%    { background-position: -10px 0; }
-    100%  { background-position: -10px 100px; }
-  }
+a {
+  color: $blue;
+  text-decoration: none;
+}
 
-  @-moz-keyframes scroll {
-    0%    { background-position: 10px 0; }
-    100%  { background-position: 10px 100px; }
-  }
+a:hover {
+  color: $blue;
+  text-decoration: underline;
+}
 
-  @keyframes scroll {
-    0%    { background-position: 10px 0; }
-    100%  { background-position: 10px 100px; }
-  }
+a:visited {
+  color: $blue;
+  text-decoration: none;
+}
 
-  #airplane {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: -40px;
-    margin-left: -40px;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-  }
-  .wingLeft {
-    position: absolute;
-    width: 40px;
-    height: 80px;
-    border-right: 1px solid $darkblue;
-    border-bottom: 1px solid $darkblue;
-    overflow: hidden;
-    -webkit-transform-origin: 100% 0;
-    -moz-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: rotateZ(5deg);
-    -moz-transform: rotateZ(5deg);
-    transform: rotateZ(5deg);
-  }
-  .wingLeft:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 40px;
-    height: 80px;
-    background: #fff;
-    border: 1px solid $darkblue;
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: skew(-26deg);
-    -moz-transform: skew(-26deg);
-    transform: skew(-26deg);
-  }
-  .wingRight {
-    position: absolute;
-    left: 40px;
-    width: 40px;
-    height: 80px;
-    border-left: 1px solid $darkblue;
-    border-bottom: 1px solid $darkblue;
-    overflow: hidden;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: rotateZ(-5deg);
-    -moz-transform: rotateZ(-5deg);
-    transform: rotateZ(-5deg);
-  }
-  .wingRight:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 40px;
-    height: 80px;
-    background: #fff;
-    border: 1px solid $darkblue;
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: skew(27deg);
-    -moz-transform: skew(27deg);
-    transform: skew(27deg);
-  }
-  .bodyLeft {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 30px;
-    height: 80px;
-    border-right: 1px solid $darkblue;
-    border-bottom: 1px solid $darkblue;
-    overflow: hidden;
-    -webkit-transform-origin: 100% 0;
-    -moz-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: rotateZ(5deg) rotateY(-102deg);
-    -moz-transform: rotateZ(5deg) rotateY(-102deg);
-    transform: rotateZ(5deg) rotateY(-102deg);
-  }
-  .bodyLeft:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 80px;
-    background: #fff;
-    border: 1px solid $darkblue;
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: skew(-20.5deg);
-    -moz-transform: skew(-20.5deg);
-    transform: skew(-20.5deg);
-  }
-  .bodyRight {
-    position: absolute;
-    top: 0;
-    left: 40px;
-    width: 31px;
-    height: 80px;
-    border-left: 1px solid $darkblue;
-    border-bottom: 1px solid $darkblue;
-    overflow: hidden;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: rotateZ(-5deg) rotateY(102deg) rotateX(-0.5deg);
-    -moz-transform: rotateZ(-5deg) rotateY(102deg) rotateX(-0.5deg);
-    transform: rotateZ(-5deg) rotateY(102deg) rotateX(-0.5deg);
-  }
-  .bodyRight:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 80px;
-    background: #fff;
-    border: 1px solid $darkblue;
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: skew(21.5deg);
-    -moz-transform: skew(21.5deg);
-    transform: skew(21.5deg);
-  }
-  .bodyShadow {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    border-right: 45px solid transparent;
-    border-left: 45px solid transparent;
-    border-bottom: 80px solid rgba(0, 0, 0, 0.3);
-    -webkit-transform: translateZ(-300px);
-    -moz-transform: translateZ(-300px);
-    transform: translateZ(-300px);
+#main {
+  color: $white;
+  text-transform: uppercase;
+
+  #show {
+    position: relative;
+    top: 50vh;
+>>>>>>> db5a7fd2b6d3099eb82fc6d883231a2f9b2f9c8a
+
+    .tagline {
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+
+    .divider {
+      border-top: 3px solid $white;
+      max-width: 450px;
+      margin: 15px auto;
+      padding-top: 5px;
+    }
+
+    .info {
+      font-size: 1.5em;
+      letter-spacing: 5px;
+    }
+
+    button {
+      margin: 0 10px;
+      padding: 10px 50px;
+      border: 2px solid $white;
+      background-color: transparent;
+      color: $white;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      transition: all 300ms ease;
+    }
+
+    button:hover {
+      background-color: $white;
+      color: $darkblue;
+    }
   }
 }

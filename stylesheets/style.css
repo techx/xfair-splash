@@ -1,275 +1,52 @@
-@font-face {
-  font-family: Avenir;
-  src: url("../assets/Avenir.ttc"); }
-html, body {
-  height: 100%;
-  padding: 0;
-  margin: 0; }
+/*
+Error: Invalid CSS after "  height: 100%": expected "{", was ";"
+        on line 32 of ./scss/style.scss
 
-body {
-  background: #05354e;
-  color: #191919;
-  text-align: center;
-  font-family: "Avenir", sans-serif;
-  font-weight: 300; }
+27:   display: none;
+28: }
+29: 
+30: section {
+31: <<<<<<< HEAD
+32:   height: 100%;
+33:   position: relative;
+34: }
+35: 
+36: .airplane {
+37: 
 
-::selection {
-  background: #6bd4ff; }
-
-::-moz-selection {
-  background: #6bd4ff; }
-
-section {
-  height: 100%;
-  position: relative; }
-
-.airplane div {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-.airplane #view {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  -webkit-perspective: 500;
-  -moz-perspective: 500;
-  perspective: 500;
-  -webkit-perspective-origin: 50% 50%;
-  -moz-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -moz-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
-  overflow: hidden; }
-.airplane #camera {
-  position: absolute;
-  left: 50vw;
-  top: 40vh;
-  -webkit-animation-name: camerawork;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-name: camerawork;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-timing-function: linear;
-  -moz-animation-duration: 8s;
-  -moz-animation-iteration-count: infinite;
-  animation-name: camerawork;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-duration: 8s;
-  animation-iteration-count: infinite; }
-@-webkit-keyframes camerawork {
-  0% {
-    -webkit-transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(0deg); }
-  25% {
-    -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
-  50% {
-    -webkit-transform: translate3d(0px, 0px, -100px) rotateX(100deg) rotateZ(180deg); }
-  75% {
-    -webkit-transform: translate3d(0px, 0px, -150px) rotateX(55deg) rotateZ(270deg); }
-  100% {
-    -webkit-transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(360deg); } }
-@-moz-keyframes camerawork {
-  0% {
-    -moz-transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(0deg); }
-  25% {
-    -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
-  50% {
-    -moz-transform: translate3d(0px, 0px, -100px) rotateX(100deg) rotateZ(180deg); }
-  75% {
-    -moz-transform: translate3d(0px, 0px, -150px) rotateX(55deg) rotateZ(270deg); }
-  100% {
-    -moz-transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(360deg); } }
-@keyframes camerawork {
-  0% {
-    transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(0deg); }
-  25% {
-    transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
-  50% {
-    transform: translate3d(0px, 0px, -100px) rotateX(100deg) rotateZ(180deg); }
-  75% {
-    transform: translate3d(0px, 0px, -150px) rotateX(55deg) rotateZ(270deg); }
-  100% {
-    transform: translate3d(0px, 0px, -200px) rotateX(40deg) rotateZ(360deg); } }
-.airplane #floor {
-  border-radius: 25vw;
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  left: -25vw;
-  top: -25vw;
-  background-position: -10px 0;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 5, from(#fff), color-stop(0.5, #fff), color-stop(0.5, transparent), to(transparent));
-  background-image: -moz-radial-gradient(center 45deg, circle closest-side, #fff 0%, #fff 10%, transparent 10%, transparent 100%);
-  -webkit-background-size: 100px 100px;
-  -moz-background-size: 100px 100px;
-  background-size: 100px 100px;
-  -webkit-transform: translateZ(-300px);
-  -moz-transform: translateZ(-300px);
-  transform: translateZ(-300px);
-  -webkit-animation-name: scroll;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.2s;
-  -webkit-animation-direction: normal;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-name: scroll;
-  -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.2s;
-  -moz-animation-direction: normal;
-  -moz-animation-iteration-count: infinite;
-  animation-name: scroll;
-  animation-timing-function: linear;
-  animation-duration: 0.2s;
-  animation-direction: normal;
-  animation-iteration-count: infinite; }
-@-webkit-keyframes scroll {
-  0% {
-    background-position: -10px 0; }
-  100% {
-    background-position: -10px 100px; } }
-@-moz-keyframes scroll {
-  0% {
-    background-position: 10px 0; }
-  100% {
-    background-position: 10px 100px; } }
-@keyframes scroll {
-  0% {
-    background-position: 10px 0; }
-  100% {
-    background-position: 10px 100px; } }
-.airplane #airplane {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  margin-top: -40px;
-  margin-left: -40px;
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; }
-.airplane .wingLeft {
-  position: absolute;
-  width: 40px;
-  height: 80px;
-  border-right: 1px solid #05354e;
-  border-bottom: 1px solid #05354e;
-  overflow: hidden;
-  -webkit-transform-origin: 100% 0;
-  -moz-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-  -webkit-transform: rotateZ(5deg);
-  -moz-transform: rotateZ(5deg);
-  transform: rotateZ(5deg); }
-.airplane .wingLeft:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 40px;
-  height: 80px;
-  background: #fff;
-  border: 1px solid #05354e;
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transform: skew(-26deg);
-  -moz-transform: skew(-26deg);
-  transform: skew(-26deg); }
-.airplane .wingRight {
-  position: absolute;
-  left: 40px;
-  width: 40px;
-  height: 80px;
-  border-left: 1px solid #05354e;
-  border-bottom: 1px solid #05354e;
-  overflow: hidden;
-  -webkit-transform-origin: 0 0;
-  -moz-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotateZ(-5deg);
-  -moz-transform: rotateZ(-5deg);
-  transform: rotateZ(-5deg); }
-.airplane .wingRight:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 40px;
-  height: 80px;
-  background: #fff;
-  border: 1px solid #05354e;
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transform: skew(27deg);
-  -moz-transform: skew(27deg);
-  transform: skew(27deg); }
-.airplane .bodyLeft {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  width: 30px;
-  height: 80px;
-  border-right: 1px solid #05354e;
-  border-bottom: 1px solid #05354e;
-  overflow: hidden;
-  -webkit-transform-origin: 100% 0;
-  -moz-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-  -webkit-transform: rotateZ(5deg) rotateY(-102deg);
-  -moz-transform: rotateZ(5deg) rotateY(-102deg);
-  transform: rotateZ(5deg) rotateY(-102deg); }
-.airplane .bodyLeft:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 80px;
-  background: #fff;
-  border: 1px solid #05354e;
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transform: skew(-20.5deg);
-  -moz-transform: skew(-20.5deg);
-  transform: skew(-20.5deg); }
-.airplane .bodyRight {
-  position: absolute;
-  top: 0;
-  left: 40px;
-  width: 31px;
-  height: 80px;
-  border-left: 1px solid #05354e;
-  border-bottom: 1px solid #05354e;
-  overflow: hidden;
-  -webkit-transform-origin: 0 0;
-  -moz-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotateZ(-5deg) rotateY(102deg) rotateX(-0.5deg);
-  -moz-transform: rotateZ(-5deg) rotateY(102deg) rotateX(-0.5deg);
-  transform: rotateZ(-5deg) rotateY(102deg) rotateX(-0.5deg); }
-.airplane .bodyRight:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 80px;
-  background: #fff;
-  border: 1px solid #05354e;
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transform: skew(21.5deg);
-  -moz-transform: skew(21.5deg);
-  transform: skew(21.5deg); }
-.airplane .bodyShadow {
-  position: absolute;
-  top: 0;
-  left: -5px;
-  border-right: 45px solid transparent;
-  border-left: 45px solid transparent;
-  border-bottom: 80px solid rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateZ(-300px);
-  -moz-transform: translateZ(-300px);
-  transform: translateZ(-300px); }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+./scss/style.scss:32
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:1093:in `tok!'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:638:in `block'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:647:in `block_contents'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:632:in `ruleset'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/scss/parser.rb:42:in `parse'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/Larry/.rvm/gems/ruby-2.1.3/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  height: 100%\": expected \"{\", was \";\"\A         on line 32 of ./scss/style.scss\A \A 27:   display: none;\A 28: }\A 29: \A 30: section {\A 31: <<<<<<< HEAD\A 32:   height: 100%;\A 33:   position: relative;\A 34: }\A 35: \A 36: .airplane {\A 37: "; }
