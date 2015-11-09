@@ -19,7 +19,8 @@ div {
   -webkit-transform: translate3d(0px, 0px, 0px);
   -moz-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .view .camera {
     position: absolute;
     left: 50vw;
@@ -46,7 +47,7 @@ div {
   75% {
     -webkit-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
   100% {
-    -webkit-transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); } }
+    -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); } }
 @-moz-keyframes camerawork {
   0% {
     -moz-transform: translate3d(0px, 0px, -500px) rotateX(40deg) rotateZ(0deg); }
@@ -57,7 +58,7 @@ div {
   75% {
     -moz-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
   100% {
-    -moz-transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); } }
+    -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); } }
 @keyframes camerawork {
   0% {
     transform: translate3d(0px, 0px, -500px) rotateX(40deg) rotateZ(0deg); }
@@ -68,7 +69,7 @@ div {
   75% {
     transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
   100% {
-    transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); } }
+    transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); } }
     .view .camera .floor {
       border-radius: 25vw;
       position: absolute;
@@ -115,6 +116,16 @@ div {
     background-position: 10px 0; }
   100% {
     background-position: 10px 100px; } }
+    .view .camera .bodyShadow {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      border-right: 40px solid transparent;
+      border-left: 40px solid transparent;
+      border-bottom: 80px solid rgba(0, 0, 0, 0.3);
+      -webkit-transform: translateZ(-300px);
+      -moz-transform: translateZ(-300px);
+      transform: translateZ(-300px); }
     .view .camera .airplane {
       position: absolute;
       width: 70px;
@@ -123,7 +134,8 @@ div {
       margin-left: -35px;
       -webkit-transform-origin: 50% 50%;
       -moz-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
+      transform-origin: 50% 50%;
+      cursor: pointer; }
       .view .camera .airplane .wingLeft {
         position: absolute;
         width: 35px;
@@ -237,16 +249,6 @@ div {
         -webkit-transform: skew(18.5deg);
         -moz-transform: skew(18.5deg);
         transform: skew(18.5deg); }
-    .view .camera .bodyShadow {
-      position: absolute;
-      top: -40px;
-      left: -40px;
-      border-right: 40px solid transparent;
-      border-left: 40px solid transparent;
-      border-bottom: 80px solid rgba(0, 0, 0, 0.3);
-      -webkit-transform: translateZ(-300px);
-      -moz-transform: translateZ(-300px);
-      transform: translateZ(-300px); }
 
 html, body {
   height: 100%;
@@ -277,11 +279,14 @@ section {
 .logo {
   display: none;
   position: relative;
-  top: 38vh;
-  left: -19px;
-  height: 6.6em; }
+  top: -32px;
+  left: -54%;
+  height: 7.5em;
+  z-index: -1; }
 
 #main {
-  color: #f0f0f0; }
+  color: #f0f0f0;
+  position: relative;
+  top: 50vh; }
 
 /*# sourceMappingURL=style.css.map */

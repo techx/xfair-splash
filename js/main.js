@@ -4,16 +4,17 @@ $(document).ready(function(){
         document.cookie="animate=false"
         animate();
     } else {
-        $('.camera').css({
-            'animation': 'none',
-            '-webkit-transform': 'translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(0deg)',
-            '-moz-transform': 'translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(0deg)',
-            'transform': 'translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(0deg)'
-        });
-        $('.floor').hide();
-        $('.bodyShadow').hide();
-        $('.logo').show();
-        $('.splash').show();
+        animate()
+        // $('.camera').css({
+        //     'animation': 'none',
+        //     '-webkit-transform': 'translate3d(0px, 0px, -80px)',
+        //     '-moz-transform': 'translate3d(0px, 0px, -80px)',
+        //     'transform': 'translate3d(0px, 0px, -80px)'
+        // });
+        // $('.floor').hide();
+        // $('.bodyShadow').hide();
+        // $('.logo').show();
+        // $('.splash').show();
     }
 });
 
@@ -38,4 +39,5 @@ function animate() {
     $('.bodyShadow').delay('8500').fadeOut('2000');
     $('.logo').delay('9000').fadeIn('1000');
     $('.splash').delay('10000').fadeIn('1000');
+    // $('.airplane').delay('9000').css({'z-index': '1'});
 }

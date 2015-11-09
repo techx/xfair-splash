@@ -41,14 +41,16 @@ section {
 .logo {
   display: none;
   position: relative;
-  top: 38vh;
-  left: -19px;
-  height: 6.6em;
+  top: -32px;
+  left: -54%;
+  height: 7.5em;
+  z-index: -1;
 }
 
 #main {
   color: $white;
-
+  position: relative;
+  top: 50vh;
 }
 
 

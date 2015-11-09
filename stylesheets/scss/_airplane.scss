@@ -18,6 +18,7 @@ div {
   -moz-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   overflow: hidden;
+  z-index: 1;
 
   .camera {
     position: absolute;
@@ -41,7 +42,7 @@ div {
       25%   { -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { -webkit-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
-      100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); }
+      100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
     @-moz-keyframes camerawork {
@@ -49,7 +50,7 @@ div {
       25%   { -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { -moz-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
-      100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); }
+      100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
     @keyframes camerawork {
@@ -57,7 +58,7 @@ div {
       25%   { transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
-      100%  { transform: translate3d(0px, 0px, -80px) rotateX(10deg) rotateZ(360deg); }
+      100%  { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
     .floor {
@@ -121,6 +122,18 @@ div {
       100%  { background-position: 10px 100px; }
     }
 
+    .bodyShadow {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      border-right: 40px solid transparent;
+      border-left: 40px solid transparent;
+      border-bottom: 80px solid rgba(0, 0, 0, 0.3);
+      -webkit-transform: translateZ(-300px);
+      -moz-transform: translateZ(-300px);
+      transform: translateZ(-300px);
+    }
+
     .airplane {
       position: absolute;
       width: 70px;
@@ -130,6 +143,7 @@ div {
       -webkit-transform-origin: 50% 50%;
       -moz-transform-origin: 50% 50%;
       transform-origin: 50% 50%;
+      cursor: pointer;
 
       .wingLeft {
         position: absolute;
@@ -259,18 +273,6 @@ div {
         -moz-transform: skew(18.5deg);
         transform: skew(18.5deg);
       }
-    }
-
-    .bodyShadow {
-      position: absolute;
-      top: -40px;
-      left: -40px;
-      border-right: 40px solid transparent;
-      border-left: 40px solid transparent;
-      border-bottom: 80px solid rgba(0, 0, 0, 0.3);
-      -webkit-transform: translateZ(-300px);
-      -moz-transform: translateZ(-300px);
-      transform: translateZ(-300px);
     }
   }
 }
