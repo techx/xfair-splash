@@ -38,25 +38,12 @@ section {
   position: relative;
 }
 
-.main-title {
-  padding-top: 34.4vh;
-  color: $white;
-  font-size: 8em;
-  font-weight: 500;
-  letter-spacing: .2em;
-  z-index: -1;
-
-  .logo {
-    display: none;
-    position: relative;
-    left: -19px;
-    top: -18px;
-    height: .8em;
-  }
-
-  .year {
-    display: none;
-  }
+.logo {
+  display: none;
+  position: relative;
+  top: 38vh;
+  left: -19px;
+  height: 6.6em;
 }
 
 #main {
