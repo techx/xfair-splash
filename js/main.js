@@ -3,10 +3,10 @@ $(document).ready(function(){
     var click = false;
     if (cookie !== 'false') {
         document.cookie="animate=false";
-        $('.floor').delay('8500').fadeOut('2000');
-        $('.bodyShadow').delay('8500').fadeOut('2000');
-        $('.logo').delay('9000').fadeIn('1000');
-        $('.splash').delay('10000').fadeIn('1000');
+        $('.floor').delay('6500').fadeOut('1000');
+        $('.bodyShadow').delay('6500').fadeOut('1000');
+        $('.logo').delay('7000').fadeIn('1000');
+        $('.splash').delay('8000').fadeIn('1000');
         
         setTimeout(function() {
             click = true;
@@ -14,23 +14,23 @@ $(document).ready(function(){
                 '-webkit-animation': 'none',
                 '-moz-animation': 'none',
                 'animation': 'none',
-                '-webkit-transform': 'translate3d(0px, 0px, -80px)',
-                '-moz-transform': 'translate3d(0px, 0px, -80px)',
-                'transform': 'translate3d(0px, 0px, -80px)'
+                '-webkit-transform': 'translate3d(20px, 0px, -80px)',
+                '-moz-transform': 'translate3d(20px, 0px, -80px)',
+                'transform': 'translate3d(20px, 0px, -80px)'
             });
             $('.airplane').css({
                 'cursor': 'pointer'
             });
-        }, 10000);
+        }, 8000);
     } else {
         click = true;
         $('.camera').css({
             '-webkit-animation': 'none',
             '-moz-animation': 'none',
             'animation': 'none',
-            '-webkit-transform': 'translate3d(0px, 0px, -80px)',
-            '-moz-transform': 'translate3d(0px, 0px, -80px)',
-            'transform': 'translate3d(0px, 0px, -80px)'
+            '-webkit-transform': 'translate3d(20px, 0px, -80px)',
+            '-moz-transform': 'translate3d(20px, 0px, -80px)',
+            'transform': 'translate3d(20px, 0px, -80px)'
         });
         $('.airplane').css({
             'cursor': 'pointer'
@@ -64,23 +64,23 @@ $(document).ready(function(){
                 $('.camera').css({
                     '-webkit-animation': '',
                     '-moz-animation': '',
-                    'animation': '',
+                    'animation': ''
                 });
                 $('.camera').addClass(newClass);
                 cameraClass = newClass;
             }, 1500);
 
-            $('.floor').delay('9000').fadeOut('1000');
-            $('.bodyShadow').delay('9000').fadeOut('1000');
-            $('.logo').delay('10000').fadeIn('1000');
-            $('.splash').delay('10000').fadeIn('1000');
+            $('.floor').delay('7000').fadeOut('1000');
+            $('.bodyShadow').delay('7000').fadeOut('1000');
+            $('.logo').delay('8000').fadeIn('1000');
+            $('.splash').delay('8000').fadeIn('1000');
 
             setTimeout(function() {
                 click = true;
                 $('.airplane').css({
                     'cursor': 'pointer'
                 });
-            }, 10000);
+            }, 8000);
         }
     });
 });

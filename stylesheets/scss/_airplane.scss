@@ -18,7 +18,7 @@ div {
   -moz-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   overflow: hidden;
-  z-index: 1;
+  // z-index: 1;
 
   .camera {
     position: absolute;
@@ -26,13 +26,13 @@ div {
     top: 40vh;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 8s;
+    -webkit-animation-duration: 6s;
     -moz-animation-fill-mode: forwards;
     -moz-animation-timing-function: linear;
-    -moz-animation-duration: 8s;
+    -moz-animation-duration: 6s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-duration: 8s;
+    animation-duration: 6s;
   }
   
   .angle0 {
@@ -45,7 +45,7 @@ div {
       25%   { -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { -webkit-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
-      100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      100%  { -webkit-transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
     @-moz-keyframes angle0 {
@@ -53,7 +53,7 @@ div {
       25%   { -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { -moz-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
-      100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      100%  { -moz-transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
     @keyframes angle0 {
@@ -61,7 +61,7 @@ div {
       25%   { transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
-      100%  { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      100%  { transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
   }
 
@@ -71,27 +71,27 @@ div {
     animation-name: angle1;
 
     @-webkit-keyframes angle1 {
-      0%    { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      0%    { -webkit-transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
       25%   { -webkit-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
       50%   { -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
-      100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
+      100%  { -webkit-transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
     }
 
     @-moz-keyframes angle1 {
-      0%    { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      0%    { -moz-transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
       25%   { -moz-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
       50%   { -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
-      100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
+      100%  { -moz-transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
     }
 
     @keyframes angle1 {
-      0%    { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      0%    { transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
       25%   { transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
       50%   { transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
       75%   { transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
-      100%  { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
+      100%  { transform: translate3d(20px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
     }
   }
 
