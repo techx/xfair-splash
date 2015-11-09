@@ -28,7 +28,7 @@ body {
   background: $blue;
 }
 
-.splash {
+#show {
   display: none;
 }
 
@@ -63,30 +63,44 @@ a:visited {
 
 #main {
   color: $white;
-  position: relative;
-  top: 50vh;
   text-transform: uppercase;
 
-  .tagline {
-    padding-top: 20px;
-    font-weight: 100;
-    letter-spacing: 2px;
-  }
+  #show {
+    position: relative;
+    top: 50vh;
 
-  .divider {
-    border-top: 3px solid $white;
-    max-width: 450px;
-    margin: 15px auto;
-    padding-top: 5px;
-  }
+    .tagline {
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
 
-  .date, .time, .location {
-    font-size: 1.5em;
-    letter-spacing: 5px;
-  }
+    .divider {
+      border-top: 3px solid $white;
+      max-width: 450px;
+      margin: 15px auto;
+      padding-top: 5px;
+    }
 
-  button {
-    text-transform: uppercase;
+    .info {
+      font-size: 1.5em;
+      letter-spacing: 5px;
+    }
+
+    button {
+      margin: 0 10px;
+      padding: 10px 50px;
+      border: 2px solid $white;
+      background-color: transparent;
+      color: $white;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      transition: all 300ms ease;
+    }
+
+    button:hover {
+      background-color: $white;
+      color: $darkblue;
+    }
   }
 }
 
