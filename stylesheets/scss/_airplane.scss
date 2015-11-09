@@ -24,20 +24,23 @@ div {
     position: absolute;
     left: 50vw;
     top: 40vh;
-    -webkit-animation-name: camerawork;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-timing-function: linear;
     -webkit-animation-duration: 8s;
-    -moz-animation-name: camerawork;
     -moz-animation-fill-mode: forwards;
     -moz-animation-timing-function: linear;
     -moz-animation-duration: 8s;
-    animation-name: camerawork;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-duration: 8s;
+  }
+  
+  .angle0 {
+    -webkit-animation-name: angle0;
+    -moz-animation-name: angle0;
+    animation-name: angle0;
 
-    @-webkit-keyframes camerawork {
+    @-webkit-keyframes angle0 {
       0%    { -webkit-transform: translate3d(0px, 0px, -500px) rotateX(40deg) rotateZ(0deg); }
       25%   { -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
@@ -45,7 +48,7 @@ div {
       100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
-    @-moz-keyframes camerawork {
+    @-moz-keyframes angle0 {
       0%    { -moz-transform: translate3d(0px, 0px, -500px) rotateX(40deg) rotateZ(0deg); }
       25%   { -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
@@ -53,7 +56,7 @@ div {
       100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
-    @keyframes camerawork {
+    @keyframes angle0 {
       0%    { transform: translate3d(0px, 0px, -500px) rotateX(40deg) rotateZ(0deg); }
       25%   { transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
@@ -61,25 +64,43 @@ div {
       100%  { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
   }
-  
-  .newcamera {
-    position: absolute;
-    left: 50vw;
-    top: 40vh;
-    -webkit-animation-name: newcamera;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 8s;
-    -moz-animation-name: newcamera;
-    -moz-animation-fill-mode: forwards;
-    -moz-animation-timing-function: linear;
-    -moz-animation-duration: 8s;
-    animation-name: newcamera;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-duration: 8s;
 
-    @-webkit-keyframes newcamera {
+  .angle1 {
+    -webkit-animation-name: angle1;
+    -moz-animation-name: angle1;
+    animation-name: angle1;
+
+    @-webkit-keyframes angle1 {
+      0%    { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      25%   { -webkit-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
+      50%   { -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
+      75%   { -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
+      100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
+    }
+
+    @-moz-keyframes angle1 {
+      0%    { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      25%   { -moz-transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
+      50%   { -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
+      75%   { -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
+      100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
+    }
+
+    @keyframes angle1 {
+      0%    { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
+      25%   { transform: translate3d(0px, 0px, -70px) rotateX(60deg) rotateZ(270deg); }
+      50%   { transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
+      75%   { transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
+      100%  { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
+    }
+  }
+
+  .angle2 {
+    -webkit-animation-name: angle2;
+    -moz-animation-name: angle2;
+    animation-name: angle2;
+
+    @-webkit-keyframes angle2 {
       0%    { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
       25%   { -webkit-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -webkit-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
@@ -87,7 +108,7 @@ div {
       100%  { -webkit-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
-    @-moz-keyframes newcamera {
+    @-moz-keyframes angle2 {
       0%    { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
       25%   { -moz-transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { -moz-transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
@@ -95,7 +116,7 @@ div {
       100%  { -moz-transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(360deg); }
     }
 
-    @keyframes newcamera {
+    @keyframes angle2 {
       0%    { transform: translate3d(0px, 0px, -80px) rotateX(0deg) rotateZ(0deg); }
       25%   { transform: translate3d(0px, 0px, -50px) rotateX(60deg) rotateZ(90deg); }
       50%   { transform: translate3d(0px, 0px, -60px) rotateX(100deg) rotateZ(180deg); }
