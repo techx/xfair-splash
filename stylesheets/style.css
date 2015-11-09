@@ -209,8 +209,7 @@ div {
     margin-left: -35px;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    cursor: pointer; }
+    transform-origin: 50% 50%; }
     .view .airplane .wingLeft {
       position: absolute;
       width: 35px;
