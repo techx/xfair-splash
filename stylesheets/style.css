@@ -365,6 +365,9 @@ button:hover {
   line-height: 200%;
   margin-bottom: 2em; }
 
+#info {
+  display: none; }
+
 #main {
   height: 100vh;
   padding: 0;
