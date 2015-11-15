@@ -388,12 +388,12 @@ button:hover {
 
 #about {
   padding: 80px 15vw;
-  background: #f0f0f0;
+  background: white;
   color: #05354e; }
 
 #employers {
   padding: 80px 20px 100px 20px;
-  background: white; }
+  background: #f0f0f0; }
   #employers a {
     color: #3996ff; }
   #employers button {
