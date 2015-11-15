@@ -1,6 +1,12 @@
 @font-face {
   font-family: Avenir;
   src: url("../assets/Avenir.ttc"); }
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
 html, body {
   height: 100%;
   padding: 0;
