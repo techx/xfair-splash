@@ -9,7 +9,7 @@ html, body {
 
 body {
   background: $darkblue;
-  color: $black;
+  color: $darkblue;
   text-align: center;
   font-family: $avenir;
   font-weight: 300;
@@ -27,11 +27,6 @@ body {
   display: none;
 }
 
-section {
-  height: 100vh;
-  position: relative;
-}
-
 .logo {
   display: none;
   position: relative;
@@ -46,9 +41,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:visited:hover {
   color: $blue;
-  text-decoration: underline;
+  transition: all 200ms ease;
 }
 
 a:visited {
@@ -56,7 +51,45 @@ a:visited {
   text-decoration: none;
 }
 
+button {
+  margin: 0 10px;
+  padding: 10px 50px;
+  border: 2px solid $white;
+  background-color: transparent;
+  color: $white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+button:hover {
+  background-color: $white;
+  color: $darkblue;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: .75em;
+}
+
+.thin {
+  font-weight: 500;
+}
+
+.content {
+  font-family: $opensans;
+  font-size: 1.25em;
+  font-weight: 200;
+  line-height: 200%;
+  margin-bottom: 2em;
+}
+
 #main {
+  height: 100vh;
+  padding: 0;
   color: $white;
   text-transform: uppercase;
 
@@ -79,22 +112,157 @@ a:visited {
     .info {
       font-size: 1.5em;
       letter-spacing: 5px;
+      margin-bottom: 5vh;
     }
+  }
+}
 
-    button {
-      margin: 0 10px;
-      padding: 10px 50px;
-      border: 2px solid $white;
-      background-color: transparent;
-      color: $white;
-      font-size: 1.2em;
-      text-transform: uppercase;
-      transition: all 300ms ease;
-    }
+#about {
+  padding: 80px 15vw;
+  background: $white;
+  color: $darkblue;  
+}
 
-    button:hover {
-      background-color: $white;
-      color: $darkblue;
+#employers {
+  padding: 80px 20px 100px 20px;
+  background: white;
+
+  a {
+    color: $accent;
+  }
+
+  button {
+    padding: 10px 30px;
+    color: $darkblue;
+    border-color: $darkblue;
+  }
+
+  button:hover {
+    background-color: $darkblue;
+    color: white;
+  }
+}
+
+#students {
+  padding: 80px 20px 100px 20px;
+  color: $white;
+
+  button {
+    padding: 10px 30px;
+  }
+}
+
+#exhibitors {
+  padding: 80px 20px 100px 20px;
+  background: white;
+
+  .content {
+    width: 80vw;
+    margin: auto;
+    line-height: 150%;
+
+    .row {
+      margin-top: 5vh;
+
+      .col-md-4 {
+
+        .photo {
+          width: 100%;
+        }
+
+        .subtitle {
+          margin: 1em 0 .25em 0;
+          text-transform: uppercase;
+          font-family: $avenir;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+
+        .subcontent {
+          font-size: .8em;
+          line-height: 150%;
+
+          a {
+            color: $accent;
+          }
+        }
+      }
     }
+  }
+}
+
+#faq {
+  padding: 80px 20px 20px 20px;
+  background: $white;
+  color: $dark;
+
+  a {
+    color: $accent;
+  }
+
+  .title {
+    margin-bottom: 1.25em;
+  }
+
+  .content {
+
+    .row {
+      padding: 0 10vw;
+      text-align: left;
+
+      .col-md-4 {
+        margin-bottom: 50px;
+        
+        .question {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          line-height: 150%;
+          margin-bottom: .9em;
+        }
+
+        .answer {
+          font-size: .8em;
+          line-height: 150%;
+          letter-spacing: .5px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  height: 60px;
+  padding: 22px 5vw;
+  background: $darkblue;
+  color: $white;
+
+  .icons {
+    margin-bottom: 5px;
+
+    i {
+      font-size: 1.25em;
+      padding: 0 2px;
+    }
+  }
+
+  a {
+    font-size: .75em;
+    display: inline-block;
+  }
+
+  a:hover, a:visited:hover {
+    color: $white;
+    text-decoration: none;
+  }
+
+  #link {
+    font-size: 100%;
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 }

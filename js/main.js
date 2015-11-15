@@ -7,6 +7,7 @@ $(document).ready(function(){
         $('.bodyShadow').delay('4500').fadeOut('500');
         $('.logo').delay('5000').fadeIn('500');
         $('#show').delay('5500').fadeIn('500');
+        $('#info').delay('5500').fadeIn('500');
         
         setTimeout(function() {
             click = true;
@@ -39,6 +40,7 @@ $(document).ready(function(){
         $('.bodyShadow').hide();
         $('.logo').show();
         $('#show').show();
+        $('#info').show();
     }
 
     var cameraClass = 'angle0';
@@ -49,6 +51,7 @@ $(document).ready(function(){
                 'cursor': ''
             });
             $('#show').fadeOut('500');
+            $('#info').fadeOut('500');
             $('.logo').fadeOut('500');
             $('.bodyShadow').fadeIn('500');
             $('.floor').fadeIn('500');
@@ -74,6 +77,7 @@ $(document).ready(function(){
             $('.bodyShadow').delay('5000').fadeOut('500');
             $('.logo').delay('5500').fadeIn('500');
             $('#show').delay('5500').fadeIn('500');
+            $('#info').delay('5500').fadeIn('500');
 
             setTimeout(function() {
                 click = true;

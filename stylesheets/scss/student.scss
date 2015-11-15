@@ -1,0 +1,99 @@
+@import '_constants';
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $darkblue;
+  color: $darkblue;
+  text-align: center;
+  font-family: $avenir;
+  font-weight: 300;
+}
+
+nav, .navbar {
+  background-color: $darkblue;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  padding: 0 20px;
+
+  a {
+    color: $white;
+  }
+
+  a:hover {
+    color: $blue;
+    transition: all 300ms ease;
+  }
+
+  li:hover, .nav, .navbar-nav, .navbar-right, a:focus, a:active {
+    background-color: $darkblue !important;
+  }
+}
+
+::selection {
+  background: $blue;
+}
+
+::-moz-selection {
+  background: $blue;
+}
+
+.student {
+  background: $white;
+
+  .container {
+    background: white;
+    width: 55vw;
+    margin: 0 auto;
+    padding: 50px;
+
+    .title {
+      font-family: $avenir;
+      font-size: 1.75em;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: .5em;
+    }
+
+    .subtitle {
+      font-family: $avenir;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: left;
+      letter-spacing: 3px;
+      margin-bottom: .5em;
+    }
+
+    .divider {
+      border-top: 2px solid $white;
+      margin: 30px 0;
+    }
+
+    .content {
+      margin: 0;
+      font-family: $opensans;
+      font-size: 1.1em;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+    }
+
+    a {
+      color: $accent;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      opacity: .6;
+      transition: all 200ms ease;
+    }
+  }
+}
