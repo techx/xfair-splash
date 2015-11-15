@@ -310,6 +310,7 @@ body {
 
 section {
   height: 100vh;
+  padding: 80px 20px 100px 20px;
   position: relative; }
 
 .logo {
@@ -332,7 +333,22 @@ a:visited {
   color: #6bd4ff;
   text-decoration: none; }
 
+.title {
+  font-size: 2.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: .75em; }
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: 200;
+  line-height: 200%;
+  margin-bottom: 2em; }
+
 #main {
+  padding: 0;
   color: #f0f0f0;
   text-transform: uppercase; }
   #main #show {
@@ -348,7 +364,8 @@ a:visited {
       padding-top: 5px; }
     #main #show .info {
       font-size: 1.5em;
-      letter-spacing: 5px; }
+      letter-spacing: 5px;
+      margin-bottom: 5vh; }
     #main #show button {
       margin: 0 10px;
       padding: 10px 50px;
@@ -361,5 +378,11 @@ a:visited {
     #main #show button:hover {
       background-color: #f0f0f0;
       color: #05354e; }
+
+#about {
+  height: auto;
+  padding: 80px 50px;
+  background: #f0f0f0;
+  color: #05354e; }
 
 /*# sourceMappingURL=style.css.map */
