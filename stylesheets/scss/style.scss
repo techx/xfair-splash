@@ -134,11 +134,48 @@ a:visited {
 
 #exhibitors {
   padding: 80px 20px 100px 20px;
+  background: white;
+
+  .content {
+    width: 80vw;
+    margin: auto;
+    line-height: 150%;
+
+    .row {
+      margin-top: 5vh;
+
+      .col-md-4 {
+
+        .photo {
+          width: 100%;
+        }
+
+        .subtitle {
+          margin: 1em 0 .25em 0;
+          text-transform: uppercase;
+          font-family: $avenir;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+
+        .subcontent {
+          font-size: .8em;
+          line-height: 150%;
+
+          a {
+            color: $accent;
+          }
+        }
+      }
+    }
+
+  }
 }
 
 #faq {
   padding: 80px 20px 20px 20px;
   background: $white;
+  color: $dark;
 
   a {
     color: $accent;
@@ -168,6 +205,7 @@ a:visited {
         .answer {
           font-size: .8em;
           line-height: 150%;
+          letter-spacing: .5px;
         }
       }
     }
@@ -178,11 +216,12 @@ a:visited {
 footer {
   text-transform: uppercase;
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
   height: 60px;
-  padding: 20px 5vw;
-  background: $blue;
+  padding: 22px 5vw;
+  background: $darkblue;
+  color: $white;
 
   .icons {
     margin-bottom: 5px;
@@ -194,18 +233,12 @@ footer {
   }
 
   a {
-    color: $white;
     font-size: .75em;
     display: inline-block;
   }
 
   a:hover, a:visited:hover {
-    color: $darkblue;
     text-decoration: none;
-  }
-
-  a:visited {
-    color: $white;
   }
 
   #link {

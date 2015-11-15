@@ -397,11 +397,32 @@ a:visited {
   padding: 80px 20px 100px 20px; }
 
 #exhibitors {
-  padding: 80px 20px 100px 20px; }
+  padding: 80px 20px 100px 20px;
+  background: white; }
+  #exhibitors .content {
+    width: 80vw;
+    margin: auto;
+    line-height: 150%; }
+    #exhibitors .content .row {
+      margin-top: 5vh; }
+      #exhibitors .content .row .col-md-4 .photo {
+        width: 100%; }
+      #exhibitors .content .row .col-md-4 .subtitle {
+        margin: 1em 0 .25em 0;
+        text-transform: uppercase;
+        font-family: "Avenir", sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px; }
+      #exhibitors .content .row .col-md-4 .subcontent {
+        font-size: .8em;
+        line-height: 150%; }
+        #exhibitors .content .row .col-md-4 .subcontent a {
+          color: #398fc8; }
 
 #faq {
   padding: 80px 20px 20px 20px;
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  color: #5a5a5a; }
   #faq a {
     color: #398fc8; }
   #faq .title {
@@ -419,30 +440,28 @@ a:visited {
         margin-bottom: .9em; }
       #faq .content .row .col-md-4 .answer {
         font-size: .8em;
-        line-height: 150%; }
+        line-height: 150%;
+        letter-spacing: .5px; }
 
 footer {
   text-transform: uppercase;
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
   height: 60px;
-  padding: 20px 5vw;
-  background: #6bd4ff; }
+  padding: 22px 5vw;
+  background: #05354e;
+  color: #f0f0f0; }
   footer .icons {
     margin-bottom: 5px; }
     footer .icons i {
       font-size: 1.25em;
       padding: 0 2px; }
   footer a {
-    color: #f0f0f0;
     font-size: .75em;
     display: inline-block; }
   footer a:hover, footer a:visited:hover {
-    color: #05354e;
     text-decoration: none; }
-  footer a:visited {
-    color: #f0f0f0; }
   footer #link {
     font-size: 100%;
     font-weight: 700;
