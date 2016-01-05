@@ -425,11 +425,13 @@ button:hover {
       #exhibitors .content .row .col-md-4 .photo {
         width: 100%; }
       #exhibitors .content .row .col-md-4 .subtitle {
-        margin: 1em 0 .25em 0;
+        margin-top: 1em;
         text-transform: uppercase;
         font-family: "Avenir", sans-serif;
         font-weight: 700;
         letter-spacing: 2px; }
+      #exhibitors .content .row .col-md-4 .creator {
+        margin-bottom: .25em; }
       #exhibitors .content .row .col-md-4 .subcontent {
         font-size: .8em;
         line-height: 150%; }
