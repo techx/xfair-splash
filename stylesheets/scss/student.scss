@@ -91,9 +91,20 @@ nav, .navbar {
       text-decoration: underline;
     }
 
-    a:hover {
-      opacity: .6;
-      transition: all 200ms ease;
+    button {
+      margin-top: 20px;
+      padding: 10px 50px;
+      border: 2px solid $darkblue;
+      background-color: transparent;
+      color: $darkblue;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      transition: all 300ms ease;
+    }
+
+    button:hover {
+      background-color: $darkblue;
+      color: $white;
     }
   }
 }
