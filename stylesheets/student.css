@@ -75,8 +75,17 @@ nav, .navbar {
     .student .container a {
       color: #3996ff;
       text-decoration: underline; }
-    .student .container a:hover {
-      opacity: .6;
-      transition: all 200ms ease; }
+    .student .container button {
+      margin-top: 20px;
+      padding: 10px 50px;
+      border: 2px solid #05354e;
+      background-color: transparent;
+      color: #05354e;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      transition: all 300ms ease; }
+    .student .container button:hover {
+      background-color: #05354e;
+      color: #f0f0f0; }
 
 /*# sourceMappingURL=student.css.map */
