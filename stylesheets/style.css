@@ -335,7 +335,7 @@ a:visited {
   text-decoration: none; }
 
 button {
-  margin: 0 10px;
+  margin: 10px;
   padding: 10px 50px;
   border: 2px solid #f0f0f0;
   background-color: transparent;
@@ -420,7 +420,7 @@ button:hover {
     width: 80vw;
     margin: auto;
     line-height: 150%; }
-    #exhibitors .content .row {
+    #exhibitors .content .row .col-md-4 {
       margin-top: 5vh; }
       #exhibitors .content .row .col-md-4 .photo {
         width: 100%; }
@@ -467,15 +467,12 @@ footer {
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
-  height: 60px;
   padding: 22px 5vw;
   background: #05354e;
   color: #f0f0f0; }
-  footer .icons {
-    margin-bottom: 5px; }
-    footer .icons i {
-      font-size: 1.25em;
-      padding: 0 2px; }
+  footer .icons i {
+    font-size: 1.25em;
+    padding: 0 2px; }
   footer a {
     font-size: .75em;
     display: inline-block; }
@@ -486,5 +483,29 @@ footer {
     font-size: 100%;
     font-weight: 700;
     letter-spacing: 2px; }
+
+@media only screen and (max-width: 414px) {
+  .logo {
+    height: 5em; }
+
+  button {
+    padding: 10px 30px;
+    font-size: 1.2em; }
+
+  .title {
+    font-size: 2.2em; }
+
+  #main #show .tagline {
+    font-size: .9em;
+    letter-spacing: 1px; }
+  #main #show .divider {
+    border-top: 2px solid #f0f0f0;
+    max-width: 350px; }
+  #main #show .info {
+    font-size: 1.25em;
+    letter-spacing: 3px; }
+
+  footer {
+    font-size: .9em; } }
 
 /*# sourceMappingURL=style.css.map */
