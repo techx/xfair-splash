@@ -653,6 +653,9 @@ footer {
     font-size: 1.25em;
     letter-spacing: 3px; }
 
+  #about {
+    padding: 80px 20px; }
+
   footer {
     font-size: .9em; } }
 @media only screen and (max-width: 330px) {
