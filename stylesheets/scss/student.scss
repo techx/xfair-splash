@@ -100,6 +100,37 @@ button:hover {
       font-weight: 400;
       line-height: 150%;
       text-align: left;
+
+      .schedule {
+        font-size: 1em;
+        padding-left: 50px;
+        margin-top: 20px;
+        border-left: 5px solid $blue;
+        padding-bottom: 15px;
+        max-width: 60%;
+
+        h4 {
+          padding: 15px 0 0 0;
+          font-weight: 500;
+        }
+
+        .row {
+          border-bottom: 1px solid #bab9c1;
+          
+          p {
+            margin-top: 10px;
+            font-weight: 400;
+          }
+          
+          .col-lg-3 p {
+            color: $blue;
+          }
+        }
+
+        .row:hover {
+          background-color: #f4f3f0;
+        }
+      }
     }
 
     a {

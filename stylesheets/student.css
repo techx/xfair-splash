@@ -86,6 +86,25 @@ button:hover {
       font-weight: 400;
       line-height: 150%;
       text-align: left; }
+      .student .container .content .schedule {
+        font-size: 1em;
+        padding-left: 50px;
+        margin-top: 20px;
+        border-left: 5px solid #6bd4ff;
+        padding-bottom: 15px;
+        max-width: 60%; }
+        .student .container .content .schedule h4 {
+          padding: 15px 0 0 0;
+          font-weight: 500; }
+        .student .container .content .schedule .row {
+          border-bottom: 1px solid #bab9c1; }
+          .student .container .content .schedule .row p {
+            margin-top: 10px;
+            font-weight: 400; }
+          .student .container .content .schedule .row .col-lg-3 p {
+            color: #6bd4ff; }
+        .student .container .content .schedule .row:hover {
+          background-color: #f4f3f0; }
     .student .container a {
       color: #3996ff;
       text-decoration: underline; }
