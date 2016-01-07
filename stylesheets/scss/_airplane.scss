@@ -4,6 +4,10 @@ div {
   transform-style: preserve-3d;
 }
 
+.tooltip.top .tooltip-arrow{
+  left: 55% !important;
+}
+
 .view {
   position: absolute;
   width: 100vw;

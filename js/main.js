@@ -33,6 +33,10 @@ $(document).ready(function(){
             $('.airplane').css({
                 'cursor': 'pointer'
             });
+
+            setTimeout(function() {
+                $('[data-toggle="tooltip"]').tooltip('show');
+            }, 3000);
         }, 6000);
     } else {
         click = true;
@@ -52,6 +56,10 @@ $(document).ready(function(){
         $('.logo').show();
         $('#show').show();
         $('#info').show();
+
+        setTimeout(function() {
+            $('[data-toggle="tooltip"]').tooltip('show');
+        }, 3000);
     }
 
     var cameraClass = 'angle0';
