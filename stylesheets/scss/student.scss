@@ -44,6 +44,22 @@ nav, .navbar {
   background: $blue;
 }
 
+button {
+  margin-top: 20px;
+  padding: 10px 50px;
+  border: 2px solid $darkblue;
+  background-color: transparent;
+  color: $darkblue;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+button:hover {
+  background-color: $darkblue;
+  color: $white;
+}
+
 .student {
   background: $white;
 
@@ -90,21 +106,27 @@ nav, .navbar {
       color: $accent;
       text-decoration: underline;
     }
+  }
+}
 
-    button {
-      margin-top: 20px;
-      padding: 10px 50px;
-      border: 2px solid $darkblue;
-      background-color: transparent;
-      color: $darkblue;
-      font-size: 1.2em;
-      text-transform: uppercase;
-      transition: all 300ms ease;
+@media only screen and (max-width: 773px) {
+  .student {
+
+    .container {
+      width: 80vw;
     }
+  }
+}
 
-    button:hover {
-      background-color: $darkblue;
-      color: $white;
+@media only screen and (max-width: 435px) {
+  button {
+    font-size: 1em;
+  }
+
+  .student {
+
+    .container {
+      width: 100vw;
     }
   }
 }

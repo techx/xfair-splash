@@ -1,6 +1,17 @@
 $(document).ready(function(){
     var cookie = getCookie('animate');
     var click = false;
+    var size = '-80px';
+    var offset = '-8vh';
+    if ($(window).width() <= 773) {
+        size = '-400px';
+        offset = '-12vh';
+    }
+    if ($(window).height() <= 414) {
+        size = '-400px';
+        offset = '-25vh';
+    }
+
     if (cookie !== 'false') {
         document.cookie="animate=false";
         $('.floor').delay('4500').fadeOut('500');
@@ -15,9 +26,9 @@ $(document).ready(function(){
                 '-webkit-animation': 'none',
                 '-moz-animation': 'none',
                 'animation': 'none',
-                '-webkit-transform': 'translate3d(20px, -8vh, -80px)',
-                '-moz-transform': 'translate3d(20px, -8vh, -80px)',
-                'transform': 'translate3d(20px, -8vh, -80px)'
+                '-webkit-transform': 'translate3d(20px, ' + offset + ', ' + size + ')',
+                '-moz-transform': 'translate3d(20px, ' + offset + ', ' + size + ')',
+                'transform': 'translate3d(20px, ' + offset + ', ' + size + ')'
             });
             $('.airplane').css({
                 'cursor': 'pointer'
@@ -29,9 +40,9 @@ $(document).ready(function(){
             '-webkit-animation': 'none',
             '-moz-animation': 'none',
             'animation': 'none',
-            '-webkit-transform': 'translate3d(20px, -8vh, -80px)',
-            '-moz-transform': 'translate3d(20px, -8vh, -80px)',
-            'transform': 'translate3d(20px, -8vh, -80px)'
+            '-webkit-transform': 'translate3d(20px, ' + offset + ', ' + size + ')',
+            '-moz-transform': 'translate3d(20px, ' + offset + ', ' + size + ')',
+            'transform': 'translate3d(20px, ' + offset + ', ' + size + ')'
         });
         $('.airplane').css({
             'cursor': 'pointer'
