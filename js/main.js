@@ -66,6 +66,8 @@ $(document).ready(function(){
     $('.airplane').click(function() {
         if (click) {
             click = false;
+            $('[data-toggle="tooltip"]').tooltip('hide');
+
             $('.airplane').css({
                 'cursor': ''
             });
