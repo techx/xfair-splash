@@ -93,15 +93,22 @@ button:hover {
         border-left: 5px solid #6bd4ff;
         padding-bottom: 15px;
         max-width: 60%; }
+        @media only screen and (max-width: 773px) {
+          .student .container .content .schedule {
+            max-width: 100%;
+            line-height: 100%; } }
         .student .container .content .schedule h4 {
           padding: 15px 0 0 0;
           font-weight: 500; }
+        .student .container .content .schedule .small-divider {
+          border-bottom: 1px solid #bab9c1;
+          margin: 0 -15px; }
         .student .container .content .schedule .row {
           border-bottom: 1px solid #bab9c1; }
           .student .container .content .schedule .row p {
             margin-top: 10px;
             font-weight: 400; }
-          .student .container .content .schedule .row .col-lg-3 p {
+          .student .container .content .schedule .row .col-sm-3 p {
             color: #6bd4ff; }
         .student .container .content .schedule .row:hover {
           background-color: #f4f3f0; }

@@ -109,9 +109,19 @@ button:hover {
         padding-bottom: 15px;
         max-width: 60%;
 
+        @media only screen and (max-width: 773px) {
+          max-width: 100%;
+          line-height: 100%;
+        }
+
         h4 {
           padding: 15px 0 0 0;
           font-weight: 500;
+        }
+
+        .small-divider {
+          border-bottom: 1px solid #bab9c1;
+          margin: 0 -15px;
         }
 
         .row {
@@ -122,7 +132,7 @@ button:hover {
             font-weight: 400;
           }
           
-          .col-lg-3 p {
+          .col-sm-3 p {
             color: $blue;
           }
         }
