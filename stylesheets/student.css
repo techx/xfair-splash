@@ -40,6 +40,20 @@ nav, .navbar {
 ::-moz-selection {
   background: #6bd4ff; }
 
+button {
+  margin-top: 20px;
+  padding: 10px 50px;
+  border: 2px solid #05354e;
+  background-color: transparent;
+  color: #05354e;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: all 300ms ease; }
+
+button:hover {
+  background-color: #05354e;
+  color: #f0f0f0; }
+
 .student {
   background: #f0f0f0; }
   .student .container {
@@ -75,17 +89,15 @@ nav, .navbar {
     .student .container a {
       color: #3996ff;
       text-decoration: underline; }
-    .student .container button {
-      margin-top: 20px;
-      padding: 10px 50px;
-      border: 2px solid #05354e;
-      background-color: transparent;
-      color: #05354e;
-      font-size: 1.2em;
-      text-transform: uppercase;
-      transition: all 300ms ease; }
-    .student .container button:hover {
-      background-color: #05354e;
-      color: #f0f0f0; }
+
+@media only screen and (max-width: 773px) {
+  .student .container {
+    width: 80vw; } }
+@media only screen and (max-width: 435px) {
+  button {
+    font-size: 1em; }
+
+  .student .container {
+    width: 100vw; } }
 
 /*# sourceMappingURL=student.css.map */

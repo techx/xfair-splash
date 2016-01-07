@@ -168,10 +168,12 @@ button:hover {
     .row {
 
       .col-md-4 {
-        margin-top: 5vh;
+        margin-top: 7vh;
+        min-margin-top: 25px;
 
         .photo {
           width: 100%;
+          max-width: 400px;
         }
 
         .subtitle {
@@ -273,7 +275,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 435px) {
 
   button {
     padding: 10px 30px;
@@ -307,5 +309,48 @@ footer {
 
   footer {
     font-size: .9em;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+
+  button {
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  #main {
+
+    #show {
+
+      .tagline {
+        font-size: .85em;
+        letter-spacing: 1px;
+      }
+
+      .divider {
+        border-top: 2px solid $white;
+        max-width: 300px;
+      }
+
+      .info {
+        font-size: 1.25em;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  footer {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (max-height: 435px) {
+  #main {
+    height: 120vh;
   }
 }
