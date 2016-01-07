@@ -64,6 +64,28 @@ div {
     transform: translate3d(0px, 0px, -50px) rotateX(90deg) rotateZ(200deg); }
   100% {
     transform: translate3d(20px, -8vh, -80px) rotateX(0deg) rotateZ(360deg); } }
+    @media only screen and (max-width: 736px) {
+      @-webkit-keyframes angle0 {
+        0% {
+          -webkit-transform: translate3d(0px, 0px, -400px) rotateX(60deg) rotateZ(90deg); }
+        40% {
+          -webkit-transform: translate3d(0px, 0px, -50px) rotateX(90deg) rotateZ(200deg); }
+        100% {
+          -webkit-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); } }
+      @-moz-keyframes angle0 {
+        0% {
+          -moz-transform: translate3d(0px, 0px, -400px) rotateX(60deg) rotateZ(90deg); }
+        40% {
+          -moz-transform: translate3d(0px, 0px, -50px) rotateX(90deg) rotateZ(200deg); }
+        100% {
+          -moz-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); } }
+      @keyframes angle0 {
+        0% {
+          transform: translate3d(0px, 0px, -400px) rotateX(60deg) rotateZ(90deg); }
+        40% {
+          transform: translate3d(0px, 0px, -50px) rotateX(90deg) rotateZ(200deg); }
+        100% {
+          transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); } } }
   .view .angle1 {
     -webkit-animation-name: angle1;
     -moz-animation-name: angle1;
@@ -89,6 +111,28 @@ div {
     transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
   100% {
     transform: translate3d(20px, -8vh, -80px) rotateX(0deg) rotateZ(0deg); } }
+    @media only screen and (max-width: 736px) {
+      @-webkit-keyframes angle1 {
+        0% {
+          -webkit-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); }
+        65% {
+          -webkit-transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
+        100% {
+          -webkit-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(0deg); } }
+      @-moz-keyframes angle1 {
+        0% {
+          -moz-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); }
+        65% {
+          -moz-transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
+        100% {
+          -moz-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(0deg); } }
+      @keyframes angle1 {
+        0% {
+          transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); }
+        65% {
+          transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
+        100% {
+          transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(0deg); } } }
   .view .angle2 {
     -webkit-animation-name: angle2;
     -moz-animation-name: angle2;
@@ -114,6 +158,28 @@ div {
     transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
   100% {
     transform: translate3d(20px, -8vh, -80px) rotateX(0deg) rotateZ(360deg); } }
+    @media only screen and (max-width: 736px) {
+      @-webkit-keyframes angle2 {
+        0% {
+          -webkit-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(0deg); }
+        35% {
+          -webkit-transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
+        100% {
+          -webkit-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); } }
+      @-moz-keyframes angle2 {
+        0% {
+          -moz-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(0deg); }
+        35% {
+          -moz-transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
+        100% {
+          -moz-transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); } }
+      @keyframes angle2 {
+        0% {
+          transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(0deg); }
+        35% {
+          transform: translate3d(0px, -4vh, -60px) rotateX(100deg) rotateZ(120deg); }
+        100% {
+          transform: translate3d(20px, -12vh, -400px) rotateX(0deg) rotateZ(360deg); } } }
   .view .floor {
     border-radius: 25vw;
     position: absolute;
@@ -145,6 +211,13 @@ div {
     animation-duration: 0.2s;
     animation-direction: normal;
     animation-iteration-count: infinite; }
+    @media only screen and (max-width: 736px) {
+      .view .floor {
+        border-radius: 100vw;
+        width: 200vw;
+        height: 200vw;
+        left: -100vw;
+        top: -100vw; } }
 @-webkit-keyframes scroll {
   0% {
     background-position: -10px 0; }
@@ -485,9 +558,6 @@ footer {
     letter-spacing: 2px; }
 
 @media only screen and (max-width: 414px) {
-  .logo {
-    height: 5em; }
-
   button {
     padding: 10px 30px;
     font-size: 1.2em; }
