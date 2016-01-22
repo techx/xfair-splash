@@ -112,6 +112,16 @@ button:hover {
             color: #6bd4ff; }
         .student .container .content .schedule .row:hover {
           background-color: #f4f3f0; }
+      .student .container .content .companies {
+        font-size: .9em; }
+        .student .container .content .companies .header {
+          margin-top: 1em;
+          margin-bottom: 8px;
+          padding: 5px 0;
+          width: 100%;
+          border-bottom: 1px solid #5a5a5a;
+          color: #6bd4ff;
+          font-size: 1.25em; }
     .student .container a {
       color: #3996ff;
       text-decoration: underline; }

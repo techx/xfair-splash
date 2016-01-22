@@ -141,6 +141,20 @@ button:hover {
           background-color: #f4f3f0;
         }
       }
+
+      .companies {
+        font-size: .9em;
+
+        .header {
+          margin-top: 1em;
+          margin-bottom: 8px;
+          padding: 5px 0;
+          width: 100%;
+          border-bottom: 1px solid $dark;
+          color: $blue;
+          font-size: 1.25em;
+        }
+      }
     }
 
     a {
