@@ -592,6 +592,43 @@ button:hover {
         #exhibitors .content .row .col-md-4 .subcontent a {
           color: #3996ff; }
 
+#sponsors {
+  padding: 80px 20px 100px 20px;
+  background: white; }
+  #sponsors .container {
+    width: 80vw; }
+    #sponsors .container img {
+      height: auto;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 16px; }
+    #sponsors .container .platinum {
+      padding: 0 5%; }
+      #sponsors .container .platinum img {
+        max-height: 200%;
+        max-width: 50%; }
+    #sponsors .container .gold {
+      padding: 0 5%; }
+      #sponsors .container .gold img {
+        max-height: 18%;
+        max-width: 28%; }
+    #sponsors .container .silver {
+      padding: 0 5%; }
+      #sponsors .container .silver img {
+        max-height: 15%;
+        max-width: 20%; }
+    #sponsors .container .bronze {
+      padding: 0 5%; }
+      #sponsors .container .bronze img {
+        max-height: 13%;
+        max-width: 15%; }
+    #sponsors .container .startup {
+      padding: 0 5%; }
+      #sponsors .container .startup img {
+        max-height: 13%;
+        max-width: 15%; }
+
 #faq {
   padding: 80px 20px 20px 20px;
   background: #f0f0f0;

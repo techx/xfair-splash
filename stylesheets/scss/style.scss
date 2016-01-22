@@ -201,6 +201,68 @@ button:hover {
   }
 }
 
+#sponsors {
+  padding: 80px 20px 100px 20px;
+  background: white;
+
+  .container {
+    width: 80vw;
+
+    img {
+      height: auto;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 16px;
+    }
+
+    .platinum {
+      padding: 0 5%;
+
+      img {
+        max-height: 200%;
+        max-width: 50%;
+      }
+    }
+
+    .gold {
+      padding: 0 5%;
+
+      img {
+        max-height: 18%;
+        max-width: 28%;
+      }
+    }
+
+    .silver {
+      padding: 0 5%;
+
+      img {
+        max-height: 15%;
+        max-width: 20%;
+      }
+    }
+
+    .bronze {
+      padding: 0 5%;
+
+      img {
+        max-height: 13%;
+        max-width: 15%;
+      }
+    }
+
+    .startup {
+      padding: 0 5%;
+
+      img {
+        max-height: 13%;
+        max-width: 15%;
+      }
+    }
+  }
+}
+
 #faq {
   padding: 80px 20px 20px 20px;
   background: $white;
