@@ -229,7 +229,7 @@ button:hover {
       padding: 0 5%;
 
       img {
-        max-height: 18%;
+        max-height: 20vh;
         max-width: 28%;
       }
     }
@@ -334,6 +334,17 @@ footer {
     font-size: 100%;
     font-weight: 700;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #sponsors {
+    padding: 80px 0 100px 0;
+
+    .container {
+      margin: 0;
+      width: 100vw;
+    }
   }
 }
 

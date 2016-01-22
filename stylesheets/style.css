@@ -611,7 +611,7 @@ button:hover {
     #sponsors .container .gold {
       padding: 0 5%; }
       #sponsors .container .gold img {
-        max-height: 18%;
+        max-height: 20vh;
         max-width: 28%; }
     #sponsors .container .silver {
       padding: 0 5%; }
@@ -675,6 +675,12 @@ footer {
     font-weight: 700;
     letter-spacing: 2px; }
 
+@media only screen and (max-width: 768px) {
+  #sponsors {
+    padding: 80px 0 100px 0; }
+    #sponsors .container {
+      margin: 0;
+      width: 100vw; } }
 @media only screen and (max-width: 435px) {
   button {
     padding: 10px 30px;
