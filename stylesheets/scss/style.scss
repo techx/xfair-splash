@@ -202,7 +202,7 @@ button:hover {
 }
 
 #sponsors {
-  padding: 80px 20px 100px 20px;
+  padding: 80px 15vw;
   background: white;
 
   .container {
@@ -337,17 +337,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #sponsors {
-    padding: 80px 0 100px 0;
-
-    .container {
-      margin: 0;
-      width: 100vw;
-    }
-  }
-}
-
 @media only screen and (max-width: 435px) {
 
   button {
@@ -381,6 +370,10 @@ footer {
   }
 
   #about {
+    padding: 80px 20px;
+  }
+
+  #sponsors {
     padding: 80px 20px;
   }
 

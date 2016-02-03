@@ -593,7 +593,7 @@ button:hover {
           color: #3996ff; }
 
 #sponsors {
-  padding: 80px 20px 100px 20px;
+  padding: 80px 15vw;
   background: white; }
   #sponsors .container {
     width: 80vw; }
@@ -675,12 +675,6 @@ footer {
     font-weight: 700;
     letter-spacing: 2px; }
 
-@media only screen and (max-width: 768px) {
-  #sponsors {
-    padding: 80px 0 100px 0; }
-    #sponsors .container {
-      margin: 0;
-      width: 100vw; } }
 @media only screen and (max-width: 435px) {
   button {
     padding: 10px 30px;
@@ -700,6 +694,9 @@ footer {
     letter-spacing: 3px; }
 
   #about {
+    padding: 80px 20px; }
+
+  #sponsors {
     padding: 80px 20px; }
 
   footer {
