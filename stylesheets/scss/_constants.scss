@@ -1,10 +1,15 @@
-$black: rgba(25,25,25,1);
 $white: rgba(240,240,240,1);
-$grey: rgba(200,200,200,1);
-$dark: rgba(90,90,90,1);
-$blue: rgba(107,212,255,1);
-$accent: rgba(57,150,255,1);
-$darkblue: rgba(5,53,78,1);
+$dark: rgba(84,122,130,1);
+$blue: rgba(62,172,168,1);
+$light: rgba(162,212,171,1);
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -mox-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -o-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
 
 @font-face {
   font-family: Avenir;

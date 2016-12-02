@@ -1,5 +1,4 @@
 @import '_constants';
-@import '_airplane';
 
 html, body {
   height: 100%;
@@ -8,8 +7,8 @@ html, body {
 }
 
 body {
-  background: $darkblue;
-  color: $darkblue;
+  background: $white;
+  color: $dark;
   text-align: center;
   font-family: $avenir;
   font-weight: 300;
@@ -23,31 +22,18 @@ body {
   background: $blue;
 }
 
-#show {
-  display: none;
-}
-
-.logo {
-  display: none;
-  position: relative;
-  top: -32px;
-  left: -54%;
-  height: 7.5em;
-  z-index: -1;
-}
-
 a {
-  color: $blue;
+  color: $dark;
   text-decoration: none;
 }
 
 a:hover, a:visited:hover {
-  color: $blue;
+  color: $dark;
   transition: all 200ms ease;
 }
 
 a:visited {
-  color: $blue;
+  color: $dark;
   text-decoration: none;
 }
 
@@ -64,7 +50,7 @@ button {
 
 button:hover {
   background-color: $white;
-  color: $darkblue;
+  color: $dark;
 }
 
 .title {
@@ -84,71 +70,62 @@ button:hover {
   font-size: 1.25em;
   font-weight: 200;
   line-height: 200%;
-  margin-bottom: 2em;
-}
-
-#info {
-  display: none;
 }
 
 #main {
   height: 100vh;
   padding: 0;
+  background: linear-gradient($light, $blue);
   color: $white;
   text-transform: uppercase;
 
-  #show {
-    position: relative;
-    top: 50vh;
+  .logo {
+    margin-top: 30vh;
+    margin-bottom: 25px;
+    height: 15vh;
+    max-width: 95vw;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
 
     .tagline {
       font-weight: 100;
       letter-spacing: 2px;
     }
 
-    .divider {
-      border-top: 3px solid $white;
-      max-width: 450px;
-      margin: 15px auto;
-      padding-top: 5px;
-    }
-
     .info {
-      font-size: 1.5em;
-      letter-spacing: 5px;
+      margin-top: 5vh;
       margin-bottom: 5vh;
+      letter-spacing: 5px;
     }
   }
 }
 
 #about {
-  padding: 80px 15vw;
+  padding: 80px 20vw;
   background: white;
-  color: $darkblue;  
+  color: $dark;
+
+    b {
+      color: $blue;
+    }
 }
 
 #employers {
   padding: 80px 20px 100px 20px;
-  background: $white;
-
-  a {
-    color: $accent;
-  }
+  background: linear-gradient(-120deg, $light, $blue, $light);
+  color: $white;
 
   button {
+    margin-top: 2em;
     padding: 10px 30px;
-    color: $darkblue;
-    border-color: $darkblue;
-  }
-
-  button:hover {
-    background-color: $darkblue;
-    color: white;
   }
 }
 
 #students {
   padding: 80px 20px 100px 20px;
+  background: linear-gradient(-45deg, $blue, $dark);
   color: $white;
 
   button {
@@ -159,6 +136,10 @@ button:hover {
 #exhibitors {
   padding: 80px 20px 100px 20px;
   background: white;
+
+  a, b {
+    color: $blue;
+  }
 
   .content {
     width: 80vw;
@@ -191,10 +172,6 @@ button:hover {
         .subcontent {
           font-size: .8em;
           line-height: 150%;
-
-          a {
-            color: $accent;
-          }
         }
       }
     }
@@ -203,7 +180,12 @@ button:hover {
 
 #sponsors {
   padding: 80px 15vw;
-  background: white;
+  color: $white;
+  background: linear-gradient(45deg, $dark, $dark, $blue);
+
+  a {
+    color: $light;
+  }
 
   .container {
     width: 80vw;
@@ -265,12 +247,8 @@ button:hover {
 
 #faq {
   padding: 80px 20px 20px 20px;
-  background: $white;
-  color: $dark;
-
-  a {
-    color: $accent;
-  }
+  background: linear-gradient(30deg, $light, $blue, $light);
+  color: $white;
 
   .title {
     margin-bottom: 1.25em;
@@ -284,7 +262,7 @@ button:hover {
 
       .col-md-4 {
         margin-bottom: 50px;
-        
+
         .question {
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -309,7 +287,7 @@ footer {
   font-weight: 400;
   letter-spacing: 2px;
   padding: 22px 5vw;
-  background: $darkblue;
+  background: $dark;
   color: $white;
 
   .icons {
@@ -321,6 +299,7 @@ footer {
   }
 
   a {
+    color: $white;
     font-size: .75em;
     display: inline-block;
   }
@@ -350,16 +329,11 @@ footer {
 
   #main {
 
-    #show {
+    .subtitle {
 
       .tagline {
         font-size: .9em;
         letter-spacing: 1px;
-      }
-
-      .divider {
-        border-top: 2px solid $white;
-        max-width: 350px;
       }
 
       .info {
@@ -395,16 +369,11 @@ footer {
 
   #main {
 
-    #show {
+    .subtitle {
 
       .tagline {
         font-size: .85em;
         letter-spacing: 1px;
-      }
-
-      .divider {
-        border-top: 2px solid $white;
-        max-width: 300px;
       }
 
       .info {
