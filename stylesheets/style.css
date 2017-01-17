@@ -251,10 +251,10 @@ footer {
     color: #f0f0f0;
     font-size: .75em;
     display: inline-block; }
-  footer a:hover, footer a:visited:hover {
+  footer a:hover, footer a:visited, footer a:visited:hover {
     color: #f0f0f0;
     text-decoration: none; }
-  footer #link {
+  footer .link {
     font-size: 100%;
     font-weight: 700;
     letter-spacing: 2px; }

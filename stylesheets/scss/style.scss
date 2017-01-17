@@ -355,12 +355,12 @@ footer {
     display: inline-block;
   }
 
-  a:hover, a:visited:hover {
+  a:hover, a:visited, a:visited:hover {
     color: $white;
     text-decoration: none;
   }
 
-  #link {
+  .link {
     font-size: 100%;
     font-weight: 700;
     letter-spacing: 2px;
