@@ -13,44 +13,43 @@ html, body {
   margin: 0; }
 
 body {
-  background: ivory;
-  color: #3c6e71;
+  background: #f0f0f0;
+  color: #547a82;
   text-align: center;
   font-family: "Avenir", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem; }
+  font-weight: 300; }
 
 ::selection {
-  background: #c4d7f2; }
+  background: #3eaca8; }
 
 ::-moz-selection {
-  background: #c4d7f2; }
+  background: #3eaca8; }
 
-a, a:visited {
-  color: ivory;
+a {
+  color: #547a82;
   text-decoration: none; }
 
 a:hover, a:visited:hover {
-  color: ivory;
+  color: #547a82;
   transition: all 200ms ease; }
+
+a:visited {
+  color: #547a82;
+  text-decoration: none; }
 
 button {
   margin: 10px;
-  padding: 20px 50px;
-  border: 2px solid ivory;
-  border-radius: 0;
+  padding: 10px 50px;
+  border: 2px solid #f0f0f0;
   background-color: transparent;
-  color: ivory;
-  font-size: 2rem;
+  color: #f0f0f0;
+  font-size: 1.2em;
   text-transform: uppercase;
   transition: all 300ms ease; }
 
 button:hover {
-  background-color: ivory;
-  color: transparent; }
-
-section {
-  position: relative; }
+  background-color: #f0f0f0;
+  color: #547a82; }
 
 .title {
   font-size: 2.5em;
@@ -64,37 +63,31 @@ section {
 
 .content {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.25em;
   font-weight: 200;
   line-height: 200%; }
-
-.down-arrow {
-  font-size: 8rem;
-  position: absolute;
-  left: 49%;
-  bottom: 0; }
 
 #main {
   height: 100vh;
   padding: 0;
-  color: ivory;
+  color: #f0f0f0;
   text-transform: uppercase; }
   #main .bg {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: #284b63;
+    background: linear-gradient(#a2d4ab, #3eaca8);
     z-index: -1; }
     #main .bg .left-trail {
       position: absolute;
-      top: 22vh;
-      left: 18vw;
-      width: 15%; }
+      bottom: -7px;
+      left: 0;
+      width: 30%; }
     #main .bg .right-trail {
       position: absolute;
-      top: 24vh;
-      right: 40vh;
-      width: 15%; }
+      bottom: -10px;
+      right: 0;
+      width: 50%; }
   #main .logo {
     margin-top: 30vh;
     margin-bottom: 25px;
@@ -103,129 +96,87 @@ section {
   #main .subtitle {
     font-size: 1.5em; }
     #main .subtitle .tagline {
-      color: #c4d7f2;
-      font-weight: 400;
+      font-weight: 100;
       letter-spacing: 2px; }
-      #main .subtitle .tagline a {
-        color: ivory;
-        font-weight: 700; }
     #main .subtitle .info {
       margin-top: 5vh;
       margin-bottom: 5vh;
       letter-spacing: 5px; }
 
 #about {
-  height: 100vh;
-  padding: 30vh 21vw;
-  background: ivory;
-  color: #284b63; }
-  #about button {
-    margin: 20px 50px 10px 50px;
-    padding: 20px 40px;
-    border: 2px solid #284b63;
-    background-color: ivory;
-    color: #284b63; }
-  #about button:hover {
-    background-color: #284b63;
-    color: ivory; }
+  padding: 80px 15vw;
+  background: white;
+  color: #547a82; }
+  #about b {
+    color: #3eaca8; }
 
 #employers {
-  height: 100vh;
-  padding: 30vh 22vw;
-  background: #284b63;
-  color: ivory; }
+  padding: 80px 20px 100px 20px;
+  background: linear-gradient(-120deg, #a2d4ab, #3eaca8, #a2d4ab);
+  color: #f0f0f0;
+  position: relative; }
   #employers button {
     margin-top: 2em;
-    border: 2px solid ivory;
-    background-color: #284b63;
-    color: ivory; }
-  #employers button:hover {
-    background-color: ivory;
-    color: #284b63; }
+    padding: 10px 30px; }
+  #employers .bg {
+    position: absolute;
+    top: 20%;
+    left: -10px;
+    width: 15%; }
 
 #students {
-  height: 100vh;
-  padding: 30vh 22vw;
-  background: ivory;
-  color: #284b63; }
-  #students b {
-    color: #3c6e71; }
+  padding: 80px 20px 100px 20px;
+  background: linear-gradient(-45deg, #3eaca8, #547a82);
+  color: #f0f0f0; }
   #students button {
-    border: 2px solid #284b63;
-    padding: 10px 50px;
-    background-color: ivory;
-    color: #284b63; }
-  #students button:hover {
-    background-color: #284b63;
-    color: ivory; }
+    padding: 10px 30px; }
 
 #exhibitors {
-  height: 100vh;
-  padding: 100px 20px 100px 20px;
-  background-color: #284b63;
-  color: ivory; }
+  padding: 80px 20px 100px 20px;
+  position: relative; }
+  #exhibitors a, #exhibitors b {
+    color: #3eaca8; }
   #exhibitors .content {
     width: 80vw;
     margin: auto;
     line-height: 150%; }
-    #exhibitors .content .row .col-md-3 {
+    #exhibitors .content .row .col-md-4 {
       margin-top: 7vh;
       min-margin-top: 25px; }
-      #exhibitors .content .row .col-md-3 .photo {
+      #exhibitors .content .row .col-md-4 .photo {
         width: 100%;
-        max-width: 300px; }
-      #exhibitors .content .row .col-md-3 .subtitle {
+        max-width: 400px; }
+      #exhibitors .content .row .col-md-4 .subtitle {
         margin-top: 1em;
         text-transform: uppercase;
         font-family: "Avenir", sans-serif;
         font-weight: 700;
         letter-spacing: 2px; }
-      #exhibitors .content .row .col-md-3 .creator {
+      #exhibitors .content .row .col-md-4 .creator {
         margin-bottom: .25em; }
-      #exhibitors .content .row .col-md-3 .subcontent {
+      #exhibitors .content .row .col-md-4 .subcontent {
         font-size: .8em;
         line-height: 150%; }
-
-#faq {
-  height: 100vh;
-  padding: 80px 20px 20px 20px;
-  background: ivory;
-  color: #284b63; }
-  #faq a {
-    color: #3c6e71;
-    font-weight: bold; }
-  #faq .title {
-    margin-bottom: 1.25em; }
-  #faq .content .row {
-    padding: 0 10vw;
-    text-align: left; }
-    #faq .content .row .col-md-6 {
-      margin-bottom: 50px; }
-      #faq .content .row .col-md-6 .question {
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 700;
-        line-height: 150%;
-        margin-bottom: .9em; }
-      #faq .content .row .col-md-6 .answer {
-        font-size: .8em;
-        line-height: 150%;
-        letter-spacing: .5px; }
+  #exhibitors .bg {
+    height: 100%;
+    width: 100%;
+    background: #f0f0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+    #exhibitors .bg .trail {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%; }
 
 #sponsors {
-  height: 89vh;
   padding: 80px 15vw;
-  background: #284b63;
-  color: ivory; }
+  color: #f0f0f0;
+  background: linear-gradient(45deg, #547a82, #547a82, #3eaca8); }
   #sponsors a {
     color: #a2d4ab; }
-  #sponsors .content {
-    width: 80vw;
-    margin: auto;
-    line-height: 150%; }
-    #sponsors .content .row .col-md-4 {
-      margin-top: 7vh;
-      min-margin-top: 25px; }
   #sponsors .container {
     width: 80vw; }
     #sponsors .container img {
@@ -233,8 +184,7 @@ section {
       width: auto;
       display: inline-block;
       vertical-align: middle;
-      margin: 16px;
-      color: ivory; }
+      margin: 16px; }
     #sponsors .container .platinum {
       padding: 0 5%; }
       #sponsors .container .platinum img {
@@ -261,29 +211,48 @@ section {
         max-height: 13%;
         max-width: 15%; }
 
+#faq {
+  padding: 80px 20px 20px 20px;
+  background: linear-gradient(30deg, #a2d4ab, #3eaca8, #a2d4ab);
+  color: #f0f0f0; }
+  #faq .title {
+    margin-bottom: 1.25em; }
+  #faq .content .row {
+    padding: 0 10vw;
+    text-align: left; }
+    #faq .content .row .col-md-4 {
+      margin-bottom: 50px; }
+      #faq .content .row .col-md-4 .question {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: .9em; }
+      #faq .content .row .col-md-4 .answer {
+        font-size: .8em;
+        line-height: 150%;
+        letter-spacing: .5px; }
+
 footer {
-  height: 11vh;
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
-  padding: 20px 5vw 20px 5vw;
-  background: ivory;
-  color: #284b63;
+  padding: 30px 5vw 37px 5vw;
+  background: #547a82;
+  color: #f0f0f0;
   position: relative; }
   footer .col-sm-6 {
     margin-top: 10px; }
-  footer .icons {
-    margin-top: 10px; }
-    footer .icons i {
-      font-size: 1.25em;
-      padding: 0 2px; }
+  footer .icons i {
+    font-size: 1.25em;
+    padding: 0 2px; }
   footer a {
-    color: #284b63;
+    color: #f0f0f0;
     font-size: .75em;
     display: inline-block; }
   footer a:hover, footer a:visited, footer a:visited:hover {
-    color: #284b63;
+    color: #f0f0f0;
     text-decoration: none; }
   footer .link {
     font-size: 100%;
@@ -295,6 +264,12 @@ footer {
     top: -3px;
     height: 20px; }
 
+@media only screen and (max-width: 1250px) {
+  #employers .bg {
+    display: none; } }
+@media only screen and (max-width: 989px) {
+  #exhibitors .bg {
+    display: none; } }
 @media only screen and (max-width: 435px) {
   button {
     padding: 10px 30px;
