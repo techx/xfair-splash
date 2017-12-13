@@ -26,13 +26,27 @@
   <meta name="twitter:title" content="xFair 2018">
   <meta name="twitter:description" content="MIT's largest career fair & tech expo | Feb 5, MIT.">
   <meta name="twitter:image:src" content="img/xfair-logo.png">
+
+  <!-- for fullPage.js -->
+  <!-- <script src="js/fullpage.min.js"></script> -->
+  <script>
+    if (screen && screen.width > 768) {
+      document.write('<script type="text/javascript" src="js/fullpage.min.js"><\/script>');
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+    });
+  </script>
   
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
   <script src="js/main.js"></script>
 </head>
 
 <body>
-  <section id="main">
+  <div id="fullpage">
+  <section id="main" class="section">
     <div class="bg">
       
       <img class="left-trail" src="img/header-left.svg"
@@ -59,7 +73,7 @@
     
   </section>
 
-  <section id="about">
+  <section id="about" class="section">
     <div class="title thin">More than your average career fair.</div>
     <div class="content">
       xFair is more than booths, name tags, and blazers — it's a career fair and a tech expo combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is <b>MIT’s largest career fair and tech expo</b>.
@@ -72,7 +86,7 @@
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="employers">
+  <section id="employers" class="section">
     <div class="title-border">
       <span class="corner BL"></span>
       <span class="corner TR"></span>
@@ -91,7 +105,7 @@
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="students">
+  <section id="students" class="section">
     <div class="title-border">
       <span class="corner BL"></span>
       <span class="corner TR"></span>
@@ -112,7 +126,7 @@
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="exhibitors">
+  <section id="exhibitors" class="section">
     <div class="title">Student Exhibitors</div>
     <div class="content">
       We want to see your creativity, innovation, and engineering at its best. And we want to help you gain the exposure you deserve. Every year, the ProjX committee sponsors over 50 student projects with up to $500 in funding. These students will display their projects at xFair 2018 to thousands of students and hundreds of industry professionals.
@@ -138,7 +152,7 @@
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="faq">
+  <section id="faq" class="section">
     <div class="title-border">
       <span class="corner BL"></span>
       <span class="corner TR"></span>
@@ -183,7 +197,7 @@
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
   
-  <section id="sponsors">
+  <section id="sponsors" class="section">
     <div class="title-border">
       <span class="corner BL"></span>
       <span class="corner TR"></span>
@@ -219,7 +233,7 @@
       </div>
   </section>
 
-  <footer class="fp-auto-height">
+  <footer>
     <div class="row">
       <div class="col-sm-6 left">
         <div class="icons">
@@ -235,5 +249,6 @@
       </div>
     </div>
   </footer>
+  </div>
 </body>
 </html>

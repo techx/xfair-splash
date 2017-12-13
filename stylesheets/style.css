@@ -256,7 +256,6 @@ section {
         letter-spacing: .5px; }
 
 #sponsors {
-  min-height: 89vh;
   padding: 80px 15vw;
   background: #284b63;
   color: ivory;
@@ -343,12 +342,13 @@ section {
     vertical-align: middle; }
 
 footer {
-  height: 11vh;
+  height: 11vh !important;
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 20px 5vw 20px 5vw;
+  margin-top: -11vh;
   background: ivory;
   color: #284b63;
   position: relative; }
@@ -391,7 +391,10 @@ footer {
     max-width: 20vw; }
 
   #students {
-    padding: 15vh 15vw; } }
+    padding: 15vh 15vw; }
+
+  footer {
+    margin-top: 0; } }
 @media only screen and (max-width: 435px) {
   button {
     padding: 10px 30px;
