@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="xFair 2018">
   <meta name="twitter:description" content="MIT's largest career fair & tech expo | Feb 5, MIT.">
   <meta name="twitter:image:src" content="img/xfair-logo.png">
-
+  
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
   <script src="js/main.js"></script>
 </head>
@@ -39,10 +39,11 @@
            onerror="this.onerror=null; this.src='img/header-left.png'">
       <img class="right-trail" src="img/header-right.svg"
            onerror="this.onerror=null; this.src='img/header-right.png'">
+      <img class="logo" src="img/logo.svg"
+           onerror="this.onerror=null; this.src='img/logo.png'">
       
     </div>
-    <img class="logo" src="img/logo.svg"
-         onerror="this.onerror=null; this.src='img/logo.png'">
+    
     <div class="subtitle">
       <div class="tagline">Powered by MIT <a href="http://techx.mit.edu/">TechX</a> and <a href="http://web.mit.edu/tbp/www/">Tau Beta Pi</a></div>
       <div class="info">
@@ -61,19 +62,22 @@
   <section id="about">
     <div class="title thin">More than your average career fair.</div>
     <div class="content">
-      xFair is more than booths, name tags, and blazers — it's a career fair and a tech expo combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is
-      <br>
-      <b>MIT’s largest career fair and tech expo</b>.
+      xFair is more than booths, name tags, and blazers — it's a career fair and a tech expo combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is <b>MIT’s largest career fair and tech expo</b>.
     </div>
     <br>
-    <a href="#employers"><button>Employers</button></a>
-    <a href="#students"><button>Students</button></a>
+    <a href="#employers" class="smooth"><button>Employers</button></a>
+    <a href="#students" class="smooth"><button>Students</button></a>
 
+    <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
   <section id="employers">
-    <div class="title">Employers</div>
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">Employers</div>
+    </div>
     <div class="content">
       <b>Recruit the brightest young minds to make your company's vision come true.</b>
       <br>
@@ -83,23 +87,28 @@
     </div>
     <a href="/sponsor.html"><button>Sponsorship Info</button></a>
 
+    <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
   <section id="students">
-    <div class="title">Students</div>
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">Students</div>
+    </div>
     <div class="content">
       Network, explore, and be inspired. xFair companies feature cutting-edge technologies and industry leaders from a variety of fields - there's something for everyone!
       <br>
       <b>2018 booklet coming soon.</b>
       <br><br>
-    <!-- Add these in as they are available -->
-    <a href="http://drop.xfair.io"><button>Resume Drop</button></a>
-      <br>
-    <!-- <a href="/student.html"><button>Student Information</button></a> -->
-    <!-- <a href="/booklet.pdf"><button>xFair Booklet</button></a> -->
+      <!-- Add these in as they are available -->
+      <!-- > <a href="http://drop.xfair.io"><button>Resume Drop</button></a> --> 
+      <!-- <a href="/student.html"><button>Student Information</button></a> -->
+      <!-- <a href="/booklet.pdf"><button>xFair Booklet</button></a> -->
     </div>
 
+    <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
@@ -124,11 +133,17 @@
         </div>
       </div>
     </div>
+
+    <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
   <section id="faq">
-    <div class="title">FAQ</div>
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">FAQ</div>
+    </div> 
     <div class="content">
       <div class="row">
         <div class="col-md-6">
@@ -156,7 +171,7 @@
           <div class="answer">
             <a href="http://en.wikipedia.org/wiki/Smart_casual">Smart casual</a>.
           </div>
-          <br><br>
+          <br>
           <div class="question">Where can I get more information?</div>
           <div class="answer">
             Student information is available <a href="\student">here</a>. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
@@ -164,24 +179,47 @@
         </div>
       </div>
     </div>
-
+    <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
   
   <section id="sponsors">
-    <div class="title">Sponsors</div>
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">Sponsors</div>
+    </div>
     <div class="content">
       <div class="row">
-        <div class="col-md-4">
-          <img src="/img/sponsors/a16z.png" class="sponsor-logo">       
+        <div class="col-sm-4">
+          <img src="img/logos/a16z.png" class="logo">       
         </div>
-        <div class="col-md-4">
-          <img src="img/sponsors/AQR.png" class="sponsor-logo">
-        </div> 
-    </div>
+        <div class="col-sm-4">
+          <img src="img/logos/AQR.png" class="logo">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/logos/disney.png" class="logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="img/logos/google.png" class="logo">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/logos/baidu.png" class="logo">
+        </div>
+        <div class="col-sm-4">
+          <img src="img/logos/amadeus.png" class="logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="img/logos/jumpstart.png" class="logo">
+        </div>
+      </div>
   </section>
 
-  <footer>
+  <footer class="fp-auto-height">
     <div class="row">
       <div class="col-sm-6 left">
         <div class="icons">

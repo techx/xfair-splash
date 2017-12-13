@@ -62,6 +62,33 @@ section {
   margin-bottom: .75em;
 }
 
+.title-border {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto 15vh auto;
+  padding-top: 20px;
+  position: relative;
+  background: $white;
+
+  .corner {
+    position: absolute;
+    background: $dark-blue;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+  }
+
+  .BL {
+    bottom: -2px;
+    left: -2px;
+  }
+
+  .TR {
+    top: -2px;
+    right: -2px;
+  }
+}
+
 .thin {
   font-weight: 500;
 }
@@ -76,20 +103,23 @@ section {
 .down-arrow {
   font-size: 8rem;
   position: absolute;
-  left: 49%;
+  left: 48%;
   bottom: 0;
 }
 
 #main {
   height: 100vh;
   padding: 0;
+  background: $dark-blue;
   color: $white;
   text-transform: uppercase;
+  z-index: -2;
 
   .bg {
-     position: absolute;
-     height: 100vh;
+     position: relative;
+     height: 30vh;
      width: 100vw;
+     margin: 0 auto;
      background: $dark-blue;
      z-index: -1;
 
@@ -103,20 +133,22 @@ section {
      .right-trail {
        position: absolute;
        top: 24vh;
-       right: 40vh;
+       right: 22vw;
        width: 15%;
      }
-   }
 
-   .logo {
-     margin-top: 30vh;
-     margin-bottom: 25px;
-     height: 15vh;
-     max-width: 95vw;
+     .logo {
+       margin-top: 30vh;
+       margin-bottom: 25px;
+       height: 15vh;
+       max-width: 95vw;
+     }
    }
 
    .subtitle {
      font-size: 1.5em;
+     position: relative;
+     margin-top: 20vh;
 
      .tagline {
        color: $light-blue;
@@ -138,8 +170,8 @@ section {
 }
 
 #about {
-  height: 100vh;
-  padding: 30vh 21vw;
+  min-height: 100vh;
+  padding: 25vh 21vw;
   background: $white;
   color: $dark-blue;
 
@@ -158,10 +190,11 @@ section {
 }
 
 #employers {
-  height: 100vh;
-  padding: 30vh 22vw;
+  min-height: 100vh;
+  padding: 15vh 12vw;
   background: $dark-blue;
   color: $white;
+  z-index: -2;
   
     button {
       margin-top: 2em;
@@ -174,13 +207,22 @@ section {
       background-color: $white;
       color: $dark-blue;  
     }
+
+    .title-border {
+      background: $dark-blue;
+      
+      .corner {
+        background: $white;
+      }
+    }
 }
 
 #students {
-  height: 100vh;
-  padding: 30vh 22vw;
+  min-height: 100vh;
+  padding: 15vh 25vw;
   background: $white;
   color: $dark-blue;
+  z-index: -2;
 
     b {
       color: $dark-teal;  
@@ -197,10 +239,18 @@ section {
       background-color: $dark-blue;
       color: $white;  
     }
+
+    .title-border {
+      background: $white;
+      
+      .corner {
+        background: $dark-blue;
+      }
+    }
 }
 
 #exhibitors {
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 20px 100px 20px;
   background-color: $dark-blue;
   color: $white;
@@ -215,10 +265,12 @@ section {
       .col-md-3 {
         margin-top: 7vh;
         min-margin-top: 25px;
-
+        
         .photo {
+          object-fit: cover;
           width: 100%;
           max-width: 300px;
+          opacity: 0.8;
         }
 
         .subtitle {
@@ -243,10 +295,11 @@ section {
 }
 
 #faq {
-  height: 100vh;
+  min-height: 100vh;
   padding: 80px 20px 20px 20px;
   background: $white;
   color: $dark-blue;
+  z-index: -2;
 
   a {
     color: $dark-teal;
@@ -257,10 +310,19 @@ section {
     margin-bottom: 1.25em;
   }
 
+  .title-border {
+    background: $white;
+    margin-bottom: 10vh;
+    
+    .corner {
+      background: $dark-blue;
+    }
+  }
+
   .content {
 
     .row {
-      padding: 0 10vw;
+      padding: 0 15vw;
       text-align: left;
 
       .col-md-6 {
@@ -285,29 +347,53 @@ section {
 }
 
 #sponsors {
-  height: 89vh;
+  min-height: 89vh;
   padding: 80px 15vw;
   background: $dark-blue;
   color: $white;
+  z-index: -2;
 
   a {
     color: $light;
   }
 
+  .title-border {
+    background: $dark-blue;
+    margin-bottom: 2vh;
+    
+    .corner {
+      background: $white;
+    }
+  }
+  
   .content {
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     line-height: 150%;
 
     .row {
-
-      .col-md-4 {
+      //margin-bottom: 50px;
+      
+      .col-sm-4 {
         margin-top: 7vh;
         min-margin-top: 25px;
       }
+
+      .col-sm-12 {
+        margin-top: 7vh;
+        min-margin-top: 25px;
+      }
+      
     }
   }
-  
+
+  .logo {
+    max-height: 100px;
+    max-width: 200px;
+    vertical-align: middle;
+  }
+
+  /*
   .container {
     width: 80vw;
 
@@ -365,6 +451,7 @@ section {
       }
     }
   }
+ */
 }
 
 footer {
@@ -416,8 +503,32 @@ footer {
   }
 }
 
-@media only screen and (max-width: 755px) {
+@media only screen and (max-width: 1500px) {
+  .left-trail {
+    opacity: 0;
+  }
 
+  .right-trail {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  .down-arrow {
+    font-size: 4rem;
+  }
+
+  #sponsors {
+    .logo {
+      max-height: 20vh;
+      max-width: 20vw;
+    }
+  }
+
+  #students {
+    padding: 15vh 15vw;
+  }
+  
   footer {
 
   }
@@ -427,11 +538,22 @@ footer {
 
   button {
     padding: 10px 30px;
-    font-size: 1.2em;
+    font-size: 2rem;
   }
 
   .title {
-    font-size: 2.2em;
+    font-size: 2.2rem;
+  }
+
+  .title-border {
+     width: 250px;
+     height: 80px;
+     margin: 0 auto 15vh auto;
+     padding-top: 20px;
+  }
+
+  .content {
+    font-size: 2rem;
   }
 
   #main {
@@ -450,6 +572,10 @@ footer {
     }
   }
 
+  #students {
+    padding: 80px 20px;
+  }
+  
   #about {
     padding: 80px 20px;
   }
@@ -467,11 +593,15 @@ footer {
 
   button {
     padding: 10px 25px;
-    font-size: 1em;
+    font-size: 2rem;
   }
 
   .title {
-    font-size: 2em;
+    font-size: 2.2rem;
+  }
+
+  .content {
+    font-size: 2rem;
   }
 
   #main {

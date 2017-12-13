@@ -59,6 +59,26 @@ section {
   letter-spacing: 5px;
   margin-bottom: .75em; }
 
+.title-border {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto 15vh auto;
+  padding-top: 20px;
+  position: relative;
+  background: ivory; }
+  .title-border .corner {
+    position: absolute;
+    background: #284b63;
+    width: 20px;
+    height: 20px;
+    z-index: -1; }
+  .title-border .BL {
+    bottom: -2px;
+    left: -2px; }
+  .title-border .TR {
+    top: -2px;
+    right: -2px; }
+
 .thin {
   font-weight: 500; }
 
@@ -71,18 +91,21 @@ section {
 .down-arrow {
   font-size: 8rem;
   position: absolute;
-  left: 49%;
+  left: 48%;
   bottom: 0; }
 
 #main {
   height: 100vh;
   padding: 0;
+  background: #284b63;
   color: ivory;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: -2; }
   #main .bg {
-    position: absolute;
-    height: 100vh;
+    position: relative;
+    height: 30vh;
     width: 100vw;
+    margin: 0 auto;
     background: #284b63;
     z-index: -1; }
     #main .bg .left-trail {
@@ -93,15 +116,17 @@ section {
     #main .bg .right-trail {
       position: absolute;
       top: 24vh;
-      right: 40vh;
+      right: 22vw;
       width: 15%; }
-  #main .logo {
-    margin-top: 30vh;
-    margin-bottom: 25px;
-    height: 15vh;
-    max-width: 95vw; }
+    #main .bg .logo {
+      margin-top: 30vh;
+      margin-bottom: 25px;
+      height: 15vh;
+      max-width: 95vw; }
   #main .subtitle {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 20vh; }
     #main .subtitle .tagline {
       color: #c4d7f2;
       font-weight: 400;
@@ -115,8 +140,8 @@ section {
       letter-spacing: 5px; }
 
 #about {
-  height: 100vh;
-  padding: 30vh 21vw;
+  min-height: 100vh;
+  padding: 25vh 21vw;
   background: ivory;
   color: #284b63; }
   #about button {
@@ -130,10 +155,11 @@ section {
     color: ivory; }
 
 #employers {
-  height: 100vh;
-  padding: 30vh 22vw;
+  min-height: 100vh;
+  padding: 15vh 12vw;
   background: #284b63;
-  color: ivory; }
+  color: ivory;
+  z-index: -2; }
   #employers button {
     margin-top: 2em;
     border: 2px solid ivory;
@@ -142,12 +168,17 @@ section {
   #employers button:hover {
     background-color: ivory;
     color: #284b63; }
+  #employers .title-border {
+    background: #284b63; }
+    #employers .title-border .corner {
+      background: ivory; }
 
 #students {
-  height: 100vh;
-  padding: 30vh 22vw;
+  min-height: 100vh;
+  padding: 15vh 25vw;
   background: ivory;
-  color: #284b63; }
+  color: #284b63;
+  z-index: -2; }
   #students b {
     color: #3c6e71; }
   #students button {
@@ -158,9 +189,13 @@ section {
   #students button:hover {
     background-color: #284b63;
     color: ivory; }
+  #students .title-border {
+    background: ivory; }
+    #students .title-border .corner {
+      background: #284b63; }
 
 #exhibitors {
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 20px 100px 20px;
   background-color: #284b63;
   color: ivory; }
@@ -172,8 +207,10 @@ section {
       margin-top: 7vh;
       min-margin-top: 25px; }
       #exhibitors .content .row .col-md-3 .photo {
+        object-fit: cover;
         width: 100%;
-        max-width: 300px; }
+        max-width: 300px;
+        opacity: 0.8; }
       #exhibitors .content .row .col-md-3 .subtitle {
         margin-top: 1em;
         text-transform: uppercase;
@@ -187,17 +224,23 @@ section {
         line-height: 150%; }
 
 #faq {
-  height: 100vh;
+  min-height: 100vh;
   padding: 80px 20px 20px 20px;
   background: ivory;
-  color: #284b63; }
+  color: #284b63;
+  z-index: -2; }
   #faq a {
     color: #3c6e71;
     font-weight: bold; }
   #faq .title {
     margin-bottom: 1.25em; }
+  #faq .title-border {
+    background: ivory;
+    margin-bottom: 10vh; }
+    #faq .title-border .corner {
+      background: #284b63; }
   #faq .content .row {
-    padding: 0 10vw;
+    padding: 0 15vw;
     text-align: left; }
     #faq .content .row .col-md-6 {
       margin-bottom: 50px; }
@@ -213,53 +256,91 @@ section {
         letter-spacing: .5px; }
 
 #sponsors {
-  height: 89vh;
+  min-height: 89vh;
   padding: 80px 15vw;
   background: #284b63;
-  color: ivory; }
-  #sponsors a {
-    color: #a2d4ab; }
-  #sponsors .content {
+  color: ivory;
+  z-index: -2;
+  /*
+  .container {
     width: 80vw;
-    margin: auto;
-    line-height: 150%; }
-    #sponsors .content .row .col-md-4 {
-      margin-top: 7vh;
-      min-margin-top: 25px; }
-  #sponsors .container {
-    width: 80vw; }
-    #sponsors .container img {
+
+    img {
       height: auto;
       width: auto;
       display: inline-block;
       vertical-align: middle;
       margin: 16px;
-      color: ivory; }
-    #sponsors .container .platinum {
-      padding: 0 5%; }
-      #sponsors .container .platinum img {
+      color: $white;
+    }
+
+    .platinum {
+      padding: 0 5%;
+
+      img {
         max-height: 200%;
-        max-width: 70%; }
-    #sponsors .container .gold {
-      padding: 0 5%; }
-      #sponsors .container .gold img {
+        max-width: 70%;
+      }
+    }
+
+    .gold {
+      padding: 0 5%;
+
+      img {
         max-height: 20vh;
-        max-width: 28%; }
-    #sponsors .container .silver {
-      padding: 0 5%; }
-      #sponsors .container .silver img {
+        max-width: 28%;
+      }
+    }
+
+    .silver {
+      padding: 0 5%;
+
+      img {
         max-height: 15%;
-        max-width: 20%; }
-    #sponsors .container .bronze {
-      padding: 0 5%; }
-      #sponsors .container .bronze img {
+        max-width: 20%;
+      }
+    }
+
+    .bronze {
+      padding: 0 5%;
+
+      img {
         max-height: 13%;
-        max-width: 15%; }
-    #sponsors .container .startup {
-      padding: 0 5%; }
-      #sponsors .container .startup img {
+        max-width: 15%;
+      }
+    }
+
+    .startup {
+      padding: 0 5%;
+
+      img {
         max-height: 13%;
-        max-width: 15%; }
+        max-width: 15%;
+      }
+    }
+  }
+ */ }
+  #sponsors a {
+    color: #a2d4ab; }
+  #sponsors .title-border {
+    background: #284b63;
+    margin-bottom: 2vh; }
+    #sponsors .title-border .corner {
+      background: ivory; }
+  #sponsors .content {
+    width: 70vw;
+    margin: auto;
+    line-height: 150%; }
+    #sponsors .content .row .col-sm-4 {
+      margin-top: 7vh;
+      min-margin-top: 25px; }
+    #sponsors .content .row .col-sm-12 {
+      margin-top: 7vh;
+      min-margin-top: 25px; }
+  #sponsors .logo {
+    max-height: 100px;
+    max-width: 200px;
+    vertical-align: middle; }
 
 footer {
   height: 11vh;
@@ -295,13 +376,38 @@ footer {
     top: -3px;
     height: 20px; }
 
+@media only screen and (max-width: 1500px) {
+  .left-trail {
+    opacity: 0; }
+
+  .right-trail {
+    opacity: 0; } }
+@media only screen and (max-width: 755px) {
+  .down-arrow {
+    font-size: 4rem; }
+
+  #sponsors .logo {
+    max-height: 20vh;
+    max-width: 20vw; }
+
+  #students {
+    padding: 15vh 15vw; } }
 @media only screen and (max-width: 435px) {
   button {
     padding: 10px 30px;
-    font-size: 1.2em; }
+    font-size: 2rem; }
 
   .title {
-    font-size: 2.2em; }
+    font-size: 2.2rem; }
+
+  .title-border {
+    width: 250px;
+    height: 80px;
+    margin: 0 auto 15vh auto;
+    padding-top: 20px; }
+
+  .content {
+    font-size: 2rem; }
 
   #main .subtitle .tagline {
     font-size: .9em;
@@ -309,6 +415,9 @@ footer {
   #main .subtitle .info {
     font-size: 1.25em;
     letter-spacing: 3px; }
+
+  #students {
+    padding: 80px 20px; }
 
   #about {
     padding: 80px 20px; }
@@ -321,10 +430,13 @@ footer {
 @media only screen and (max-width: 330px) {
   button {
     padding: 10px 25px;
-    font-size: 1em; }
+    font-size: 2rem; }
 
   .title {
-    font-size: 2em; }
+    font-size: 2.2rem; }
+
+  .content {
+    font-size: 2rem; }
 
   #main .subtitle .tagline {
     font-size: .85em;
