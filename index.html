@@ -27,166 +27,215 @@
   <meta name="twitter:description" content="MIT's largest career fair & tech expo | Feb 5, MIT.">
   <meta name="twitter:image:src" content="img/xfair-logo.png">
 
+  <!-- for fullPage.js -->
+  <!-- <script src="js/fullpage.min.js"></script> -->
+  <script>
+    if (screen && screen.width > 768) {
+      document.write('<script type="text/javascript" src="js/fullpage.min.js"><\/script>');
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+    });
+  </script>
+  
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
   <script src="js/main.js"></script>
 </head>
 
 <body>
-  <section id="main">
+  <div id="fullpage">
+  <section id="main" class="section">
     <div class="bg">
+      
       <img class="left-trail" src="img/header-left.svg"
            onerror="this.onerror=null; this.src='img/header-left.png'">
       <img class="right-trail" src="img/header-right.svg"
            onerror="this.onerror=null; this.src='img/header-right.png'">
+      <img class="logo" src="img/logo.svg"
+           onerror="this.onerror=null; this.src='img/logo.png'">
+      
     </div>
-    <img class="logo" src="img/logo.svg"
-         onerror="this.onerror=null; this.src='img/logo.png'">
+    
     <div class="subtitle">
-      <div class="tagline">Powered by <a href="http://techx.mit.edu/">MIT TechX</a> and <a href="http://web.mit.edu/tbp/www/">MIT Tau Beta Pi</a></div>
+      <div class="tagline">Powered by MIT <a href="http://techx.mit.edu/">TechX</a> and <a href="http://web.mit.edu/tbp/www/">Tau Beta Pi</a></div>
       <div class="info">
         February 5, 2018
         <br>
         10AM – 4PM
         <br>
         Rockwell Cage
-      </div>
-      <a href="#employers"><button>Employers</button></a>
-      <a href="#students"><button>Students</button></a>
+      </div>    
     </div>
+
+    <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
+    
   </section>
 
-  <section id="about">
-    <div class="title thin">More than your average career fair</div>
+  <section id="about" class="section">
+    <div class="title thin">More than your average career fair.</div>
     <div class="content">
       xFair is more than booths, name tags, and blazers — it's a career fair and a tech expo combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is <b>MIT’s largest career fair and tech expo</b>.
     </div>
+    <br>
+    <a href="#employers" class="smooth"><button>Employers</button></a>
+    <a href="#students" class="smooth"><button>Students</button></a>
+
+    <br>
+    <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="employers">
-    <div class="title">Employers</div>
+  <section id="employers" class="section">
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">Employers</div>
+    </div>
     <div class="content">
       <b>Recruit the brightest young minds to make your company's vision come true.</b>
       <br>
       Showcase your company and brand to thousands of attendees and inspire the next generation of talent.
       <br>
-      Apply for xFair 2018 at <a href="https://apply.xfair.io/" target="_blank">apply.xfair.io</a>! If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>.
+      Apply for xFair 2018 at <a href="https://apply.xfair.io/" target="_blank"><b>apply.xfair.io</b></a>! If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu"><b>xfair-cr@mit.edu</b></a>.
     </div>
-    <a href="/sponsor.html"><button>Sponsorship Information</button></a>
-    <div class="bg">
-      <img src="img/employers.svg"
-           onerror="this.onerror=null; this.src='img/employers.png'">
-    </div>
+    <a href="/sponsor.html"><button>Sponsorship Info</button></a>
+
+    <br>
+    <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="students">
-    <div class="title">Students</div>
+  <section id="students" class="section">
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">Students</div>
+    </div>
     <div class="content">
-      Network, explore, and be inspired. xFair companies feature cutting-edge technologies and industry leaders from a variety of fields.
-      <br><br>
-    <!-- Add these in as they are available -->
-    <a href="http://drop.xfair.io"><button>Drop Your Resume</button></a>
+      Network, explore, and be inspired. xFair companies feature cutting-edge technologies and industry leaders from a variety of fields - there's something for everyone!
       <br>
-      Booklet coming soon!
-    <!-- <a href="/student.html"><button>Student Information</button></a> -->
-    <!-- <a href="/booklet.pdf"><button>xFair Booklet</button></a> -->
+      <b>2018 booklet coming soon.</b>
+      <br><br>
+      <!-- Add these in as they are available -->
+      <!-- > <a href="http://drop.xfair.io"><button>Resume Drop</button></a> --> 
+      <!-- <a href="/student.html"><button>Student Information</button></a> -->
+      <!-- <a href="/booklet.pdf"><button>xFair Booklet</button></a> -->
     </div>
+
+    <br>
+    <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="exhibitors">
+  <section id="exhibitors" class="section">
     <div class="title">Student Exhibitors</div>
     <div class="content">
       We want to see your creativity, innovation, and engineering at its best. And we want to help you gain the exposure you deserve. Every year, the ProjX committee sponsors over 50 student projects with up to $500 in funding. These students will display their projects at xFair 2018 to thousands of students and hundreds of industry professionals.
       <br><br>
-      <b>Applications open every October – stay updated on the <a href="http://projx.mit.edu">ProjX website</a>.</b>
+      Applications open every October – stay updated on the <a href="http://projx.mit.edu"><b>ProjX website</b></a>.
       <div class="row">
-        <div class="col-md-4">
-          <img src="img/coffee_table.png" class="photo">
-          <div class="subtitle">LED Matrix Coffee Table</div>
-          <div class="creator">David Afolabi</div>
-          <div class="subcontent">
-            With the help of an Arduino and nearly 400 LEDs, an ordinary coffee table becomes an entertainment piece and an interactive experience.
-          </div>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <img src="img/gecko_gloves.png" class="photo">
-          <div class="subtitle">Gecko Gloves</div>
-          <div class="creator">Rory Beyer</div>
-          <div class="subcontent">
-            A person can wear these gloves and shoes to climb up any type of surface, just like a gecko.
-          </div>
         </div>
-        <div class="col-md-4">
-          <img src="img/chrome_projector.png" class="photo">
-          <div class="subtitle">Projected Browser</div>
-          <div class="creator">Corey Walsh</div>
-          <div class="subcontent">
-            This Chrome plugin lets you turn a projected browser window into a touch interface with minimal setup or hardware requirements.
-          </div>
+        <div class="col-md-3">
+          <img src="img/table.jpg" class="photo">
+        </div>
+        <div class="col-md-3">
+          <img src="img/laser.jpg" class="photo">
+        </div>
+        <div class="col-md-3">
+          <img src="img/glasses.jpg" class="photo">
         </div>
       </div>
     </div>
-    <div class="bg">
-      <img class="trail" src="img/projects.svg"
-           onerror="this.onerror=null; this.src='img/projects.png'">
-    </div>
+
+    <br>
+    <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
 
-  <section id="sponsors">
-    <div class="title">Sponsors</div>
-    <div class="content">
-      Thanks to all 111 of our sponsors for coming to xFair 2017!
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="title">Frequently Asked Questions For Students</div>
+  <section id="faq" class="section">
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">FAQ</div>
+    </div> 
     <div class="content">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="question">What is xFair?</div>
           <div class="answer">
             We have merged TechX's TechFair and TBP's Career Fair to present xFair: an interactive career fair with a focus on company demos and our very own MIT student projects.
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="question">Should I bring my resume?</div>
           <div class="answer">
-            Yes. There will be a resume drop opening in January so employers can find you before the fair, but also bring paper copies. Some recruiters like writing on resumes in person.
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="question">What's the dress code?</div>
-          <div class="answer">
-            <a href="http://en.wikipedia.org/wiki/Smart_casual">Smart</a> casual.
+            Yes. There will be a resume drop opening in January so employers can find you before the fair.
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="question">What distinguishes xFair from traditional career fairs?</div>
           <div class="answer">
-            Many companies at xFair will be displaying cool demos, so you can check out the products that you'll help build at your future job. In addition to company demos, we'll also be displaying cool projects made by MIT students like you! Check out your friends' and classmates' projects at the fair.
+            Many companies at xFair will be displaying cool demos, so you can check out the products that you'll help build at your future job. In addition to company demos, we'll also be displaying cool projects made by students, so come to support your friends' and classmates' projects!
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
+          <div class="question">What's the dress code?</div>
+          <div class="answer">
+            <a href="http://en.wikipedia.org/wiki/Smart_casual">Smart casual</a>.
+          </div>
+          <br>
           <div class="question">Where can I get more information?</div>
           <div class="answer">
             Student information is available <a href="\student">here</a>. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="question">Why should I go?</div>
-          <div class="answer">
-            We try to bring companies from all different industries so that there's something there for everyone. At xFair, you could find a job, a first hand look at what the latest industry-leading companies are doing, cool demos, swag, and maybe even... true love?
-          </div>
-        </div>
       </div>
     </div>
+    <br>
+    <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
+  </section>
+  
+  <section id="sponsors" class="section">
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">Sponsors</div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="img/logos/a16z.png" class="logo">       
+        </div>
+        <div class="col-xs-4">
+          <img src="img/logos/AQR.png" class="logo">
+        </div>
+        <div class="col-xs-4">
+          <img src="img/logos/disney.png" class="logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="img/logos/google.png" class="logo">
+        </div>
+        <div class="col-xs-4">
+          <img src="img/logos/baidu.png" class="logo">
+        </div>
+        <div class="col-xs-4">
+          <img src="img/logos/amadeus.png" class="logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="img/logos/jumpstart.png" class="logo">
+        </div>
+      </div>
   </section>
 
   <footer>
     <div class="row">
-      <div class="col-sm-6 left">
+      <div class="col-xs-6 left">
         <div class="icons">
           XFAIR 2018 //
           <a href="mailto:xfair-cr@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
@@ -194,12 +243,12 @@
           <a href="https://twitter.com/MITxFair" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
         </div>
       </div>
-      <div class="col-sm-6 right">
-        <img class="plane" src="img/plane.svg"
-             onerror="this.onerror=null; this.src='img/plane.png'">
-        Powered by <a href="http://techx.mit.edu/" class="link">MIT TechX</a> and <a href="http://web.mit.edu/tbp/www/" class="link">MIT Tau Beta Pi</a>
+      <div class="col-xs-6 right">
+        <div>Powered by <a href="http://techx.mit.edu/" class="link">MIT TechX</a></div>
+        <div>and <a href="http://web.mit.edu/tbp/www/" class="link">MIT Tau Beta Pi</a></div>
       </div>
     </div>
   </footer>
+  </div>
 </body>
 </html>

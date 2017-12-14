@@ -1,0 +1,480 @@
+@import '_constants';
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $white;
+  color: $dark;
+  text-align: center;
+  font-family: $avenir;
+  font-weight: 300;
+}
+
+::selection {
+  background: $blue;
+}
+
+::-moz-selection {
+  background: $blue;
+}
+
+a {
+  color: $dark;
+  text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+  color: $dark;
+  transition: all 200ms ease;
+}
+
+a:visited {
+  color: $dark;
+  text-decoration: none;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 50px;
+  border: 2px solid $white;
+  background-color: transparent;
+  color: $white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+button:hover {
+  background-color: $white;
+  color: $dark;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: .75em;
+}
+
+.thin {
+  font-weight: 500;
+}
+
+.content {
+  font-family: $opensans;
+  font-size: 1.25em;
+  font-weight: 200;
+  line-height: 200%;
+}
+
+#main {
+  height: 100vh;
+  padding: 0;
+  color: $white;
+  text-transform: uppercase;
+
+  .bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient($light, $blue);
+    z-index: -1;
+
+    .left-trail {
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      width: 30%;
+    }
+
+    .right-trail {
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 50%;
+    }
+  }
+  
+  .logo {
+    margin-top: 30vh;
+    margin-bottom: 25px;
+    height: 15vh;
+    max-width: 95vw;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+
+    .tagline {
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+
+    .info {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+#about {
+  padding: 80px 15vw;
+  background: white;
+  color: $dark;
+
+    b {
+      color: $blue;
+    }
+}
+
+#employers {
+  padding: 80px 20px 100px 20px;
+  background: linear-gradient(-120deg, $light, $blue, $light);
+  color: $white;
+  position: relative;
+
+  button {
+    margin-top: 2em;
+    padding: 10px 30px;
+  }
+
+  .bg {
+    position: absolute;
+    top: 20%;
+    left: -10px;
+    width: 15%;
+  }
+}
+
+#students {
+  padding: 80px 20px 100px 20px;
+  background: linear-gradient(-45deg, $blue, $dark);
+  color: $white;
+
+  button {
+    padding: 10px 30px;
+  }
+}
+
+#exhibitors {
+  padding: 80px 20px 100px 20px;
+  position: relative;
+
+  a, b {
+    color: $blue;
+  }
+
+  .content {
+    width: 80vw;
+    margin: auto;
+    line-height: 150%;
+
+    .row {
+
+      .col-md-4 {
+        margin-top: 7vh;
+        min-margin-top: 25px;
+
+        .photo {
+          width: 100%;
+          max-width: 400px;
+        }
+
+        .subtitle {
+          margin-top: 1em;
+          text-transform: uppercase;
+          font-family: $avenir;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+
+        .creator {
+          margin-bottom: .25em;
+        }
+
+        .subcontent {
+          font-size: .8em;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  .bg {
+    height: 100%;
+    width: 100%;
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    .trail {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+#sponsors {
+  padding: 80px 15vw;
+  color: $white;
+  background: linear-gradient(45deg, $dark, $dark, $blue);
+
+  a {
+    color: $light;
+  }
+
+  .container {
+    width: 80vw;
+
+    img {
+      height: auto;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 16px;
+    }
+
+    .platinum {
+      padding: 0 5%;
+
+      img {
+        max-height: 200%;
+        max-width: 70%;
+      }
+    }
+
+    .gold {
+      padding: 0 5%;
+
+      img {
+        max-height: 20vh;
+        max-width: 28%;
+      }
+    }
+
+    .silver {
+      padding: 0 5%;
+
+      img {
+        max-height: 15%;
+        max-width: 20%;
+      }
+    }
+
+    .bronze {
+      padding: 0 5%;
+
+      img {
+        max-height: 13%;
+        max-width: 15%;
+      }
+    }
+
+    .startup {
+      padding: 0 5%;
+
+      img {
+        max-height: 13%;
+        max-width: 15%;
+      }
+    }
+  }
+}
+
+#faq {
+  padding: 80px 20px 20px 20px;
+  background: linear-gradient(30deg, $light, $blue, $light);
+  color: $white;
+
+  .title {
+    margin-bottom: 1.25em;
+  }
+
+  .content {
+
+    .row {
+      padding: 0 10vw;
+      text-align: left;
+
+      .col-md-4 {
+        margin-bottom: 50px;
+
+        .question {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          line-height: 150%;
+          margin-bottom: .9em;
+        }
+
+        .answer {
+          font-size: .8em;
+          line-height: 150%;
+          letter-spacing: .5px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 30px 5vw 37px 5vw;
+  background: $dark;
+  color: $white;
+  position: relative;
+
+  .col-sm-6 {
+    margin-top: 10px;
+  }
+
+  .icons {
+
+    i {
+      font-size: 1.25em;
+      padding: 0 2px;
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: .75em;
+    display: inline-block;
+  }
+
+  a:hover, a:visited, a:visited:hover {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .link {
+    font-size: 100%;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .plane {
+    position: relative;
+    right: 10px;
+    top: -3px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  
+  #employers {
+    
+    .bg {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  
+  #exhibitors {
+    
+    .bg {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 755px) {
+
+  footer {
+
+  }
+}
+
+@media only screen and (max-width: 435px) {
+
+  button {
+    padding: 10px 30px;
+    font-size: 1.2em;
+  }
+
+  .title {
+    font-size: 2.2em;
+  }
+
+  #main {
+
+    .subtitle {
+
+      .tagline {
+        font-size: .9em;
+        letter-spacing: 1px;
+      }
+
+      .info {
+        font-size: 1.25em;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  #about {
+    padding: 80px 20px;
+  }
+
+  #sponsors {
+    padding: 80px 20px;
+  }
+
+  footer {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+
+  button {
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  #main {
+
+    .subtitle {
+
+      .tagline {
+        font-size: .85em;
+        letter-spacing: 1px;
+      }
+
+      .info {
+        font-size: 1.25em;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  footer {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (max-height: 435px) {
+  #main {
+    height: 120vh;
+  }
+}
