@@ -8,49 +8,50 @@ html, body {
 
 body {
   background: $white;
-  color: $dark;
+  color: $dark-teal;
   text-align: center;
   font-family: $avenir;
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 ::selection {
-  background: $blue;
+  background: $light-blue;
 }
 
 ::-moz-selection {
-  background: $blue;
+  background: $light-blue;
 }
 
-a {
-  color: $dark;
+a, a:visited {
+  color: $white;
   text-decoration: none;
 }
 
 a:hover, a:visited:hover {
-  color: $dark;
+  color: $white;
   transition: all 200ms ease;
-}
-
-a:visited {
-  color: $dark;
-  text-decoration: none;
 }
 
 button {
   margin: 10px;
-  padding: 10px 50px;
+  padding: 20px 50px;
   border: 2px solid $white;
+  border-radius: 0;
   background-color: transparent;
   color: $white;
-  font-size: 1.2em;
+  font-size: 2rem;
   text-transform: uppercase;
   transition: all 300ms ease;
 }
 
 button:hover {
   background-color: $white;
-  color: $dark;
+  color: transparent;
+}
+
+section {
+  position: relative;
 }
 
 .title {
@@ -61,114 +62,198 @@ button:hover {
   margin-bottom: .75em;
 }
 
+.title-border {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto 15vh auto;
+  padding-top: 20px;
+  position: relative;
+  background: $white;
+
+  .corner {
+    position: absolute;
+    background: $dark-blue;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+  }
+
+  .BL {
+    bottom: -2px;
+    left: -2px;
+  }
+
+  .TR {
+    top: -2px;
+    right: -2px;
+  }
+}
+
 .thin {
   font-weight: 500;
 }
 
 .content {
   font-family: $opensans;
-  font-size: 1.25em;
+  font-size: 2.5rem;
   font-weight: 200;
   line-height: 200%;
 }
 
+.down-arrow {
+  font-size: 8rem;
+  position: absolute;
+  left: 48%;
+  bottom: 0;
+}
+
 #main {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
+  background: $dark-blue;
   color: $white;
   text-transform: uppercase;
+  z-index: -2;
 
   .bg {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient($light, $blue);
-    z-index: -1;
+     position: relative;
+     height: 30vh;
+     width: 100vw;
+     margin: 0 auto;
+     background: $dark-blue;
+     z-index: -1;
 
-    .left-trail {
-      position: absolute;
-      bottom: -7px;
-      left: 0;
-      width: 30%;
-    }
+     .left-trail {
+       position: absolute;
+       top: 22vh;
+       left: 18vw;
+       width: 15%;
+     }
 
-    .right-trail {
-      position: absolute;
-      bottom: -10px;
-      right: 0;
-      width: 50%;
-    }
-  }
-  
-  .logo {
-    margin-top: 30vh;
-    margin-bottom: 25px;
-    height: 15vh;
-    max-width: 95vw;
-  }
+     .right-trail {
+       position: absolute;
+       top: 24vh;
+       right: 22vw;
+       width: 15%;
+     }
 
-  .subtitle {
-    font-size: 1.5em;
+     .logo {
+       margin-top: 30vh;
+       margin-bottom: 25px;
+       height: 15vh;
+       max-width: 95vw;
+     }
+   }
 
-    .tagline {
-      font-weight: 100;
-      letter-spacing: 2px;
-    }
+   .subtitle {
+     font-size: 1.5em;
+     position: relative;
+     margin-top: 20vh;
 
-    .info {
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-      letter-spacing: 5px;
-    }
-  }
+     .tagline {
+       color: $light-blue;
+       font-weight: 400;
+       letter-spacing: 2px;
+
+       a {
+         color: $white; 
+         font-weight: 700;
+       }
+     }
+
+     .info {
+       margin-top: 5vh;
+       margin-bottom: 5vh;
+       letter-spacing: 5px;
+     }
+   }
 }
 
 #about {
-  padding: 80px 15vw;
-  background: white;
-  color: $dark;
+  min-height: 100vh;
+  padding: 25vh 21vw;
+  background: $white;
+  color: $dark-blue;
 
-    b {
-      color: $blue;
+    button {
+      margin: 20px 50px 10px 50px;
+      padding: 20px 40px;
+      border: 2px solid $dark-blue;
+      background-color: $white;
+      color: $dark-blue;
+    }
+
+    button:hover {
+      background-color: $dark-blue;
+      color: $white;
     }
 }
 
 #employers {
-  padding: 80px 20px 100px 20px;
-  background: linear-gradient(-120deg, $light, $blue, $light);
+  min-height: 100vh;
+  padding: 15vh 12vw;
+  background: $dark-blue;
   color: $white;
-  position: relative;
+  z-index: -2;
+  
+    button {
+      margin-top: 2em;
+      border: 2px solid $white;
+      background-color: $dark-blue;
+      color: $white;
+    }
 
-  button {
-    margin-top: 2em;
-    padding: 10px 30px;
-  }
+    button:hover {
+      background-color: $white;
+      color: $dark-blue;  
+    }
 
-  .bg {
-    position: absolute;
-    top: 20%;
-    left: -10px;
-    width: 15%;
-  }
+    .title-border {
+      background: $dark-blue;
+      
+      .corner {
+        background: $white;
+      }
+    }
 }
 
 #students {
-  padding: 80px 20px 100px 20px;
-  background: linear-gradient(-45deg, $blue, $dark);
-  color: $white;
+  min-height: 100vh;
+  padding: 15vh 25vw;
+  background: $white;
+  color: $dark-blue;
+  z-index: -2;
 
-  button {
-    padding: 10px 30px;
-  }
+    b {
+      color: $dark-teal;  
+    }
+    
+    button {
+      border: 2px solid $dark-blue;
+      padding: 10px 50px;
+      background-color: $white;
+      color: $dark-blue; 
+    }
+
+    button:hover {
+      background-color: $dark-blue;
+      color: $white;  
+    }
+
+    .title-border {
+      background: $white;
+      
+      .corner {
+        background: $dark-blue;
+      }
+    }
 }
 
 #exhibitors {
-  padding: 80px 20px 100px 20px;
-  position: relative;
-
-  a, b {
-    color: $blue;
-  }
+  min-height: 100vh;
+  padding: 100px 20px 100px 20px;
+  background-color: $dark-blue;
+  color: $white;
 
   .content {
     width: 80vw;
@@ -177,13 +262,15 @@ button:hover {
 
     .row {
 
-      .col-md-4 {
+      .col-md-3 {
         margin-top: 7vh;
         min-margin-top: 25px;
-
+        
         .photo {
+          object-fit: cover;
           width: 100%;
-          max-width: 400px;
+          max-width: 300px;
+          opacity: 0.8;
         }
 
         .subtitle {
@@ -205,34 +292,109 @@ button:hover {
       }
     }
   }
+}
 
-  .bg {
-    height: 100%;
-    width: 100%;
+#faq {
+  min-height: 100vh;
+  padding: 80px 15px 20px 15px;
+  background: $white;
+  color: $dark-blue;
+  z-index: -2;
+
+  a {
+    color: $dark-teal;
+    font-weight: bold; 
+  }
+  
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .title-border {
     background: $white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    margin-bottom: 40px;
+    
+    .corner {
+      background: $dark-blue;
+    }
+  }
 
-    .trail {
-      position: absolute;
-      top: 45%;
-      left: 0;
-      width: 100%;
+  .content {
+
+    .row {
+      padding: 0 15vw;
+      text-align: left;
+
+      .col-md-6 {
+        margin-bottom: 30px;
+
+        .question {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          line-height: 150%;
+          margin-bottom: .9em;
+        }
+
+        .answer {
+          font-size: .8em;
+          line-height: 150%;
+          letter-spacing: .5px;
+        }
+      }
     }
   }
 }
 
 #sponsors {
   padding: 80px 15vw;
+  min-height: 100vh;
+  background: $dark-blue;
   color: $white;
-  background: linear-gradient(45deg, $dark, $dark, $blue);
+  z-index: -2;
 
   a {
     color: $light;
   }
 
+  .title-border {
+    background: $dark-blue;
+    margin-bottom: 2vh;
+    
+    .corner {
+      background: $white;
+    }
+  }
+  
+  .content {
+    width: 70vw;
+    margin: auto;
+    line-height: 150%;
+
+    .row {
+      
+      .col-xs-4 {
+        margin-top: 7vh;
+        min-margin-top: 25px;
+        padding: 5px;
+      }
+
+      .col-xs-12 {
+        margin-top: 7vh;
+        min-margin-top: 25px;
+        padding: 5px;
+      }
+      
+    }
+  }
+
+  .logo {
+    max-height: 100px;
+    max-width: 200px;
+    vertical-align: middle;
+  }
+
+  /*
   .container {
     width: 80vw;
 
@@ -242,6 +404,7 @@ button:hover {
       display: inline-block;
       vertical-align: middle;
       margin: 16px;
+      color: $white;
     }
 
     .platinum {
@@ -289,60 +452,28 @@ button:hover {
       }
     }
   }
-}
-
-#faq {
-  padding: 80px 20px 20px 20px;
-  background: linear-gradient(30deg, $light, $blue, $light);
-  color: $white;
-
-  .title {
-    margin-bottom: 1.25em;
-  }
-
-  .content {
-
-    .row {
-      padding: 0 10vw;
-      text-align: left;
-
-      .col-md-4 {
-        margin-bottom: 50px;
-
-        .question {
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-weight: 700;
-          line-height: 150%;
-          margin-bottom: .9em;
-        }
-
-        .answer {
-          font-size: .8em;
-          line-height: 150%;
-          letter-spacing: .5px;
-        }
-      }
-    }
-  }
+ */
 }
 
 footer {
+  height: 11vh !important;
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
-  padding: 30px 5vw 37px 5vw;
-  background: $dark;
-  color: $white;
+  padding: 20px 5vw 20px 5vw;
+  margin-top: -11vh;
+  background: $white;
+  color: $dark-blue;
   position: relative;
 
-  .col-sm-6 {
+  .col-xs-6 {
     margin-top: 10px;
   }
 
   .icons {
-
+    margin-top: 10px;
+    
     i {
       font-size: 1.25em;
       padding: 0 2px;
@@ -350,13 +481,13 @@ footer {
   }
 
   a {
-    color: $white;
+    color: $dark-blue;
     font-size: .75em;
     display: inline-block;
   }
 
   a:hover, a:visited, a:visited:hover {
-    color: $white;
+    color: $dark-blue;
     text-decoration: none;
   }
 
@@ -374,30 +505,76 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1250px) {
-  
-  #employers {
-    
-    .bg {
-      display: none;
-    }
+@media only screen and (max-width: 1500px) {
+  .left-trail {
+    opacity: 0;
+  }
+
+  .right-trail {
+    opacity: 0;
   }
 }
 
-@media only screen and (max-width: 989px) {
-  
+@media only screen and (max-width: 1000px) {
+  #about {
+    padding-top: 15vh;
+
+    button {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
   #exhibitors {
+    .row {
+      height: 0;
+    }
+    img {
+      height: 0;
+    }
+  }
+
+  #faq {
     
-    .bg {
-      display: none;
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .title-border {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 2rem;
     }
   }
 }
 
 @media only screen and (max-width: 755px) {
+  .down-arrow {
+    font-size: 4rem;
+  }
 
+  #sponsors {
+    
+    .logo {
+      max-height: 20vh;
+      max-width: 20vw;
+    }
+  }
+
+  #students {
+    padding: 15vh 15vw;
+  }
+  
   footer {
+    padding-top: 2vh;
+    font-size: 1.5rem;
 
+    .col-xs-6 {
+      margin-top: 0;
+    }
   }
 }
 
@@ -405,11 +582,22 @@ footer {
 
   button {
     padding: 10px 30px;
-    font-size: 1.2em;
+    font-size: 2rem;
   }
 
   .title {
-    font-size: 2.2em;
+    font-size: 2.2rem;
+  }
+
+  .title-border {
+     width: 250px;
+     height: 80px;
+     margin: 0 auto 10px auto;
+     padding-top: 20px;
+  }
+
+  .content {
+    font-size: 2rem;
   }
 
   #main {
@@ -428,6 +616,10 @@ footer {
     }
   }
 
+  #students {
+    padding: 80px 20px;
+  }
+  
   #about {
     padding: 80px 20px;
   }
@@ -437,7 +629,7 @@ footer {
   }
 
   footer {
-    font-size: .9em;
+    font-size: 1rem;
   }
 }
 
@@ -445,11 +637,15 @@ footer {
 
   button {
     padding: 10px 25px;
-    font-size: 1em;
+    font-size: 2rem;
   }
 
   .title {
-    font-size: 2em;
+    font-size: 2.2rem;
+  }
+
+  .content {
+    font-size: 2rem;
   }
 
   #main {
