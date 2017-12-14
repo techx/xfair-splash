@@ -299,6 +299,8 @@ section {
   padding: 80px 15px 20px 15px;
   background: $white;
   color: $dark-blue;
+  //background: $dark-blue;
+  //color: $white;
   z-index: -2;
 
   a {
@@ -327,7 +329,7 @@ section {
 
       .col-md-6 {
         margin-bottom: 30px;
-
+        
         .question {
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -340,6 +342,10 @@ section {
           font-size: .8em;
           line-height: 150%;
           letter-spacing: .5px;
+        }
+
+        #space {
+          height: 20px;
         }
       }
     }
@@ -463,8 +469,10 @@ footer {
   letter-spacing: 2px;
   padding: 20px 5vw 20px 5vw;
   margin-top: -11vh;
-  background: $white;
-  color: $dark-blue;
+  //background: $white;
+  //color: $dark-blue;
+  background: $dark-blue;
+  color: $white;
   position: relative;
 
   .col-xs-6 {
@@ -481,13 +489,15 @@ footer {
   }
 
   a {
-    color: $dark-blue;
+    //color: $dark-blue;
+    color: $white;
     font-size: .75em;
     display: inline-block;
   }
 
   a:hover, a:visited, a:visited:hover {
-    color: $dark-blue;
+    //color: $dark-blue;
+    color: $white;
     text-decoration: none;
   }
 
@@ -515,6 +525,42 @@ footer {
   }
 }
 
+// temporary fix, can be removed once sponsors page is re-added
+@media only screen and (max-width: 1200px) {
+  #faq {
+    .content {
+
+      .row {
+        padding: 0 5vw;
+        text-align: left;
+
+        .col-md-6 {
+          margin-bottom: 0;
+
+          .question {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            line-height: 150%;
+            margin-bottom: .2em;
+          }
+
+          .answer {
+            font-size: .8em;
+            line-height: 150%;
+            letter-spacing: .5px;
+            margin-bottom: 0.9em;
+          }
+
+          #space {
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   #about {
     padding-top: 15vh;
@@ -529,24 +575,37 @@ footer {
     .row {
       height: 0;
     }
+
+    .col-md-3 {
+      height: 0;
+      margin-top: 0;
+    }
+    
     img {
       height: 0;
     }
   }
 
   #faq {
+    padding-top: 20px;
+    padding-bottom: 11vh;
     
     .title {
       font-size: 2.5rem;
     }
 
     .title-border {
-      height: 80px;
-      margin-bottom: 10px;
+      height: 40px;
+      margin-bottom: 20px;
+
+      .corner {
+        background: $white;
+      }
     }
 
     .content {
       font-size: 2rem;
+
     }
   }
 }

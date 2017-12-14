@@ -28,20 +28,28 @@
   <meta name="twitter:image:src" content="img/xfair-logo.png">
 
   <!-- for fullPage.js -->
-  <!-- <script src="js/fullpage.min.js"></script> -->
   <script>
     if (screen && screen.width > 768) {
       document.write('<script type="text/javascript" src="js/fullpage.min.js"><\/script>');
     }
+        
   </script>
   <script>
     $(document).ready(function() {
-      $('#fullpage').fullpage();
+    
+    if (screen && screen.width < 768) {
+    $('#employer-button').attr("href", "#employers");
+    $('#student-button').attr("href", "#students");
+    }
+    
+    $('#fullpage').fullpage({
+    anchors:['banner', 'menu', 'employer', 'student', 'exhibition', 'questions']
+    });
+    
     });
   </script>
   
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -79,9 +87,10 @@
       xFair is more than booths, name tags, and blazers — it's a career fair and a tech expo combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is <b>MIT’s largest career fair and tech expo</b>.
     </div>
     <br>
-    <a href="#employers" class="smooth"><button>Employers</button></a>
-    <a href="#students" class="smooth"><button>Students</button></a>
-
+    
+    <a id="employer-button" href="#employer" class="smooth"><button>Employers</button></a>
+    <a id="student-button" href="#student" class="smooth"><button>Students</button></a>
+    
     <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
   </section>
@@ -185,18 +194,21 @@
           <div class="answer">
             <a href="http://en.wikipedia.org/wiki/Smart_casual">Smart casual</a>.
           </div>
-          <br>
+          <div id="space"></div>
           <div class="question">Where can I get more information?</div>
           <div class="answer">
-            Student information is available <a href="\student">here</a>. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
+            <!-- Student information is available <a href="\student">here </a>.--> Student information will be availabe soon. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
           </div>
         </div>
       </div>
     </div>
+    <!--
     <br>
     <div class="down-arrow"><i class="fa fa-angle-down"></i></div>
+    -->
   </section>
-  
+
+  <!--
   <section id="sponsors" class="section">
     <div class="title-border">
       <span class="corner BL"></span>
@@ -232,7 +244,8 @@
         </div>
       </div>
   </section>
-
+  -->
+  
   <footer>
     <div class="row">
       <div class="col-xs-6 left">
