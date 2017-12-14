@@ -95,7 +95,7 @@ section {
   bottom: 0; }
 
 #main {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   background: #284b63;
   color: ivory;
@@ -225,7 +225,7 @@ section {
 
 #faq {
   min-height: 100vh;
-  padding: 80px 20px 20px 20px;
+  padding: 80px 15px 20px 15px;
   background: ivory;
   color: #284b63;
   z-index: -2; }
@@ -233,17 +233,17 @@ section {
     color: #3c6e71;
     font-weight: bold; }
   #faq .title {
-    margin-bottom: 1.25em; }
+    margin-bottom: 10px; }
   #faq .title-border {
     background: ivory;
-    margin-bottom: 10vh; }
+    margin-bottom: 40px; }
     #faq .title-border .corner {
       background: #284b63; }
   #faq .content .row {
     padding: 0 15vw;
     text-align: left; }
     #faq .content .row .col-md-6 {
-      margin-bottom: 50px; }
+      margin-bottom: 30px; }
       #faq .content .row .col-md-6 .question {
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -257,6 +257,7 @@ section {
 
 #sponsors {
   padding: 80px 15vw;
+  min-height: 100vh;
   background: #284b63;
   color: ivory;
   z-index: -2;
@@ -330,12 +331,14 @@ section {
     width: 70vw;
     margin: auto;
     line-height: 150%; }
-    #sponsors .content .row .col-sm-4 {
+    #sponsors .content .row .col-xs-4 {
       margin-top: 7vh;
-      min-margin-top: 25px; }
-    #sponsors .content .row .col-sm-12 {
+      min-margin-top: 25px;
+      padding: 5px; }
+    #sponsors .content .row .col-xs-12 {
       margin-top: 7vh;
-      min-margin-top: 25px; }
+      min-margin-top: 25px;
+      padding: 5px; }
   #sponsors .logo {
     max-height: 100px;
     max-width: 200px;
@@ -352,7 +355,7 @@ footer {
   background: ivory;
   color: #284b63;
   position: relative; }
-  footer .col-sm-6 {
+  footer .col-xs-6 {
     margin-top: 10px; }
   footer .icons {
     margin-top: 10px; }
@@ -382,6 +385,25 @@ footer {
 
   .right-trail {
     opacity: 0; } }
+@media only screen and (max-width: 1000px) {
+  #about {
+    padding-top: 15vh; }
+    #about button {
+      margin-left: 20px;
+      margin-right: 20px; }
+
+  #exhibitors .row {
+    height: 0; }
+  #exhibitors img {
+    height: 0; }
+
+  #faq .title {
+    font-size: 2.5rem; }
+  #faq .title-border {
+    height: 80px;
+    margin-bottom: 10px; }
+  #faq .content {
+    font-size: 2rem; } }
 @media only screen and (max-width: 755px) {
   .down-arrow {
     font-size: 4rem; }
@@ -394,7 +416,10 @@ footer {
     padding: 15vh 15vw; }
 
   footer {
-    margin-top: 0; } }
+    padding-top: 2vh;
+    font-size: 1.5rem; }
+    footer .col-xs-6 {
+      margin-top: 0; } }
 @media only screen and (max-width: 435px) {
   button {
     padding: 10px 30px;
@@ -406,7 +431,7 @@ footer {
   .title-border {
     width: 250px;
     height: 80px;
-    margin: 0 auto 15vh auto;
+    margin: 0 auto 10px auto;
     padding-top: 20px; }
 
   .content {
@@ -429,7 +454,7 @@ footer {
     padding: 80px 20px; }
 
   footer {
-    font-size: .9em; } }
+    font-size: 1rem; } }
 @media only screen and (max-width: 330px) {
   button {
     padding: 10px 25px;

@@ -108,7 +108,7 @@ section {
 }
 
 #main {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   background: $dark-blue;
   color: $white;
@@ -296,7 +296,7 @@ section {
 
 #faq {
   min-height: 100vh;
-  padding: 80px 20px 20px 20px;
+  padding: 80px 15px 20px 15px;
   background: $white;
   color: $dark-blue;
   z-index: -2;
@@ -307,12 +307,12 @@ section {
   }
   
   .title {
-    margin-bottom: 1.25em;
+    margin-bottom: 10px;
   }
 
   .title-border {
     background: $white;
-    margin-bottom: 10vh;
+    margin-bottom: 40px;
     
     .corner {
       background: $dark-blue;
@@ -326,7 +326,7 @@ section {
       text-align: left;
 
       .col-md-6 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         .question {
           text-transform: uppercase;
@@ -348,6 +348,7 @@ section {
 
 #sponsors {
   padding: 80px 15vw;
+  min-height: 100vh;
   background: $dark-blue;
   color: $white;
   z-index: -2;
@@ -371,16 +372,17 @@ section {
     line-height: 150%;
 
     .row {
-      //margin-bottom: 50px;
       
-      .col-sm-4 {
+      .col-xs-4 {
         margin-top: 7vh;
         min-margin-top: 25px;
+        padding: 5px;
       }
 
-      .col-sm-12 {
+      .col-xs-12 {
         margin-top: 7vh;
         min-margin-top: 25px;
+        padding: 5px;
       }
       
     }
@@ -465,7 +467,7 @@ footer {
   color: $dark-blue;
   position: relative;
 
-  .col-sm-6 {
+  .col-xs-6 {
     margin-top: 10px;
   }
 
@@ -513,6 +515,42 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  #about {
+    padding-top: 15vh;
+
+    button {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  #exhibitors {
+    .row {
+      height: 0;
+    }
+    img {
+      height: 0;
+    }
+  }
+
+  #faq {
+    
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .title-border {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 2rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 755px) {
   .down-arrow {
     font-size: 4rem;
@@ -531,7 +569,12 @@ footer {
   }
   
   footer {
-    margin-top: 0;
+    padding-top: 2vh;
+    font-size: 1.5rem;
+
+    .col-xs-6 {
+      margin-top: 0;
+    }
   }
 }
 
@@ -549,7 +592,7 @@ footer {
   .title-border {
      width: 250px;
      height: 80px;
-     margin: 0 auto 15vh auto;
+     margin: 0 auto 10px auto;
      padding-top: 20px;
   }
 
@@ -586,7 +629,7 @@ footer {
   }
 
   footer {
-    font-size: .9em;
+    font-size: 1rem;
   }
 }
 
