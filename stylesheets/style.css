@@ -254,6 +254,8 @@ section {
         font-size: .8em;
         line-height: 150%;
         letter-spacing: .5px; }
+      #faq .content .row .col-md-6 #space {
+        height: 20px; }
 
 #sponsors {
   padding: 80px 15vw;
@@ -352,8 +354,8 @@ footer {
   letter-spacing: 2px;
   padding: 20px 5vw 20px 5vw;
   margin-top: -11vh;
-  background: ivory;
-  color: #284b63;
+  background: #284b63;
+  color: ivory;
   position: relative; }
   footer .col-xs-6 {
     margin-top: 10px; }
@@ -363,11 +365,11 @@ footer {
       font-size: 1.25em;
       padding: 0 2px; }
   footer a {
-    color: #284b63;
+    color: ivory;
     font-size: .75em;
     display: inline-block; }
   footer a:hover, footer a:visited, footer a:visited:hover {
-    color: #284b63;
+    color: ivory;
     text-decoration: none; }
   footer .link {
     font-size: 100%;
@@ -385,6 +387,25 @@ footer {
 
   .right-trail {
     opacity: 0; } }
+@media only screen and (max-width: 1200px) {
+  #faq .content .row {
+    padding: 0 5vw;
+    text-align: left; }
+    #faq .content .row .col-md-6 {
+      margin-bottom: 0; }
+      #faq .content .row .col-md-6 .question {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: .2em; }
+      #faq .content .row .col-md-6 .answer {
+        font-size: .8em;
+        line-height: 150%;
+        letter-spacing: .5px;
+        margin-bottom: 0.9em; }
+      #faq .content .row .col-md-6 #space {
+        height: 10px; } }
 @media only screen and (max-width: 1000px) {
   #about {
     padding-top: 15vh; }
@@ -394,16 +415,24 @@ footer {
 
   #exhibitors .row {
     height: 0; }
+  #exhibitors .col-md-3 {
+    height: 0;
+    margin-top: 0; }
   #exhibitors img {
     height: 0; }
 
-  #faq .title {
-    font-size: 2.5rem; }
-  #faq .title-border {
-    height: 80px;
-    margin-bottom: 10px; }
-  #faq .content {
-    font-size: 2rem; } }
+  #faq {
+    padding-top: 20px;
+    padding-bottom: 11vh; }
+    #faq .title {
+      font-size: 2.5rem; }
+    #faq .title-border {
+      height: 40px;
+      margin-bottom: 20px; }
+      #faq .title-border .corner {
+        background: ivory; }
+    #faq .content {
+      font-size: 2rem; } }
 @media only screen and (max-width: 755px) {
   .down-arrow {
     font-size: 4rem; }
