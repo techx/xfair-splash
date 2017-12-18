@@ -224,7 +224,7 @@ section {
         line-height: 150%; }
 
 #faq {
-  min-height: 100vh;
+  min-height: 89vh;
   padding: 80px 15px 20px 15px;
   background: ivory;
   color: #284b63;
@@ -353,7 +353,6 @@ footer {
   font-weight: 400;
   letter-spacing: 2px;
   padding: 20px 5vw 20px 5vw;
-  margin-top: -11vh;
   background: #284b63;
   color: ivory;
   position: relative; }
