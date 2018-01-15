@@ -113,7 +113,7 @@ section {
   background: $dark-blue;
   color: $white;
   text-transform: uppercase;
-  z-index: -2;
+  z-index: 1;
 
   .bg {
      position: relative;
@@ -121,7 +121,7 @@ section {
      width: 100vw;
      margin: 0 auto;
      background: $dark-blue;
-     z-index: -1;
+     z-index: 2;
 
      .left-trail {
        position: absolute;
@@ -194,7 +194,6 @@ section {
   padding: 15vh 12vw;
   background: $dark-blue;
   color: $white;
-  z-index: -2;
   
     button {
       margin-top: 2em;
@@ -222,7 +221,6 @@ section {
   padding: 15vh 25vw;
   background: $white;
   color: $dark-blue;
-  z-index: -2;
 
     b {
       color: $dark-teal;  
@@ -301,7 +299,6 @@ section {
   color: $dark-blue;
   //background: $dark-blue;
   //color: $white;
-  z-index: -2;
 
   a {
     color: $dark-teal;
@@ -357,7 +354,6 @@ section {
   min-height: 100vh;
   background: $dark-blue;
   color: $white;
-  z-index: -2;
 
   a {
     color: $light;
