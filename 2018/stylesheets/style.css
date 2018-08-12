@@ -268,7 +268,7 @@ section {
 
 #sponsors {
   padding: 80px 10vw;
-  /* min-height: 90vh; */
+  min-height: 90vh;
   background: #284b63;
   color: ivory;
   /*
