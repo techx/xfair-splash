@@ -1,0 +1,491 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../assets/Avenir.ttc"); }
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.test{
+    position: relative;
+    text-align: center;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: ivory;
+  color: #3c6e71;
+  text-align: center;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem; }
+
+::selection {
+  background: #c4d7f2; }
+
+::-moz-selection {
+  background: #c4d7f2; }
+
+a, a:visited {
+  color: ivory;
+  text-decoration: none; }
+
+a:hover, a:visited:hover {
+  color: ivory;
+  transition: all 200ms ease; }
+
+button {
+  margin: 10px;
+  padding: 20px 50px;
+  border: 2px solid ivory;
+  border-radius: 200px;
+  background-color: transparent;
+  color: ivory;
+  font-size: 2rem;
+  text-transform: lowercase;
+  transition: all 300ms ease; }
+
+button:hover {
+  background-color: ivory;
+  color: transparent; }
+
+section {
+  position: relative; }
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  margin-bottom: .75em; }
+
+.thin {
+  font-weight: 500; }
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 200%; }
+
+/*
+.down-arrow {
+  font-size: 8rem;
+  position: absolute;
+  left: 48%;
+  bottom: 0;
+}
+*/
+.down-arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  font-size: 8rem; }
+
+#main {
+  min-height: 100vh;
+  padding: 0;
+  background: #FFFDF8;
+  color: ivory;
+  text-transform: lowercase;
+  background-image: url("/img/header.svg");
+  z-index: 1; }
+  #main .subtitle {
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    right: 40%;
+   }
+    #main .subtitle .tagline {
+      color: #F7943F;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-align: bottom;
+    }
+      #main .subtitle .tagline a {
+        color: #F7943F;
+        font-weight: 700; }
+    #main .subtitle .info {
+      letter-spacing: 5px;
+      color: #AFD34E;}
+
+.header{
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.description{
+  position: relative;
+  width: 100%;
+}
+#des_content{
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  font-size: 1.5em;
+  margin-right: 75px;
+}
+
+#research_group{
+  background-color: white;
+}
+
+#employers {
+  min-height: 100vh;
+  padding: 15vh 12vw;
+  background-color: white;
+  }
+
+  #employers button {
+    margin-top: 2em;
+    border: 2px solid ivory;
+    background-color: #FFCC24;
+    color: ivory; }
+  #employers button:hover {
+    background-color: ivory;
+    color: black; }
+
+#students {
+  min-height: 100vh;
+  padding: 15vh 25vw;
+  background: #FFFDF8; }
+  #students b {
+    color: #3c6e71; }
+  #students #resume_button {
+    padding: 10px 50px;
+    background-color: #F7943F; }
+  #students #booklet_button {
+    padding: 10px 50px;
+    background-color: #AFD34E; }
+  #students button:hover {
+    background-color: ;
+    color: ivory; }
+
+#exhibitors {
+  min-height: 100vh;
+  padding: 100px 20px 100px 20px; }
+  #exhibitors .content {
+    width: 80vw;
+    margin: auto; }
+    #exhibitors .content .row .col-md-3 {
+      margin-top: 7vh;
+      min-margin-top: 25px; }
+      #exhibitors .content .row .col-md-3 .photo {
+        object-fit: cover;
+        width: 100%;
+        max-width: 300px;
+        opacity: 0.8; }
+      #exhibitors .content .row .col-md-3 .subtitle {
+        margin-top: 1em;
+        text-transform: lowercase;
+        font-family: "Avenir", sans-serif;
+        font-weight: 700; }
+      #exhibitors .content .row .col-md-3 .creator {
+        margin-bottom: .25em; }
+      #exhibitors .content .row .col-md-3 .subcontent {
+        font-size: .8em;}
+      #exhibitors .content a{
+        color: #F05624;  }
+      #exhibitors .title{
+        color: #AFD34E;}
+
+#faq {
+  min-height: 100vh;
+  padding: 80px 15px 20px 15px;
+  background: white; }
+  #faq a {
+    color: black;
+    font-weight: bold; }
+  #faq .question{
+    color: #AFD34E;
+  }
+  #faq .title {
+    color: #F7943F;
+    margin-bottom: 10px; }
+  #faq .content .row {
+    padding: 0 15vw;
+    text-align: left; }
+    #faq .content .row .col-md-6 {
+      margin-bottom: 30px; }
+      #faq .content .row .col-md-6 .question {
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: .9em; }
+      #faq .content .row .col-md-6 .answer {
+        font-size: .8em;
+        line-height: 150%;
+        letter-spacing: .5px; }
+      #faq .content .row .col-md-6 #space {
+        height: 20px; }
+
+#sponsors {
+  padding: 80px 10vw;
+  min-height: 90vh;
+  background: white;
+  color: black;
+  /*
+  .content {
+    width: 70vw;
+    margin: auto;
+    line-height: 150%;
+
+    .row {
+
+      .col-xs-4 {
+        margin-top: 7vh;
+        min-margin-top: 25px;
+        padding: 5px;
+      }
+
+      .col-xs-12 {
+        margin-top: 7vh;
+        min-margin-top: 25px;
+        padding: 5px;
+      }
+
+    }
+  }
+
+  .logo {
+    max-height: 100px;
+    max-width: 200px;
+    vertical-align: middle;
+  }
+  */ }
+  #sponsors a {
+    color: #a2d4ab; }
+  #sponsors .title{
+    color: #40B682;
+  }
+  #sponsors .container {
+    width: 80vw; }
+    #sponsors .container img {
+      height: auto;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 16px;
+      color: ivory;
+      transition: transform 0.2s; }
+    #sponsors .container img:hover {
+      transform: scale(1.2); }
+    #sponsors .container .platinum {
+      padding: 0 5%; }
+      #sponsors .container .platinum img {
+        max-height: 100%;
+        max-width: 60%; }
+    #sponsors .container .gold {
+      padding: 0 5%; }
+      #sponsors .container .gold img {
+        max-height: 5vh;
+        max-width: 40%; }
+    #sponsors .container .silver {
+      padding: 0 5%; }
+      #sponsors .container .silver img {
+        max-height: 15%;
+        max-width: 20%; }
+    #sponsors .container .bronze {
+      padding: 0 5%; }
+      #sponsors .container .bronze img {
+        max-height: 13%;
+        max-width: 15%; }
+    #sponsors .container .startup {
+      padding: 0 5%; }
+      #sponsors .container .startup img {
+        max-height: 13%;
+        max-width: 15%; }
+
+footer {
+  height: 10vh !important;
+  text-transform: lowercase;
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 20px 5vw 20px 5vw;
+  background: #F7943F;
+  color: ivory;
+  position: relative; }
+  footer .col-xs-6 {
+    margin-top: 10px; }
+  footer .icons {
+    margin-top: 10px; }
+    footer .icons i {
+      font-size: 1.25em;
+      padding: 0 2px; }
+  footer a {
+    font-size: .5em;
+    display: inline-block; }
+  footer a:hover, footer a:visited, footer a:visited:hover {
+    color: #black;
+    text-decoration: none; }
+  footer .link {
+    font-size: 100%;
+    font-weight: 700;
+    letter-spacing: 2px; }
+  footer .plane {
+    position: relative;
+    right: 10px;
+    top: -3px;
+    height: 20px; }
+
+@media only screen and (max-width: 1500px) {
+  .left-trail {
+    opacity: 0; }
+
+  .right-trail {
+    opacity: 0; } }
+@media only screen and (max-width: 1200px) {
+  #faq .content .row {
+    padding: 0 5vw;
+    text-align: left; }
+    #faq .content .row .col-md-6 {
+      margin-bottom: 0; }
+      #faq .content .row .col-md-6 .question {
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: .2em; }
+      #faq .content .row .col-md-6 .answer {
+        font-size: .8em;
+        line-height: 150%;
+        letter-spacing: .5px;
+        margin-bottom: 0.9em; }
+      #faq .content .row .col-md-6 #space {
+        height: 10px; } }
+@media only screen and (max-width: 1000px) {
+  #about {
+    padding-top: 15vh; }
+    #about button {
+      margin-left: 20px;
+      margin-right: 20px; }
+
+  #exhibitors .row {
+    height: 0; }
+  #exhibitors .col-md-3 {
+    height: 0;
+    margin-top: 0; }
+  #exhibitors img {
+    height: 0; }
+
+  #faq {
+    padding-top: 20px;
+    padding-bottom: 11vh; }
+    #faq .title {
+      font-size: 2.5rem; }
+    #faq .title-border {
+      height: 40px;
+      margin-bottom: 20px; }
+      #faq .title-border .corner {
+        background: ivory; }
+    #faq .content {
+      font-size: 2rem; } }
+@media only screen and (max-width: 755px) {
+  .down-arrow {
+    font-size: 4rem; }
+
+  #sponsors .logo {
+    max-height: 20vh;
+    max-width: 20vw; }
+
+  #students {
+    padding: 15vh 15vw; }
+
+  footer {
+    padding-top: 2vh;
+    font-size: 1.5rem; }
+    footer .col-xs-6 {
+      margin-top: 0; } }
+@media only screen and (max-width: 435px) {
+  button {
+    padding: 10px 30px;
+    font-size: 2rem; }
+
+  .title {
+    font-size: 2.2rem; }
+
+  .title-border {
+    width: 250px;
+    height: 80px;
+    margin: 0 auto 10px auto;
+    padding-top: 20px; }
+
+  .content {
+    font-size: 2rem; }
+
+  #main .subtitle .tagline {
+    font-size: .9em;
+    letter-spacing: 1px; }
+  #main .subtitle .info {
+    font-size: 1.25em;
+    letter-spacing: 3px; }
+
+  #students {
+    padding: 80px 20px; }
+
+  #about {
+    padding: 80px 20px; }
+
+  #sponsors {
+    padding: 80px 20px; }
+
+  footer {
+    font-size: 1rem; } }
+@media only screen and (max-width: 330px) {
+  button {
+    padding: 10px 25px;
+    font-size: 2rem; }
+
+  .title {
+    font-size: 2.2rem; }
+
+  .content {
+    font-size: 2rem; }
+
+  #main .subtitle .tagline {
+    font-size: .85em;
+    letter-spacing: 1px; }
+  #main .subtitle .info {
+    font-size: 1.25em;
+    letter-spacing: 3px; }
+
+  footer {
+    font-size: .9em; } }
+@media only screen and (max-height: 435px) {
+  #main {
+    height: 120vh; } }
+
+  #title_employers{
+    color: #AFD34E;
+  }
+
+  #student_title{
+    color: #40B682;
+  }
+
+  #flame_text{
+    color: #F05624;
+  }
+
+  #resume_button{
+    background-color: #F7943F;
+  }
+
+  #booklet_button{
+    background-color: #AFD34E;
+  }
+
+/*# sourceMappingURL=style.css.map */
