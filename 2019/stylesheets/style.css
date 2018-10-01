@@ -50,10 +50,6 @@ button {
   text-transform: lowercase;
   transition: all 300ms ease; }
 
-button:hover {
-  background-color: ivory;
-  color: transparent; }
-
 section {
   position: relative; }
 
@@ -156,9 +152,6 @@ section {
     border: 2px solid ivory;
     background-color: #FFCC24;
     color: ivory; }
-  #employers button:hover {
-    background-color: ivory;
-    color: black; }
 
 #students {
   min-height: 100vh;
