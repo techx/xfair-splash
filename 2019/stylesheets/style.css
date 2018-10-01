@@ -19,7 +19,7 @@ html, body {
 
 body {
   background: ivory;
-  color: #3c6e71;
+  color: #403D3C;
   text-align: center;
   font-family: "Avenir", sans-serif;
   font-weight: 300;
@@ -139,6 +139,10 @@ section {
 
 #research_group{
   background-color: white;
+  padding: 10vh 12vw 0 12vw;
+}
+#research_group .title{
+  color: #F05624;
 }
 
 #employers {
@@ -232,10 +236,8 @@ section {
         height: 20px; }
 
 #sponsors {
-  padding: 80px 10vw;
-  min-height: 90vh;
-  background: white;
-  color: black;
+  min-height: 50vh;
+  padding: 80px 20px;
   /*
   .content {
     width: 70vw;
@@ -270,43 +272,6 @@ section {
   #sponsors .title{
     color: #40B682;
   }
-  #sponsors .container {
-    width: 80vw; }
-    #sponsors .container img {
-      height: auto;
-      width: auto;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 16px;
-      color: ivory;
-      transition: transform 0.2s; }
-    #sponsors .container img:hover {
-      transform: scale(1.2); }
-    #sponsors .container .platinum {
-      padding: 0 5%; }
-      #sponsors .container .platinum img {
-        max-height: 100%;
-        max-width: 60%; }
-    #sponsors .container .gold {
-      padding: 0 5%; }
-      #sponsors .container .gold img {
-        max-height: 5vh;
-        max-width: 40%; }
-    #sponsors .container .silver {
-      padding: 0 5%; }
-      #sponsors .container .silver img {
-        max-height: 15%;
-        max-width: 20%; }
-    #sponsors .container .bronze {
-      padding: 0 5%; }
-      #sponsors .container .bronze img {
-        max-height: 13%;
-        max-width: 15%; }
-    #sponsors .container .startup {
-      padding: 0 5%; }
-      #sponsors .container .startup img {
-        max-height: 13%;
-        max-width: 15%; }
 
 footer {
   height: 10vh !important;
@@ -314,7 +279,7 @@ footer {
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
-  padding: 20px 5vw 20px 5vw;
+  padding: 10px 5vw 20px 5vw;
   background: #F7943F;
   color: ivory;
   position: relative; }
@@ -437,9 +402,6 @@ footer {
     padding: 80px 20px; }
 
   #about {
-    padding: 80px 20px; }
-
-  #sponsors {
     padding: 80px 20px; }
 
   footer {
