@@ -41,12 +41,12 @@ a:hover, a:visited:hover {
 
 button {
   margin: 10px;
-  padding: 20px 50px;
+  padding: 10px 40px;
   border: 2px solid ivory;
-  border-radius: 200px;
-  background-color: transparent;
+  border-radius: 25px;
   color: ivory;
   font-size: 2rem;
+  font-weight: bold;
   text-transform: lowercase;
   transition: all 300ms ease; }
 
@@ -57,7 +57,6 @@ section {
   font-size: 2.5em;
   font-weight: 700;
   text-transform: lowercase;
-  letter-spacing: 5px;
   margin-bottom: .75em; }
 
 .thin {
@@ -65,9 +64,9 @@ section {
 
 .content {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 200;
-  line-height: 200%; }
+  line-height: 150%; }
 
 /*
 .down-arrow {
@@ -88,8 +87,6 @@ section {
   font-size: 8rem; }
 
 #main {
-  min-height: 100vh;
-  padding: 0;
   background: #FFFDF8;
   color: ivory;
   text-transform: lowercase;
@@ -100,7 +97,7 @@ section {
     position: absolute;
     text-align: center;
     top: 70%;
-    right: 40%;
+    left: 40%;
    }
     #main .subtitle .tagline {
       color: #F7943F;
@@ -112,7 +109,6 @@ section {
         color: #F7943F;
         font-weight: 700; }
     #main .subtitle .info {
-      letter-spacing: 5px;
       color: #AFD34E;}
 
 .header{
@@ -124,13 +120,13 @@ section {
 .description{
   position: relative;
   width: 100%;
+  height: 100%;
 }
 #des_content{
   position: absolute;
-  left: 40%;
-  top: 25%;
-  font-size: 1.5em;
-  margin-right: 75px;
+  left: 45%;
+  top: 30%;
+  margin-right: 8em;
 }
 
 #research_group{
@@ -151,23 +147,33 @@ section {
     margin-top: 2em;
     border: 2px solid ivory;
     background-color: #FFCC24;
-    color: ivory; }
+    color: ivory;
+    font-size: 1.5em;}
+  #employers button:hover{
+    border: 2px solid #FFCC24;
+    background-color: ivory;
+    color: #FFCC24;}
 
 #students {
   min-height: 100vh;
-  padding: 15vh 25vw;
+  padding: 10vh 15vw;
   background: #FFFDF8; }
   #students b {
     color: #3c6e71; }
   #students #resume_button {
-    padding: 10px 50px;
-    background-color: #F7943F; }
+    background-color: #F7943F;
+    margin-right: 10px; }
+  #students #resume_button:hover{
+    border: 2px solid #F7943F;
+    background-color: ivory;
+    color: #F7943F;}
   #students #booklet_button {
-    padding: 10px 50px;
-    background-color: #AFD34E; }
-  #students button:hover {
-    background-color: ;
-    color: ivory; }
+    background-color: #AFD34E;
+    margin-left: 10px; }
+  #students #booklet_button:hover {
+    border: 2px solid #AFD34E;
+    background-color: ivory;
+    color: #AFD34E;}
 
 #exhibitors {
   min-height: 100vh;
@@ -268,7 +274,6 @@ section {
 
 footer {
   height: 10vh !important;
-  text-transform: lowercase;
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
@@ -388,8 +393,7 @@ footer {
     font-size: .9em;
     letter-spacing: 1px; }
   #main .subtitle .info {
-    font-size: 1.25em;
-    letter-spacing: 3px; }
+    font-size: 1.25em; }
 
   #students {
     padding: 80px 20px; }
