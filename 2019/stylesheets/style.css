@@ -133,8 +133,7 @@ section {
     color: #FFCC24;}
 
 #students {
-  padding: 10vh 15vw;
-  background: #FFFDF8; }
+  padding: 10vh 15vw; }
   #students #resume_button {
     background-color: #F7943F;
     margin-right: 10px; }
@@ -196,7 +195,7 @@ section {
         height: 20px; }
 
 #sponsors {
-  min-height: 50vh;
+  min-height: 20vh;
   padding: 80px 20px;
   /*
   .content {
@@ -362,15 +361,14 @@ footer {
     display: none;
   }
   #about{
-    height: 100%;
     padding: 10vh 15vw;
   }
   #des_content{
+    position: relative;
     width: 100%;
     margin: auto;
-    display:inline-block;
-    left: 0%;
     padding-left: 3em;
+    left: unset;
   }
 
   footer {
