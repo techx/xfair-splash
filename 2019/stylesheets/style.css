@@ -305,6 +305,9 @@ footer {
         margin-bottom: 0.9em; }
       #faq .content .row .col-md-6 #space {
         height: 10px; } }
+  #des_content{
+      margin-right: auto;
+      padding-right: 2em;}
 @media only screen and (max-width: 1000px) {
   .title{
     font-size: 2.5rem;
@@ -319,9 +322,9 @@ footer {
     font-size: 0.8em; }
 
   #des_content{
-    font-size: 2rem;
-    padding: 0;
-  }
+    margin-right: auto;
+    padding-right: 3em;}
+
   #about {
     padding-top: 15vh; }
     #about button {
@@ -355,6 +358,21 @@ footer {
   #main .subtitle .info {
       font-size: 0.7em; }
 
+  .description{
+    display: none;
+  }
+  #about{
+    height: 100%;
+    padding: 10vh 15vw;
+  }
+  #des_content{
+    width: 100%;
+    margin: auto;
+    display:inline-block;
+    left: 0%;
+    padding-left: 3em;
+  }
+
   footer {
     padding-top: 2vh;
     font-size: 1.5rem; }
@@ -376,6 +394,16 @@ footer {
 
   .content {
     font-size: 2rem; }
+
+  .description{
+      display: none;
+  }
+
+  #des_content{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
 
   #main .subtitle .tagline {
     font-size: 0.7em;
@@ -402,6 +430,16 @@ footer {
   .content {
     font-size: 2rem; }
 
+  .description{
+      display: none;
+  }
+
+  #des_content{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
   #main .subtitle .tagline {
     font-size: 0.6em;
     letter-spacing: 1px; }
@@ -414,6 +452,17 @@ footer {
 @media only screen and (max-height: 435px) {
   #main {
     height: 120vh; }
+
+  .description{
+      display: none;
+  }
+
+  #des_content{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
   footer {
     font-size: .75em; }
    }
