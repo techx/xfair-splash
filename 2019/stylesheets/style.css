@@ -65,7 +65,7 @@ section {
   line-height: 150%; }
 
 .content a{
-  color: #403D3C;
+  color: #32909a;
 }
 
 #main {
@@ -87,6 +87,7 @@ section {
       font-weight: 400;
       letter-spacing: 2px;
       text-align: bottom;
+      padding-bottom: 1em;
     }
     #main .subtitle .tagline a {
       color: #F7943F;
@@ -247,6 +248,11 @@ section {
   #booklet_button{
     background-color: #AFD34E;  }
 
+#hidden_header{
+  display: none;
+  color: #F05624;
+}
+
 footer {
   height: 10vh !important;
   font-size: 1.1em;
@@ -321,14 +327,11 @@ footer {
     font-size: 0.8em; }
 
   #des_content{
-    margin-right: auto;
-    padding-right: 3em;}
-
-  #about {
-    padding-top: 15vh; }
-    #about button {
-      margin-left: 20px;
-      margin-right: 20px; }
+    margin: auto;
+    padding-right: 3em;
+    font-size: 1.3em;
+    top: 21%;
+  }
 
   #exhibitors .row {
     height: 0; }
@@ -360,8 +363,12 @@ footer {
   .description{
     display: none;
   }
+  #hidden_header{
+    display: block;
+    color: #F05624;
+  }
   #about{
-    padding: 10vh 15vw;
+    padding: 10vh 10vw;
   }
   #des_content{
     position: relative;
@@ -397,6 +404,11 @@ footer {
       display: none;
   }
 
+  #hidden_header{
+    display: block;
+    color: #F05624;
+  }
+
   #des_content{
     width: 100%;
     margin: auto;
@@ -404,8 +416,7 @@ footer {
   }
 
   #main .subtitle .tagline {
-    font-size: 0.7em;
-    letter-spacing: 1px; }
+    font-size: 0.7em; }
   #main .subtitle .info {
     font-size: 0.6em; }
 
@@ -432,6 +443,11 @@ footer {
       display: none;
   }
 
+  #hidden_header{
+    display: block;
+    color: #F05624;
+  }
+
   #des_content{
     width: 100%;
     margin: auto;
@@ -439,11 +455,10 @@ footer {
   }
 
   #main .subtitle .tagline {
-    font-size: 0.6em;
-    letter-spacing: 1px; }
+    font-size: 0.6em;}
   #main .subtitle .info {
     font-size: 0.5em;
-    letter-spacing: 3px; }
+    letter-spacing: 1px; }
 
   footer {
     font-size: .9em; } }
@@ -455,6 +470,18 @@ footer {
       display: none;
   }
 
+  #main .subtitle .tagline {
+    padding-bottom: 0;
+  }
+
+  .subtitle{
+    font-size: 0.4em;
+  }
+
+  #hidden_header{
+    display: block;
+    color: #F05624;
+  }
   #des_content{
     width: 100%;
     margin: auto;
