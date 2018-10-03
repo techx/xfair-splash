@@ -49,7 +49,8 @@ button {
   transition: all 300ms ease; }
 
 section {
-  position: relative; }
+  position: relative;
+  margin: auto;}
 
 .title {
   font-size: 2.5em;
@@ -71,15 +72,16 @@ section {
   background: #FFFDF8;
   color: ivory;
   text-transform: lowercase;
-  background-image: url("/img/header.svg");
-  z-index: 1; }
+  z-index: 1;
+  margin: auto;}
   #main .subtitle {
     font-size: 1.5em;
     position: absolute;
     text-align: center;
-    top: 70%;
-    left: 40%;
-   }
+    margin: auto;
+    width: 100%;
+    bottom: 10%;
+  }
     #main .subtitle .tagline {
       color: #F7943F;
       font-weight: 400;
@@ -94,14 +96,18 @@ section {
 
 .header{
     position: relative;
+    max-width: 100%;
+    max-height: 100%;
     width: 100%;
+    margin: auto;
     background-repeat: no-repeat;
 }
 
 .description{
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
-  height: 100%;
 }
 
 #des_content{
@@ -227,6 +233,21 @@ section {
     color: #40B682;
   }
 
+  #title_employers{
+    color: #AFD34E;  }
+
+  #student_title{
+    color: #40B682;}
+
+  #flame_text{
+    color: #F05624;  }
+
+  #resume_button{
+    background-color: #F7943F;  }
+
+  #booklet_button{
+    background-color: #AFD34E;  }
+
 footer {
   height: 10vh !important;
   font-size: 1.1em;
@@ -285,6 +306,22 @@ footer {
       #faq .content .row .col-md-6 #space {
         height: 10px; } }
 @media only screen and (max-width: 1000px) {
+  .title{
+    font-size: 2.5rem;
+  }
+  .content{
+    font-size: 2rem;
+  }
+  #main .subtitle .tagline {
+    font-size: 1em;
+    letter-spacing: 1px; }
+  #main .subtitle .info {
+    font-size: 0.8em; }
+
+  #des_content{
+    font-size: 2rem;
+    padding: 0;
+  }
   #about {
     padding-top: 15vh; }
     #about button {
@@ -302,18 +339,8 @@ footer {
   #faq {
     padding-top: 20px;
     padding-bottom: 11vh; }
-    #faq .title {
-      font-size: 2.5rem; }
-    #faq .title-border {
-      height: 40px;
-      margin-bottom: 20px; }
-      #faq .title-border .corner {
-        background: ivory; }
-    #faq .content {
-      font-size: 2rem; } }
+   }
 @media only screen and (max-width: 755px) {
-  .down-arrow {
-    font-size: 4rem; }
 
   #sponsors .logo {
     max-height: 20vh;
@@ -321,6 +348,12 @@ footer {
 
   #students {
     padding: 15vh 15vw; }
+
+  #main .subtitle .tagline {
+      font-size: 0.8em;
+      letter-spacing: 1px; }
+  #main .subtitle .info {
+      font-size: 0.7em; }
 
   footer {
     padding-top: 2vh;
@@ -345,10 +378,10 @@ footer {
     font-size: 2rem; }
 
   #main .subtitle .tagline {
-    font-size: .9em;
+    font-size: 0.7em;
     letter-spacing: 1px; }
   #main .subtitle .info {
-    font-size: 1.25em; }
+    font-size: 0.6em; }
 
   #students {
     padding: 80px 20px; }
@@ -370,36 +403,19 @@ footer {
     font-size: 2rem; }
 
   #main .subtitle .tagline {
-    font-size: .85em;
+    font-size: 0.6em;
     letter-spacing: 1px; }
   #main .subtitle .info {
-    font-size: 1.25em;
+    font-size: 0.5em;
     letter-spacing: 3px; }
 
   footer {
     font-size: .9em; } }
 @media only screen and (max-height: 435px) {
   #main {
-    height: 120vh; } }
-
-  #title_employers{
-    color: #AFD34E;
-  }
-
-  #student_title{
-    color: #40B682;
-  }
-
-  #flame_text{
-    color: #F05624;
-  }
-
-  #resume_button{
-    background-color: #F7943F;
-  }
-
-  #booklet_button{
-    background-color: #AFD34E;
-  }
+    height: 120vh; }
+  footer {
+    font-size: .75em; }
+   }
 
 /*# sourceMappingURL=style.css.map */
