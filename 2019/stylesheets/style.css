@@ -63,6 +63,10 @@ section {
   font-weight: 200;
   line-height: 150%; }
 
+.content a{
+  color: #403D3C;
+}
+
 #main {
   background: #FFFDF8;
   color: ivory;
@@ -160,8 +164,7 @@ section {
   padding: 80px 15px 20px 15px;
   background: white; }
   #faq a {
-    color: #403D3C;
-    font-weight: bold; }
+    color: #403D3C; }
   #faq .question{
     color: #AFD34E;
   }
@@ -259,9 +262,9 @@ footer {
 @media only screen and (max-width: 1500px) {
   .left-trail {
     opacity: 0; }
-
   .right-trail {
     opacity: 0; } }
+
 @media only screen and (max-width: 1200px) {
   #faq .content .row {
     padding: 0 5vw;
