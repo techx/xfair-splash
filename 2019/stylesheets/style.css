@@ -358,7 +358,7 @@ footer {
       font-size: 0.8em;
       letter-spacing: 1px; }
   #main .subtitle .info {
-      font-size: 0.7em; }
+      font-size: 0.6em; }
 
   .description{
     display: none;
@@ -404,6 +404,10 @@ footer {
       display: none;
   }
 
+  #main .subtitle{
+    font-size: 0.6em;
+  }
+
   #hidden_header{
     display: block;
     color: #F05624;
@@ -418,7 +422,7 @@ footer {
   #main .subtitle .tagline {
     font-size: 0.7em; }
   #main .subtitle .info {
-    font-size: 0.6em; }
+    font-size: 0.7em; }
 
   #students {
     padding: 80px 20px; }
