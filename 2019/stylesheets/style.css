@@ -403,10 +403,10 @@ footer {
   .description{
       display: none;
   }
-
+/*
   #main .subtitle{
     font-size: 0.6em;
-  }
+  } */
 
   #hidden_header{
     display: block;
@@ -479,7 +479,7 @@ footer {
   }
 
   .subtitle{
-    font-size: 0.4em;
+    font-size: 0.7em;
   }
 
   #hidden_header{
