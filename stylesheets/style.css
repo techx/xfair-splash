@@ -254,7 +254,7 @@ section {
 }
 
 footer {
-  height: 10vh !important;
+/*  height: 10vh !important; */
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 2px;
