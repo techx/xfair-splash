@@ -330,7 +330,7 @@ footer {
     margin: auto;
     padding-right: 3em;
     font-size: 1.3em;
-    top: 22%;
+    top: 21%;
   }
 
   #exhibitors .row {
@@ -345,14 +345,6 @@ footer {
     padding-top: 20px;
     padding-bottom: 11vh; }
    }
-@media only screen and (max-width: 820px) {
-  #des_content{
-    margin: auto;
-    padding-right: 3em;
-    font-size: 1.2em;
-    top: 18%;
-  }
-}
 @media only screen and (max-width: 755px) {
 
   #sponsors .logo {
@@ -413,7 +405,7 @@ footer {
   }
 
   #main .subtitle{
-    font-size: 1em;
+    font-size: 0.6em;
   }
 
   #hidden_header{
@@ -487,7 +479,7 @@ footer {
   }
 
   .subtitle{
-    font-size: 0.7em;
+    font-size: 0.4em;
   }
 
   #hidden_header{
