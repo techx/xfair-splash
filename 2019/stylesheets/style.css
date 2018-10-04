@@ -330,7 +330,7 @@ footer {
     margin: auto;
     padding-right: 3em;
     font-size: 1.3em;
-    top: 21%;
+    top: 22%;
   }
 
   #exhibitors .row {
@@ -345,6 +345,14 @@ footer {
     padding-top: 20px;
     padding-bottom: 11vh; }
    }
+@media only screen and (max-width: 820px) {
+  #des_content{
+    margin: auto;
+    padding-right: 3em;
+    font-size: 1.2em;
+    top: 18%;
+  }
+}
 @media only screen and (max-width: 755px) {
 
   #sponsors .logo {
