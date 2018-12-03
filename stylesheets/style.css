@@ -23,6 +23,68 @@ body {
   font-weight: 300;
   font-size: 1.5rem; }
 
+.navbar{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  min-height: 100px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #F7943F;
+    font-family:"Avenir";
+    height: 100%;
+    display: inline-block;
+}
+
+.navbar li {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#em_nav :hover{
+  background-color: ivory;
+  color: #AFD34E;
+}
+
+#stu_nav :hover{
+  background-color: ivory;
+  color: #40B682;
+}
+
+#rg_nav :hover{
+  background-color: ivory;
+  color: #F05624;
+}
+
+#ex_nav :hover{
+  background-color: ivory;
+  color: #FFCC24;
+}
+
+#faq_nav :hover{
+  background-color: ivory;
+  color: black;
+}
+
+#faq_nav{
+  padding-right: 2em;
+}
+
 ::selection {
   background: #c4d7f2; }
 
@@ -34,7 +96,6 @@ a, a:visited {
   text-decoration: none; }
 
 a:hover, a:visited:hover {
-  color: ivory;
   transition: all 200ms ease; }
 
 button {
@@ -121,7 +182,7 @@ section {
 #employers {
   padding: 10vh 15vw;
   background-color: white;
-  }
+}
 #employers button {
     margin-top: 2em;
     border: 2px solid ivory;
@@ -345,6 +406,9 @@ footer {
     padding-bottom: 11vh; }
    }
 @media only screen and (max-width: 820px) {
+  .navbar{
+    display: none;
+  }
   #des_content{
     margin: auto;
     padding-right: 3em;
