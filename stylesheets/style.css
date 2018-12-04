@@ -27,7 +27,6 @@ body {
   width: 100%;
   position: fixed;
   z-index: 999;
-  min-height: 100px;
 }
 
 .navbar ul {
@@ -82,7 +81,7 @@ body {
 }
 
 #faq_nav{
-  padding-right: 2em;
+  padding-right: 3em;
 }
 
 ::selection {
@@ -352,6 +351,13 @@ footer {
     opacity: 0; } }
 
 @media only screen and (max-width: 1200px) {
+  .navbar li a{
+    padding: none;
+    font-size: 1.5em;
+  }
+  #faq_nav{
+    display: none;
+  }
   #faq .content .row {
     padding: 0 5vw;
     text-align: left; }
@@ -379,6 +385,13 @@ footer {
   }
   .content{
     font-size: 2rem;
+  }
+  .navbar li a{
+    padding: none;
+    font-size: 1.25em;
+  }
+  #faq_nav{
+    display: none;
   }
   #main .subtitle .tagline {
     font-size: 1em;
