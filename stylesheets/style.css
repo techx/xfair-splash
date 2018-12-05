@@ -27,7 +27,12 @@ body {
   font-size: 1.5em;
 }
 
-#xfair{
+.navbar{
+    background-color: #F7943F;
+    border-color: #F7943F;
+}
+
+#xfair, #emp, #stu, #resg, #stux, #f{
   color: ivory;
 }
 
