@@ -23,8 +23,12 @@ body {
   font-weight: 300;
   font-size: 1.5rem; }
 
-.navbar li a{
+.navbar li a {
   font-size: 1.5em;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
 }
 
 .navbar{
