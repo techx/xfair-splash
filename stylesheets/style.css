@@ -385,6 +385,9 @@ footer {
   #exhibitors img {
     height: 0; }
 
+   #wrapper{
+    display: none;
+  }
   #faq {
     padding-top: 20px;
     padding-bottom: 11vh; }
