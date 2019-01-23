@@ -6,7 +6,6 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -52,7 +51,6 @@
     });
   </script>
   -->
-
   <script type="text/javascript" src="js/main.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 </head>
@@ -74,6 +72,7 @@
     </div>
   </nav>
   </div>
+
   <div id="fullpage">
   <section id="main" class="section">
     <img class="header" src="img/header.svg">
@@ -82,6 +81,7 @@
       <div class="info"> February 4, 2019 <br> 10am – 4pm <br> rockwell cage </div>
     </div>
   </section>
+
   <section id="about" class="section">
       <img class="description" src="img/description.svg" onerror="this.onerror=null; this.src='img/description.png'">
     <div class="title" id="hidden_header">more than your average career fair</div>
@@ -97,7 +97,7 @@
     <div class="content">
       <div id="flame_text">Recruit the brightest young minds to make your company's vision come true.</div><br>
       <div id="emp_text">Showcase your company's vision to the brightest young minds. This is a chance to attract and inspire students with the latest in tech, awesome company culture, and the core values at the heart of your business. <br>
-      Applications for xFair 2019 are now <a href="https://apply.xfair.io/">open</a>! We welcome all companies, startups, labs, and nonprofits to apply! If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>.</div>
+      Applications for xFair 2019 are now <b>closed</b>! Please check back later in the year to apply to xFair 2020. If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>.</div>
     </div>
     <a href="sponsor.html"><button>Sponsorship Information</button></a>
   </section>
@@ -107,12 +107,15 @@
       <div class="title" id="student_title">students</div>
     </div>
     <div class="content">
-      Explore, learn, and be inspired.This year’s xFair is all about introducing students to new industries and new tech. Whether you’re studying astrophysics or economics, computer science or chemistry, xFair has something for everyone! <br><br>
+      Explore, learn, and be inspired. This year’s xFair is all about introducing students to new industries and new tech. Whether you’re studying astrophysics or economics, computer science or chemistry, xFair has something for everyone! <br> <br>
+      Be sure to drop your resume below, browse demos coming to xFair, and familiarize yourself with the layout before the day of the event.
     </div>
     <!-- Add these in as they are available -->
-    <!-- <a href="http://drop.xfair.io"><button id="resume_button">Resume Drop</button></a> -->
-    <!-- <a href="/student.html"><button>Student Information</button></a> -->
-    <!-- <a href="/booklet.html"><button id="booklet_button">xFair Booklet</button></a> -->
+    <a href="http://drop.xfair.io"><button id="resume_button">Resume Drop</button></a>
+    <a href="http://demos.xfair.io"><button id="demo_button">Demo Preview</button></a>
+    <a href="http://dayof.xfair.io"><button id="map_button">Day of Map</button></a>
+    <!--<a href="/student.html"><button>Student Information</button></a> -->
+    <!--<a href="/booklet.html"><button id="booklet_button">xFair Booklet</button></a> -->
   </section>
 
   <section id="research_group" class="section">
@@ -133,6 +136,18 @@
     </div>
   </section>
 
+  <section id="sponsors" class="section">
+    <div class="title-border">
+      <div class="title">Sponsors</div>
+    </div>
+    <div class="content">
+      Be sure to check out all the sponsors coming to xFair 2019!
+    </div>
+    <div>
+      <a href="sponsor-list.pdf"><button id="sponsor_button">Sponsor List</button></a>
+    </div>
+  </section>
+
   <section id="faq" class="section">
     <div class="title-border">
       <span class="corner BL"></span>
@@ -150,7 +165,7 @@
         <div class="col-md-6">
           <div class="question">Should I bring my resume?</div>
           <div class="answer">
-            Yes. There will be a resume drop opening in January so employers can find you before the fair.          </div>
+            Yes! Also be sure to drop your resume <a href='http://drop.xfair.io'>here</a> so employers can find you before the fair.          </div>
         </div>
       </div>
       <div class="row">
@@ -167,7 +182,7 @@
           <div id="space"></div>
           <div class="question">Where can I get more information?</div>
           <div class="answer">
-            <!-- Student information is available <a href="\student">here </a>.--> Student information will be availabe soon. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
+            Student information is available <a href="#students">here </a>. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
           </div>
         </div>
       </div>
@@ -175,15 +190,43 @@
     <br>
   </section>
 
-
-  <section id="sponsors" class="section">
-    <div class="title-border">
-      <div class="title">Sponsors</div>
-    </div>
-    <div class="content">
-      Thank you to all the sponsors who attended xFair 2018!
+  <section class='section'>
+    <div id='wrapper'>
+      <div id='left'>
+        <div class='title' id='team'>meet the team</div>
+      </div>
+      <div id="slideshow">
+        <div><img src="img/team/amy.JPG" class ='er fade'></div>
+        <div><img src="img/team/savannah.JPG" class='er fade'></div>
+        <div><img src="img/team/jessica.JPG" class='er fade'></div>
+        <div><img src="img/team/emily.JPG" class='er fade'></div>
+        <div><img src="img/team/madie.JPG" class='er fade'></div>
+        <div><img src="img/team/joie.JPG" class='er fade'></div>
+        <div><img src="img/team/ivy.JPG" class='er fade'></div>
+        <div><img src="img/team/bryan.JPG" class='er fade'></div>
+        <div><img src="img/team/steven.JPG" class='er fade'></div>
+        <div><img src="img/team/suki.JPG" class='er fade'></div>
+        <div><img src="img/team/pramoda.JPG" class='er fade'></div>
+        <div><img src="img/team/stephanie.JPG" class='er fade'></div>
+      </div>
     </div>
   </section>
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("er");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+      </script>
 
   <footer>
     <div class="row">
