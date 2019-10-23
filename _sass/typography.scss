@@ -24,12 +24,13 @@ h4 {
 
 a {
     text-decoration: none;
+    font: 400 1rem/120% $font-family;
 }
 
 p {
     color: $dark-blue;
-    font: 400 1.1rem/150% $font-family;
     margin: 2rem 0;
+    font: 400 1.1rem/150% $font-family;
 }
 p:first-child {
     margin-top: 0;
@@ -43,5 +44,28 @@ b {
     font-weight: 400;
 }
 
-// todo: p a
-// todo: .btn
+section nav {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.btn a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: .9rem 1.25rem;
+    font-weight: 600;
+    border-radius: 3rem;
+}
+
+p a {
+    font: 600 1.1rem/150% $font-family;
+    color: $dark-blue;
+    text-decoration: underline;
+}
