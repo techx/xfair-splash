@@ -1,0 +1,47 @@
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h2 {
+    font: 600 1.75rem $font-family;
+    margin-bottom: $small-padding;
+    text-transform: uppercase;
+    color: $dark-blue;
+}
+
+h3 {
+    font: 600 1.25rem $font-family;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: $dark-blue;
+}
+
+h4 {
+    color: $light-text;
+    font: 400 1rem/100% $font-family;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: $dark-blue;
+    font: 400 1.1rem/150% $font-family;
+    margin: 2rem 0;
+}
+p:first-child {
+    margin-top: 0;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+b {
+    color: $pink;
+    font-weight: 400;
+}
+
+// todo: p a
+// todo: .btn
