@@ -1,0 +1,11 @@
+nav-links:
+  - title: Employers
+    url: #employers
+  - title: Research Groups
+    url: #research-groups
+  - title: Students
+    url: #students
+  - title: Student Exhibitors
+    url: #student-exhibitors
+  - title: FAQ
+    url: #faq
