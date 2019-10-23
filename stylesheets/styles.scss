@@ -1,133 +1,52 @@
 ---
 ---
+@import 'reset';
+@import 'variables';
+@import 'generic-classes';
+@import 'typography';
+@import 'header';
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap');
 
-$font-family: 'Work Sans', sans-serif;
+@mixin structure-styles($padding) {
 
-$dark-text: #191919;
-$light-text: #fff;
-
-$pink: #e55ebf;
-$dark-blue: #40a6ab;
-$light-blue: #8cc4c8;
-
-@mixin gradient1 {
-    background: linear-gradient($dark-blue, $light-blue)
-}
-
-@mixin gradient2 {
-    background: linear-gradient($dark-blue, $light-blue 36%, #fff)
-}
-
-.main-container {
-    background: $light-blue;
 }
 
 article {
     width: 90%;
     max-width: 850px;
     margin: 0 auto;
-    padding: 5rem 0;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-header nav {
-    width: 100%;
-    background: $dark-blue;
-    a, li {
-        display: inline-block;
-    }
-    a {
-        color: $light-blue;
-        font: 600 1rem $font-family;
-        text-transform: uppercase;
-    }
-}
-
-.pink-bg {
-    background: $pink;
-}
-
-.light-text {
-    color: $light-text;
-}
-
-h1, h2, h3, h4 {
-    text-align: center;
-}
-
-h2 {
-    font: 600 1.75rem $font-family;
-    margin-bottom: 2.5rem;
-}
-
-h3 {
-    font: 600 1.25rem $font-family;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    color: $dark-blue;
-}
-
-.pink-text {
-    color: $pink;
-}
-
-h4 {
-    color: $light-text;
-    font: 400 1rem/100% $font-family;
-    margin-bottom: 1rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-header {
-    height: 50vh;
-    padding-bottom: 2rem;
-    @include gradient1;
-}
-
-.white-50pct-opacity-bg {
-    background: rgba(250, 250, 250, .75);
-}
-
-.light-to-dark-blue-gradient-bg {
-    background: linear-gradient($dark-blue, $light-blue);
-}
-
-.light-blue-bg {
-    background: $light-blue;
+    padding: $small-padding 0;
 }
 
 .subsection {
     width: 90%;
-    margin: 5% auto;
-    max-width: 1000px;
+    margin: $small-padding auto 0;
+    max-width: 1200px;
+}
+.subsection:first-of-type {
+    margin-top: 0;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: $dark-blue;
+.main-container {
+    padding: $small-padding 0;
 }
 
-p {
-    color: $dark-blue;
-    font: 400 1rem/150% $font-family;
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1rem;
 }
 
-b {
-    color: $pink;
-    font-weight: 400;
+@media (min-width: 40rem) {
+    // $medium-padding is used here
+    .main-container {
+        padding: $medium-padding 0;
+    }
 }
 
 @media (min-width: 60rem) {
+    // $large-padding is used here
     header {
         height: 70vh;
     }

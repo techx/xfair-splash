@@ -9,3 +9,6 @@ nav-links:
     url: #student-exhibitors
   - title: FAQ
     url: #faq
+
+sass:
+  style: compressed
