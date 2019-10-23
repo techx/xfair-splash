@@ -1,0 +1,19 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="2.46in" height="1.61in" viewBox="0 0 176.76 115.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3da8ad;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>airplane_07</title>
+  <g>
+    <polyline class="cls-1" points="43.11 67.58 43.13 67.63 47.65 74.91 72.03 114.19 174.35 45.5 2.16 1.58 32.53 50.53"/>
+    <polyline class="cls-1" points="43.11 67.58 43.04 67.61 22.53 77.56"/>
+    <line class="cls-1" x1="43.06" y1="67.64" x2="43.04" y2="67.61"/>
+    <polyline class="cls-1" points="43.06 67.64 43.13 67.63 174.35 45.5 32.53 50.53 31.85 50.55 22.53 77.56 47.64 74.91"/>
+  </g>
+</svg>
