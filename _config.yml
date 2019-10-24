@@ -7,6 +7,11 @@ logo-path-png: "assets/xfair_logo.png"
 
 sponsor-info-path: ""
 company-lab-app-path: ""
+smart-casual-link: ""
+fb-link: ""
+twitter-link: ""
+tbp: "http://web.mit.edu/tbp/www/"
+techx: "https://techx.io"
 
 nav-links:
   - title: Employers
