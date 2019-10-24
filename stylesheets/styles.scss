@@ -5,27 +5,6 @@
 @import 'generic-classes';
 @import 'typography';
 @import 'header';
+@import 'structure';
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap');
-
-article {
-    width: 90%;
-    max-width: 850px;
-    margin: 0 auto;
-
-}
-
-.subsection {
-    width: 90%;
-
-    max-width: 1200px;
-}
-.subsection:first-of-type {
-    margin-top: 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 1rem;
-}

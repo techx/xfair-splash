@@ -1,0 +1,50 @@
+article {
+    padding: $small-padding 1rem;
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+section {
+    z-index: 1;
+}
+
+.subsection {
+    width: 90%;
+    margin: $small-padding auto;
+    max-width: 1200px;
+}
+.subsection:first-of-type {
+    margin-top: 0;
+}
+
+.main-container {
+    padding: $small-padding 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1rem;
+}
+
+#intro-airplane {
+    display: none;
+}
+
+@media (min-width: $medium-breakpoint) {
+    article {
+        padding: $medium-padding 1rem;
+    }  
+}
+
+@media (min-width: $large-breakpoint) {
+    #intro-airplane {
+        display: block;
+        position: absolute;
+        width: $large-padding;
+        z-index: 0;
+        margin-top: 5%;
+        left: 10%;
+    }
+}
