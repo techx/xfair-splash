@@ -5,6 +5,9 @@ description: MIT's largest career fair & tech expo. Feb 25, 2020 @ MIT Media Lab
 favicon-path: "assets/xfair_favicon.png"
 logo-path-png: "assets/xfair_logo.png"
 
+sponsor-info-path: ""
+company-lab-app-path: ""
+
 nav-links:
   - title: Employers
     url: #employers

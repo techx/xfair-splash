@@ -49,6 +49,11 @@ section nav {
     justify-content: center;
 }
 
+.btn-list {
+    padding: $small-padding 0;
+    text-align: center;
+}
+
 .btn {
     list-style: none;
     display: inline-block;

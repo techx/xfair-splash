@@ -1,6 +1,15 @@
 header {
     padding: 0 1rem $small-padding;
     @include gradient1;
+
+    a {
+        text-decoration: none;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 header nav {
@@ -8,9 +17,9 @@ header nav {
     background: $dark-blue;
     padding: .5rem;
     text-align: center;
-    position: fixed;
+    position: relative;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     
     a, li {
         display: inline-block;
@@ -21,7 +30,6 @@ header nav {
         font: 600 1rem $font-family;
         text-transform: uppercase;
         margin-right: .5rem;
-        text-decoration: none;
     }
 
     .nav-logo {
@@ -71,6 +79,7 @@ header nav {
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 0;
     }
 }
 

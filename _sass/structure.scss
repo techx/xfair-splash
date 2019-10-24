@@ -3,10 +3,8 @@ article {
     width: 90%;
     max-width: 850px;
     margin: 0 auto;
-}
-
-section {
-    z-index: 1;
+    z-index: 2;
+    position: relative;
 }
 
 .subsection {
@@ -33,9 +31,13 @@ section {
 }
 
 @media (min-width: $medium-breakpoint) {
-    article {
+    article, .main-container {
         padding: $medium-padding 1rem;
-    }  
+    }
+
+    .subsection {
+        margin-top: $medium-padding;
+    }
 }
 
 @media (min-width: $large-breakpoint) {

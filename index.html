@@ -40,20 +40,23 @@
 				</ul>
 			</nav>
 
-			<a class="chungus-logo" href="{{ site.url }}">
-				<img src="assets/xfair_logo.svg" alt="xFair Logo"/>
-			</a>
+			<div class="content">
+				<a class="chungus-logo" href="{{ site.url }}">
+					<img src="assets/xfair_logo.svg" alt="xFair Logo"/>
+				</a>
+	
+				<h3>
+					Powered by
+					<a href="https://techx.io" class="pink-text">MIT TechX</a>
+					&
+					<a href="http://web.mit.edu/tbp/www/" class="pink-text">Tau Beta Pi</a>
+				</h3>
+	
+				<h4>February 25th, 2020</h4>
+				<h4>10am-4pm</h4>
+				<h4>Media Lab</h4>
+			</div>
 
-			<h3>
-				Powered by
-				<a class="pink-text">MIT TechX</a>
-				&
-				<a class="pink-text">Tau Beta Pi</a>
-			</h3>
-
-			<h4>February 25th, 2020</h4>
-			<h4>10am-4pm</h4>
-			<h4>Media Lab</h4>
 			<img id="header-dash-line" src="assets/dash_line_01.svg"/>
 		</header>
 
@@ -67,20 +70,20 @@
 						<b>xFair</b> is more than booths, name tags, and blazers - it’s an exhibition of the latest pursuits by companies and students combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, xFair is <b>MIT’s largest career fair and tech expo</b>.
 					</p>
 				</article>
-				<img style="display:none" src="assets/dash_line_02.svg"/>
 			</section>
 
 			<section class="dark-blue-bg main-container">
+				<img style="display:none" src="assets/dash_line_02.svg"/>
 				<section id="employers" class="white-50pct-opacity-bg subsection">
 					<article>
 						<h2>Employers</h2>
 						<p>
 							<span class="pink-text">Make meaningful connections with talented MIT students.</span> This is a chance to attract and inspire students with the latest in tech, awesome company culture, and the core values at the heart of your business. Applications for xFair 2020 are now live!
 						</p>
-						<nav>
-							<li class="btn"><a href="" class="pink-bg light-text">Sponsorship Information</a></li>
-							<li class="btn"><a href="" class="pink-bg light-text">Company/Lab Application</a></li>
-						</nav>
+						<ul class="btn-list">
+							<li class="btn"><a href="{{ site.sponsor-info-path }}" class="pink-bg light-text">Sponsorship Information</a></li>
+							<li class="btn"><a href="{{ site.company-lab-app-path }}" class="pink-bg light-text">Company/Lab Application</a></li>
+						</ul>
 						<p>
 							If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>
 						</p>
