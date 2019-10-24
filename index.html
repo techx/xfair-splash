@@ -57,12 +57,13 @@
 				<h4>Media Lab</h4>
 			</div>
 
-			<img id="header-dash-line" src="assets/dash_line_01.svg"/>
+			<img id="header-dash-line" class="hide-on-mobile absolute z0" src="assets/dash_line_01.svg">
 		</header>
 
-		<section class="light-blue-bg">
+		<section class="light-blue-bg z0">
 			<section class="white-50pct-opacity-bg">
-				<img id="intro-airplane" src="assets/airplane_01.svg"/>
+				<img class="z-1 absolute hide-on-mobile airplane airplane-left airplane-mid-height" src="assets/airplane_01.svg">
+
 				<article>
 					<h2>More than your average career fair</h2>
 
@@ -72,8 +73,11 @@
 				</article>
 			</section>
 
-			<section class="dark-blue-bg main-container">
-				<img style="display:none" src="assets/dash_line_02.svg"/>
+			<section class="dark-blue-bg main-container z0">
+				<img id="subsection-dash-line" class="absolute hide-on-mobile z-1" src="assets/dash_line_02.svg">
+
+				<img id="subsection-airplane" class="absolute hide-on-mobile z-1 airplane airplane-right airplane-low-height" src="assets/airplane_02.svg">
+				
 				<section id="employers" class="white-50pct-opacity-bg subsection">
 					<article>
 						<h2>Employers</h2>
@@ -85,13 +89,12 @@
 							<li class="btn"><a href="{{ site.company-lab-app-path }}" class="pink-bg light-text">Company/Lab Application</a></li>
 						</ul>
 						<p>
-							If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>
+							If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>.
 						</p>
 					</article>
 				</section>
 
 				<section id="research-groups" class="white-50pct-opacity-bg subsection">
-					<img src="assets/airplane_02.svg"/>
 					<article>
 						<h2>Research Groups</h2>
 						<p>
@@ -101,8 +104,10 @@
 				</section
 				>
 				<section id="students" class="white-50pct-opacity-bg subsection">
-					<img src="assets/dash_line_03.svg"/>
-					<img src="assets/airplane_03.svg"/>
+					<img class="z-1 absolute hide-on-mobile" src="assets/dash_line_03.svg"/>
+
+					<img class="z-1 absolute hide-on-mobile airplane airplane-left airplane-above" src="assets/airplane_03.svg"/>
+					
 					<article>
 						<h2>Students</h2>
 						<p>
@@ -122,32 +127,48 @@
 			</section>
 		</section>
 
-		<section id="faq" class="white-50pct-opacity-bg">
-			<img src="assets/airplane_04.svg"/>
-			<h2>Frequently Asked Questions</h2>
-			<div class="grid">
-					<div>
-						<span class="pink-text"> What is xFair? </span>
-						<p>We have merged TechX's TechFair and TBP's Career Fair to present xFair: an interactive career fair with a focus on company demos and our very own MIT student projects. </p>
+		<section class="light-to-dark-blue-gradient-bg">
+			<section id="faq" class="white-50pct-opacity-bg">
+					<img class="hide-on-mobile absolute airplane airplane-right airplane-mid-height" src="assets/airplane_04.svg">
+		
+					<article>
+						<h2>Frequently Asked Questions</h2>
+		
+						<div class="grid">
+							<div>
+									<h3 class="pink-text"> What is xFair?</h3>
+									<p>We have merged TechX's TechFair and TBP's Career Fair to present xFair: an interactive career fair with a focus on company demos and our very own MIT student projects.</p>
+				
+									<h3 class="pink-text"> What distinguishes xFair from traditional career fairs?</h3>
+									<p>Many companies at xFair will be displaying cool demos, so you can check out the products that you'll help build at your future job. In addition to company demos, we'll also be displaying cool projects made by students, so come to support your friends' and classmates' projects!</p>
+								</div>
+				
+								<div>
+									<h3 class="pink-text">Should I bring my resume?</h3>
+									<p>Yes! Also be sure to drop your resume online when the link opens so employers can find you before the fair.</p>
+				
+									<h3 class="pink-text">What's the dress code?</h3>
+									<p>Smart casual.</p>
+				
+									<h3 class="pink-text">Where can I get more information?</h3>
+									<p>Student information will be updated closer to the event. You can also follow MIT xFair on Facebook or Twitter to stay updated!</p>
+								</div>
+						</div>
+					</article>
+		
+					<img src="assets/dash_line_04.svg"/>
+					
+					<img src="assets/airplane_05.svg"/>
+				</section>
 
-						<span class="pink-text"> What distinguishes xFair from traditional career fairs? </span>
-						<p>Many companies at xFair will be displaying cool demos, so you can check out the products that you'll help build at your future job. In addition to company demos, we'll also be displaying cool projects made by students, so come to support your friends' and classmates' projects! </p>
-					</div>
-					<div>
-						<span class="pink-text">Should I bring my resume? </span>
-						<p>Yes! Also be sure to drop your resume online when the link opens so employers can find you before the fair. </p>
+				<footer>
+					<a href="mailto:xfair-cr@mit.edu">
+						<h3>XFAIR 2020</h3>
+						<img src="assets/email_icon.svg" alt="Email">
+					</a>
 
-						<span class="pink-text">What's the dress code? </span>
-						<p>Smart casual. </p>
-
-						<span class="pink-text">Where can I get more information? </span>
-						<p>Student information will be updated closer to the event. You can also follow MIT xFair on Facebook or Twitter to stay updated! </p>
-
-					</div>
-
-			</div>
-			<img src="assets/dash_line_04.svg"/>
-			<img src="assets/airplane_05.svg"/>
+					<h3>Powered by MIT TechX and Tau Beta Pi</h3>
+				</footer>
 		</section>
 	</body>
 </html>

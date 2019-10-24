@@ -2,6 +2,10 @@
     background: linear-gradient($dark-blue, $light-blue)
 }
 
+@mixin gradient1reversed {
+    background: linear-gradient($light-blue, $dark-blue)
+}
+
 @mixin gradient2 {
     background: linear-gradient($dark-blue, $light-blue 36%, #fff)
 }
@@ -16,11 +20,11 @@
 }
 
 .white-50pct-opacity-bg {
-    background: rgba(250, 250, 250, .75);
+    background: rgba(250, 250, 250, .6);
 }
 
 .light-to-dark-blue-gradient-bg {
-    background: linear-gradient($dark-blue, $light-blue);
+    @include gradient1reversed;
 }
 
 .light-blue-bg {
@@ -34,4 +38,56 @@
 
 .pink-text {
     color: $pink;
+}
+
+// z-index
+.z0, .z1, .z-1 {
+    position: relative;
+}
+
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z-1 {
+    z-index: -1;
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+@media (min-width: $large-breakpoint) {
+    .airplane {
+        width: $large-padding;
+    }
+
+    .airplane-right {
+        right: 10%;
+    }
+
+    .airplane-left {
+        left: 10%;
+    }
+
+    .airplane-mid-height {
+        margin-top: 5%;
+    }
+
+    .airplane-low-height {
+        margin-top: 20%;
+    }
+
+    .airplane-high-height {
+        margin-top: -10%;
+    }
+
+    .absolute {
+        display: block !important;
+        position: absolute;
+    }
 }
