@@ -4,13 +4,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<title>{{ site.title }}</title>
+		<link rel="icon" type="image/png" href="{{ site.favicon-path }}">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="stylesheets/styles.css">
+
+		<!-- for Facebook -->
+		<meta property="og:title" content="{{ site.title }}"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="{{ site.logo-path-png }}"/>
+		<meta property="og:url" content="{{ site.url }}"/>
+		<meta property="og:description" content="{{ site.description }}"/>
+
+		<!-- for Twitter -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@MITxFair">
+		<meta name="twitter:title" content="{{ site.title }}">
+		<meta name="twitter:description" content="{{ site.description }}">
+		<meta name="twitter:image:src" content="{{ site.logo-path-png }}">
 	</head>
 
 	<body>
 		<header>
 			<nav>
-				<a> <!-- THIS LOGO WON'T SHOW UP UNTIL DISPLAY IS CHANGED TO ABSOLUTE -->
+				<a href="{{ site.url }}"> <!-- THIS LOGO WON'T SHOW UP UNTIL DISPLAY IS CHANGED TO ABSOLUTE -->
 					<img src="assets/xfair_logo.svg"/>
 				</a>
 
