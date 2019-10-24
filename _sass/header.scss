@@ -1,6 +1,5 @@
 header {
-    height: 50vh;
-    padding-bottom: 2rem;
+    padding: 0 1rem $small-padding;
     @include gradient1;
 }
 
@@ -9,6 +8,9 @@ header nav {
     background: $dark-blue;
     padding: .5rem;
     text-align: center;
+    position: absolute;
+    left: 0;
+    z-index: 1;
     
     a, li {
         display: inline-block;
@@ -19,11 +21,24 @@ header nav {
         font: 600 1rem $font-family;
         text-transform: uppercase;
         margin-right: .5rem;
+        text-decoration: none;
     }
 
     .nav-logo {
         display: none;
     }
+}
+
+.chungus-logo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: $medium-padding 0 2rem;
+    max-width: 500px;
+}
+
+#header-dash-line {
+    display: none;
 }
 
 @media (min-width: $medium-breakpoint) {
@@ -38,9 +53,24 @@ header nav {
     }
 
     .nav-logo {
-        display: block;
+        display: block !important;
         width: 5rem;
         margin-right: 1rem;
+    }
+
+    .chungus-logo {
+        padding-top: $large-padding;
+    }
+
+    header {
+        padding-bottom: $medium-padding;
+    }
+
+    #header-dash-line {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 

@@ -8,49 +8,24 @@
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap');
 
-@mixin structure-styles($padding) {
-
-}
-
 article {
     width: 90%;
     max-width: 850px;
     margin: 0 auto;
-    padding: $small-padding 0;
+
 }
 
 .subsection {
     width: 90%;
-    margin: $small-padding auto 0;
+
     max-width: 1200px;
 }
 .subsection:first-of-type {
     margin-top: 0;
 }
 
-.main-container {
-    padding: $small-padding 0;
-}
-
 .grid {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 1rem;
-}
-
-@media (min-width: 40rem) {
-    // $medium-padding is used here
-    .main-container {
-        padding: $medium-padding 0;
-    }
-}
-
-@media (min-width: 60rem) {
-    // $large-padding is used here
-    header {
-        height: 70vh;
-    }
-    article {
-        padding: 15vh 0;
-    }
 }
