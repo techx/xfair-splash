@@ -1,9 +1,9 @@
 footer {
     display: flex;
     justify-content: space-between;
-    padding: $small-padding $small-padding $medium-padding;
+    padding: $small-padding;
 
-    h3, h3 a {
+    h3, a {
         color: $light-blue;
         text-transform: uppercase;
         display: inline-block;

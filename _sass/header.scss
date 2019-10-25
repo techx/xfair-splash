@@ -32,7 +32,7 @@ header nav {
     
     ul a {
         color: $light-blue;
-        font: 600 1rem $font-family;
+        font: 400 1rem $font-family;
         text-transform: uppercase;
         margin-right: .5rem;
     }
@@ -61,14 +61,14 @@ header nav {
         text-align: left;
 
         ul a {
-            margin-right: .75rem;
+            margin-right: 1.25rem;
         }
     }
 
     .nav-logo {
         display: block !important;
         width: 5rem;
-        margin-right: 1rem;
+        margin-right: 1.25rem;
     }
 
     .chungus-logo {
