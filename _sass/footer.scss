@@ -1,6 +1,4 @@
 footer {
-    display: flex;
-    justify-content: space-between;
     padding: $small-padding;
 
     h3, a {
@@ -14,5 +12,12 @@ footer {
         height: 1rem;
         display: inline-block;
         margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: $medium-breakpoint) {
+    .right {
+        text-align: right;
+        padding-right: 2rem;
     }
 }

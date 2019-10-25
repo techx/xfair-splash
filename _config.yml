@@ -15,15 +15,15 @@ techx: "https://techx.io"
 
 nav-links:
   - title: Employers
-    url: #employers
+    url: "/#employers"
   - title: Research Groups
-    url: #research-groups
+    url: "/#research-groups"
   - title: Students
-    url: #students
+    url: "/#students"
   - title: Student Exhibitors
-    url: #student-exhibitors
+    url: "/#student-exhibitors"
   - title: FAQ
-    url: #faq
+    url: "/#faq"
 
 sass:
   style: compressed
