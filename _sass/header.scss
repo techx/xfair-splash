@@ -35,6 +35,11 @@ header nav {
         font: 400 1rem $font-family;
         text-transform: uppercase;
         margin-right: .5rem;
+        transition: .1s;
+    }
+
+    ul a:hover {
+        color: lighten($light-text, 100%);
     }
 
     .nav-logo {

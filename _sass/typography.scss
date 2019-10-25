@@ -73,4 +73,9 @@ p a {
     font: 600 1.1rem/150% $font-family;
     color: $dark-blue;
     text-decoration: underline;
+    transition: .2s;
+}
+
+p a:hover {
+    color: darken($dark-blue, 10%);
 }
