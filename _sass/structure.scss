@@ -20,14 +20,16 @@ article {
     padding: $small-padding 0;
 }
 
-
 .grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 2rem;
 }
 
 @media (min-width: $medium-breakpoint) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 2rem;
+    }
+
     article, .main-container {
         padding: $medium-padding 1rem;
     }
