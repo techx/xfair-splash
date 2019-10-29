@@ -1,0 +1,40 @@
+article {
+    padding: $small-padding 1rem;
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.subsection {
+    width: 90%;
+    margin: $small-padding auto;
+    max-width: 1200px;
+}
+.subsection:first-of-type {
+    margin-top: 0;
+}
+
+.main-container {
+    padding: $small-padding 0;
+}
+
+.grid {
+    display: grid;
+}
+
+@media (min-width: $medium-breakpoint) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 2rem;
+    }
+
+    article, .main-container {
+        padding: $medium-padding 1rem;
+    }
+
+    .subsection {
+        margin-top: $medium-padding;
+    }
+}

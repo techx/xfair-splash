@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title> xFair 2019 | Feb 4</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="xFair 2019"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="img/xfair-logo.png"/>
+  <meta property="og:url" content="http://xfair.io"/>
+  <meta property="og:description" content="MIT's largest career fair & tech expo | Feb 4, 2019 MIT."/>
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MITxFair">
+  <meta name="twitter:title" content="xFair 2019">
+  <meta name="twitter:description" content="MIT's largest career fair & tech expo | Feb 4, 2019 MIT.">
+  <meta name="twitter:image:src" content="img/xfair-logo.png">
+
+  <!-- for fullPage.js -->
+  <!--
+  <script>
+    if (screen && screen.width > 768) {
+      document.write('<script type="text/javascript" src="js/fullpage.min.js"><\/script>');
+    }
+
+  </script>
+  <script>
+    $(document).ready(function() {
+
+    if (screen && screen.width < 768) {
+    $('#employer-button').attr("href", "#employers");
+    $('#student-button').attr("href", "#students");
+    }
+
+    $('#fullpage').fullpage({
+    anchors:['banner', 'menu', 'employer', 'student', 'exhibition', 'questions']
+    });
+
+    });
+  </script>
+  -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+</head>
+
+<body>
+  <div class="navbar" style="margin-bottom: 0;">
+    <nav nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#main" id="xfair" style="font-size: 1.5em;">XFAIR</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#employers" id="emp">employers</a></li>
+        <li><a href="#students" id="stu">students</a></li>
+        <li><a href="#research_group" id="resg">research groups</a></li>
+        <li><a href="#exhibitors" id="stux">student exhibitors</a></li>
+        <li><a href="#faq" id="f">faq</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <div id="fullpage">
+  <section id="main" class="section">
+    <img class="header" src="img/header.svg">
+    <div class="subtitle">
+      <div class="tagline">mit <a href="http://techx.mit.edu/">techx</a> + <a href="http://web.mit.edu/tbp/www/">tau beta pi</a></div>
+      <div class="info"> February 4, 2019 <br> 10am – 4pm <br> rockwell cage </div>
+    </div>
+  </section>
+
+  <section id="research_group" class="section">
+    <div>
+      <div class="title">Students and Employers</div>
+    </div>
+    <div class="content">
+      Thank you for coming to xfair 2019! Please check back soon for more details on xfair 2020.
+    </div> <br>
+  </section>
+
+  <section id="about" class="section">
+      <img class="description" src="img/description.svg" onerror="this.onerror=null; this.src='img/description.png'">
+    <div class="title" id="hidden_header">more than your average career fair</div>
+    <div class="content" id="des_content">
+      xFair is more than booths, name tags, and blazers - it’s an exhibition of the latest pursuits by companies and students combined. The result is a unique showcase of raw talent, raw ideas, and raw passion. With 2000+ MIT undergraduate and graduate students in attendance, <font color="#F05624">xFair is MIT’s largest career fair and tech expo.</font>
+    </div>
+  </section>
+
+  <section id="employers" class="section">
+    <div>
+      <div class="title" id="title_employers">employers</div>
+    </div>
+    <div class="content">
+      <div id="flame_text">Recruit the brightest young minds to make your company's vision come true.</div><br>
+      <div id="emp_text">Showcase your company's vision to the brightest young minds. This is a chance to attract and inspire students with the latest in tech, awesome company culture, and the core values at the heart of your business. <br>
+      Applications for xFair 2019 are now <b>closed</b>! Please check back later in the year to apply to xFair 2020. If you have any questions, you can reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a>.</div>
+    </div>
+    <a href="sponsor.html"><button>Sponsorship Information</button></a>
+  </section>
+
+  <section id="students" class="section">
+    <div>
+      <div class="title" id="student_title">students</div>
+    </div>
+    <div class="content">
+      Explore, learn, and be inspired. This year’s xFair is all about introducing students to new industries and new tech. Whether you’re studying astrophysics or economics, computer science or chemistry, xFair has something for everyone! <br> <br>
+      Be sure to drop your resume below, browse demos coming to xFair, and familiarize yourself with the layout before the day of the event.
+    </div>
+    <!-- Add these in as they are available -->
+    <a href="http://drop.xfair.io"><button id="resume_button">Resume Drop</button></a>
+    <a href="http://demos.xfair.io"><button id="demo_button">Demo Preview</button></a>
+    <a href="http://dayof.xfair.io"><button id="map_button">Day of Map</button></a>
+    <!--<a href="/student.html"><button>Student Information</button></a> -->
+    <!--<a href="/booklet.html"><button id="booklet_button">xFair Booklet</button></a> -->
+  </section>
+
+  <section id="research_group" class="section">
+    <div>
+      <div class="title">research groups</div>
+    </div>
+    <div class="content">
+      This year, we are reimagining xFair and giving labs on campus the opportunity to demo their work. If you are a lab interested in attending xFair 2019, please contact us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a> for more details.      <br><br>
+    </div> <br>
+  </section>
+
+  <section id="exhibitors" class="section">
+    <div class="title">student exhibitors</div>
+    <div class="content">
+      We want to see your creativity, innovation, and engineering at its best. And we want to help you gain the exposure you deserve. Every year, the ProjX committee sponsors over 50 student projects with up to $500 in funding. These students will display their projects at xFair 2019 to thousands of students and hundreds of industry professionals.
+      <br><br>
+      Applications open every October – stay updated on the <a href="https://projx.mit.edu/"> ProjX website.</a>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="title-border">
+      <span class="corner BL"></span>
+      <span class="corner TR"></span>
+      <div class="title">FAQ</div>
+    </div>
+    <br>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="question">What is xFair?</div>
+          <div class="answer">
+            We have merged TechX's TechFair and TBP's Career Fair to present xFair: an interactive career fair with a focus on company demos and our very own MIT student projects.          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="question">Should I bring my resume?</div>
+          <div class="answer">
+            Yes! Also be sure to drop your resume <a href='http://drop.xfair.io'>here</a> so employers can find you before the fair.          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="question">What distinguishes xFair from traditional career fairs?</div>
+          <div class="answer">
+            Many companies at xFair will be displaying cool demos, so you can check out the products that you'll help build at your future job. In addition to company demos, we'll also be displaying cool projects made by students, so come to support your friends' and classmates' projects!          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="question">What's the dress code?</div>
+          <div class="answer">
+            <a href="http://en.wikipedia.org/wiki/Smart_casual">Smart casual</a>.
+          </div>
+          <div id="space"></div>
+          <div class="question">Where can I get more information?</div>
+          <div class="answer">
+            Student information is available <a href="#students">here </a>. You can follow MIT xFair on <a href="https://www.facebook.com/MITxFair">Facebook</a> or <a href="https://twitter.com/MITxFair">Twitter</a> to stay updated.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <section class='section'>
+    <div id='wrapper'>
+      <div id='left'>
+        <div class='title' id='team'>meet the team</div>
+        <div class='content' id='reachus'>reach us at <a href="mailto:xfair-cr@mit.edu">xfair-cr@mit.edu</a></div>
+      </div>
+      <div id="slideshow">
+        <div class ='er fade'>
+          <img src="img/team/amy.JPG">
+          <div class='title text'>Amy Kim<br>Director</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/savannah.JPG">
+          <div class='title text'>Savannah En<br>Director</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/jessica.JPG">
+          <div class='title text'>Jessica Lee<br>Finance</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/emily.JPG">
+          <div class='title text'>Emily Han<br>Finance</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/madie.JPG">
+          <div class='title text'>Madie Wang<br>Finance</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/joie.JPG">
+          <div class='title text'>Joie Le<br>Dev Ops</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/ivy.JPG">
+          <div class='title text'>Ivy Wang<br>Dev Ops</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/bryan.JPG">
+          <div class='title text'>Bryan Chen<br>Dev Ops</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/steven.JPG">
+          <div class='title text'>Steven Okada<br>Dev Ops</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/suki.JPG">
+          <div class='title text'>Suki Zhang<br>Internal Relations</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/pramoda.JPG">
+          <div class='title text'>Pramoda Karnati<br>Logistics</div>
+        </div>
+        <div class ='er fade'>
+          <img src="img/team/stephanie.JPG">
+          <div class='title text'>Stephanie Zhang<br>Logistics</div>
+        </div>
+        <div class ='er fade'>
+            <img src="img/team/lucy.JPG">
+            <div class='title text'>Lucy Wang<br>Logistics</div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("er");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+      </script>
+
+  <footer>
+    <div class="row">
+      <div class="col-xs-6 left">
+        XFAIR 2019
+        <a href="mailto:xfair-cr@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
+      </div>
+      <div class="col-xs-6 right">
+        <div>Powered by <a href="http://techx.mit.edu/" class="link">MIT TechX</a> and <a href="http://web.mit.edu/tbp/www/" class="link">MIT Tau Beta Pi</a></div>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

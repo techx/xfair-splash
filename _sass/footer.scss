@@ -1,0 +1,23 @@
+footer {
+    padding: $small-padding;
+
+    h3, a {
+        color: $light-blue;
+        text-transform: uppercase;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    img {
+        height: 1rem;
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: $medium-breakpoint) {
+    .right {
+        text-align: right;
+        padding-right: 2rem;
+    }
+}
