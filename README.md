@@ -1,15 +1,13 @@
 # xfair-splash
-This is the xFair Splash Page.
 
-Since this Github pages, the public-facing branch is `gh-pages`. Therefore, `gh-pages` is a sacred branch, do not commit there unless you are 100% certain it is deploy-ready.
+This is the xFair 2020 splash page: [https://xfair.io](https://xfair.io)
 
+It's built using [Jekyll](https://jekyllrb.com/), a static site generator written in Ruby and natively supported by Github Pages.
 
-Testing
--------
+Most links/paths are stored in `_config.yml`. Some are hard coded into `index.html`.
 
-To view the splash page on your own computer, simply run `python -m SimpleHTTPServer` (if using python3, run `python -m http.server`) in this directory. Then, go to `http://localhost:8000` to view your version.
+Styles are written in SCSS and broken up into partials in the `_sass` directory, then imported into `styleshets/styles.scss`.
 
-Dev
----
+**To run and test locally**, you need to have Jekyll installed. See [instructions](https://jekyllrb.com/docs/installation/).
 
-Make sure to compile your scss appropriately. Something like `sass --watch stylesheets/scss:stylesheets` suffices.
+After cloning this repo, `cd` into the project folder and run `jekyll serve`. This will compile and serve the website on `localhost:4000` and also generate the static files in `_site`.

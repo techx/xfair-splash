@@ -1,0 +1,97 @@
+header {
+    padding-bottom: $small-padding;
+    @include gradient1;
+
+    a {
+        text-decoration: none;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+header nav {
+    width: 100%;
+    background: $dark-blue;
+    padding: .5rem;
+    text-align: center;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    
+    a, li {
+        display: inline-block;
+    }
+    
+    ul a {
+        color: $light-blue;
+        font: 400 1rem $font-family;
+        text-transform: uppercase;
+        margin-right: .5rem;
+        transition: .1s;
+    }
+
+    ul a:hover {
+        color: lighten($light-text, 100%);
+    }
+
+    .nav-logo {
+        display: none;
+    }
+}
+
+.chungus-logo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: $medium-padding 0 2rem;
+    max-width: 500px;
+}
+
+#header-dash-line {
+    display: none;
+}
+
+@media (min-width: $medium-breakpoint) {
+    header nav {
+        padding: 1rem;
+        display: flex;
+        text-align: left;
+
+        ul a {
+            margin-right: 1.25rem;
+        }
+    }
+
+    .nav-logo {
+        display: block !important;
+        width: 5rem;
+        margin-right: 1.25rem;
+    }
+
+    .chungus-logo {
+        padding-top: $large-padding;
+    }
+
+    header {
+        padding-bottom: $medium-padding;
+    }
+
+    #header-dash-line {
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: $large-breakpoint) {
+    header nav {
+        padding: 1rem 2rem .75rem;
+    }
+}

@@ -1,0 +1,81 @@
+h1, h2, h4 {
+    text-align: center;
+}
+
+h2 {
+    font: 600 1.75rem $font-family;
+    margin-bottom: $small-padding;
+    text-transform: uppercase;
+    color: $dark-blue;
+}
+
+h3 {
+    font: 600 1.25rem $font-family;
+    margin-bottom: 1.5rem;
+    color: $dark-blue;
+}
+
+h4 {
+    color: $light-text;
+    font: 400 1rem/100% $font-family;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: $dark-blue;
+    margin: 2rem 0;
+    font: 400 1.1rem/150% $font-family;
+}
+p:first-child {
+    margin-top: 0;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+b {
+    color: $pink;
+    font-weight: 400;
+}
+
+section nav {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-list {
+    padding: $small-padding 0;
+    text-align: center;
+}
+
+.btn {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: .9rem 1.25rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.btn a:hover {
+    background: darken($pink, 5%);
+}
+
+p a {
+    font: 600 1.1rem/150% $font-family;
+    color: $dark-blue;
+    text-decoration: underline;
+    transition: .2s;
+}
+
+p a:hover {
+    color: darken($dark-blue, 10%);
+}
