@@ -1,5 +1,5 @@
 header {
-    padding-bottom: $small-padding;
+    padding-bottom: $medium-padding;
     @include gradient1;
 
     a {
@@ -81,7 +81,7 @@ header nav {
     }
 
     header {
-        padding-bottom: $medium-padding;
+        padding-bottom: $large-padding;
     }
 
     #header-dash-line {
