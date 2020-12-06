@@ -6,14 +6,14 @@ h2 {
     font: 600 1.75rem $font-family;
     margin-bottom: $small-padding;
     text-transform: uppercase;
-    color: $dark-blue;
+    color: $pink;
 }
 
 h3 {
     font: 600 1.25rem $font-family;
     margin-bottom: 0;
     margin-top: 1rem;
-    color: $dark-blue;
+    color: $middle-blue;
 }
 
 header h3 {
@@ -22,7 +22,7 @@ header h3 {
 }
 
 h4 {
-    color: $light-text;
+    color: $middle-blue;
     font: 400 1rem/100% $font-family;
     margin-bottom: 1rem;
 }
@@ -65,7 +65,7 @@ section nav {
     display: inline-block;
     text-transform: uppercase;
     padding: .9rem 1.25rem;
-    font-weight: 600;
+    //font-weight: 600;
     border-radius: 3rem;
     text-decoration: none;
     transition: .2s;
@@ -76,7 +76,7 @@ section nav {
 }
 
 p a {
-    font: 600 1.1rem/150% $font-family;
+    //font: 600 1.1rem/150% $font-family;
     color: $dark-blue;
     text-decoration: underline;
     transition: .2s;

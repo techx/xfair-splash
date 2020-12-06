@@ -31,6 +31,14 @@
     background: $light-blue;
 }
 
+.darkest-blue-bg{
+    background: $darkest-blue;
+}
+
+.centered-text{
+    text-align: center;
+}
+
 // colored text
 .light-text {
     color: $light-text;
@@ -38,6 +46,10 @@
 
 .pink-text {
     color: $pink;
+}
+
+.light-blue-text {
+    color: $light-blue;
 }
 
 // z-index
