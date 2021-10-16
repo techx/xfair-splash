@@ -8,6 +8,8 @@ Most links/paths are stored in `_config.yml`. Some are hard coded into `index.ht
 
 Styles are written in SCSS and broken up into partials in the `_sass` directory, then imported into `styleshets/styles.scss`.
 
-**To run and test locally**, you need to have Jekyll installed. See [instructions](https://jekyllrb.com/docs/installation/).
+## Running and testing locally
 
-After cloning this repo, `cd` into the project folder and run `jekyll serve`. This will compile and serve the website on `localhost:4000` and also generate the static files in `_site`.
+To run and test locally, you need to have Jekyll installed. See [instructions](https://jekyllrb.com/docs/installation/).
+
+After cloning this repo, `cd` into the project folder and run `bundle exec jekyll serve`. This will compile and serve the website on `localhost:4000` and also generate the static files in `_site`.
